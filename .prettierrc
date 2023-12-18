@@ -1,0 +1,14 @@
+{
+  "tabWidth": 2,
+  "endOfLine": "auto",
+  "useTabs": false,
+  "importOrder": [
+    "<THIRD_PARTY_MODULES>",
+    "^app(\\/.*)?$",
+    "^modules(\\/.*)?$",
+    "^business(\\/.*)?$",
+    "^shared(\\/.*)?$",
+    "^[./]"
+  ],
+  "importOrderSortSpecifiers": true
+}
