@@ -1,0 +1,41 @@
+exports.id=56,exports.ids=[56],exports.modules={7663:(e,i,t)=>{Promise.resolve().then(t.t.bind(t,2583,23)),Promise.resolve().then(t.t.bind(t,6840,23)),Promise.resolve().then(t.t.bind(t,8771,23)),Promise.resolve().then(t.t.bind(t,3225,23)),Promise.resolve().then(t.t.bind(t,9295,23)),Promise.resolve().then(t.t.bind(t,3982,23))},2329:(e,i,t)=>{Promise.resolve().then(t.bind(t,6343)),Promise.resolve().then(t.bind(t,3959)),Promise.resolve().then(t.bind(t,7267))},8189:(e,i,t)=>{"use strict";t.d(i,{Z:()=>d});var n=t(2295),r=t(9982),o=t(6739);let l=(0,r.Z)(o.Z)`
+  display: flex;
+`;function d({children:e,...i}){return n.jsx(l,{...i,children:e})}},4167:(e,i,t)=>{"use strict";t.d(i,{Z:()=>d});var n=t(2295),r=t(9982),o=t(6739);let l=(0,r.Z)(o.Z)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;function d({children:e,...i}){return n.jsx(l,{...i,children:e})}},6343:(e,i,t)=>{"use strict";t.r(i),t.d(i,{default:()=>d});var n=t(2295),r=t(9982),o=t(6739);let l=(0,r.Z)(o.Z)`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;function d({children:e,...i}){return n.jsx(l,{...i,children:e})}},3959:(e,i,t)=>{"use strict";t.r(i),t.d(i,{default:()=>j});var n=t(2295),r=t(3729),o=t(5442),l=t(4167),d=t(9982),s=t(783),h=t.n(s);let a=(0,d.Z)(h())`
+  text-decoration: none;
+  color: unset;
+`;var f=t(6331),g=t(2254);function c({name:e,href:i,Icon:t}){let r=(0,g.usePathname)()===i?f.H3:f.il;return(0,n.jsxs)(a,{href:i,children:[n.jsx(l.Z,{children:n.jsx(t,{color:r})}),n.jsx(o.Z,{variant:"bodySRegular",color:r,children:e})]})}let m=[{name:"Home",Icon:({color:e=f.il})=>n.jsx("svg",{width:"26",height:"24",viewBox:"0 0 26 24",fill:"none",children:n.jsx("path",{d:"M10.4 24V15.5294H15.6V24H22.1V12.7059H26L13 0L0 12.7059H3.9V24H10.4Z",fill:e})}),href:"/home"},{name:"Search",Icon:({color:e=f.il})=>(0,n.jsxs)("svg",{width:"26",height:"24",viewBox:"0 0 26 24",fill:"none",children:[n.jsx("g",{clipPath:"url(#clip0_92_465)",children:n.jsx("path",{d:"M16.6458 14H15.8229L15.5312 13.73C16.5521 12.59 17.1667 11.11 17.1667 9.5C17.1667 5.91 14.1354 3 10.3958 3C6.65625 3 3.625 5.91 3.625 9.5C3.625 13.09 6.65625 16 10.3958 16C12.0729 16 13.6146 15.41 14.8021 14.43L15.0833 14.71V15.5L20.2917 20.49L21.8438 19L16.6458 14ZM10.3958 14C7.80208 14 5.70833 11.99 5.70833 9.5C5.70833 7.01 7.80208 5 10.3958 5C12.9896 5 15.0833 7.01 15.0833 9.5C15.0833 11.99 12.9896 14 10.3958 14Z",fill:e})}),n.jsx("defs",{children:n.jsx("clipPath",{id:"clip0_92_465",children:n.jsx("rect",{width:"25",height:"24",fill:"white",transform:"translate(0.5)"})})})]}),href:"/search"},{name:"Schedule",Icon:({color:e=f.il})=>n.jsx("svg",{width:"25",height:"24",viewBox:"0 0 25 24",fill:"none",children:n.jsx("path",{d:"M19.1667 13.2H12.5V19.2H19.1667V13.2ZM17.8333 0V2.4H7.16667V0H4.5V2.4H3.16667C1.68667 2.4 0.513333 3.48 0.513333 4.8L0.5 21.6C0.5 22.92 1.68667 24 3.16667 24H21.8333C23.3 24 24.5 22.92 24.5 21.6V4.8C24.5 3.48 23.3 2.4 21.8333 2.4H20.5V0H17.8333ZM21.8333 21.6H3.16667V8.4H21.8333V21.6Z",fill:e})}),href:"/schedule"},{name:"Profile",Icon:({color:e=f.il})=>n.jsx("svg",{width:"25",height:"24",viewBox:"0 0 25 24",fill:"none",children:n.jsx("path",{d:"M12.5 0C5.876 0 0.5 5.376 0.5 12C0.5 18.624 5.876 24 12.5 24C19.124 24 24.5 18.624 24.5 12C24.5 5.376 19.124 0 12.5 0ZM12.5 3.6C14.492 3.6 16.1 5.208 16.1 7.2C16.1 9.192 14.492 10.8 12.5 10.8C10.508 10.8 8.9 9.192 8.9 7.2C8.9 5.208 10.508 3.6 12.5 3.6ZM12.5 20.64C9.5 20.64 6.848 19.104 5.3 16.776C5.336 14.388 10.1 13.08 12.5 13.08C14.888 13.08 19.664 14.388 19.7 16.776C18.152 19.104 15.5 20.64 12.5 20.64Z",fill:e})}),href:"/profile"}];var x=t(5575);let u=d.Z.nav`
+  padding: 1rem 28px;
+  display: flex;
+  justify-content: space-between;
+  background-color: ${f.O5};
+  border-radius: 12px;
+
+  box-shadow: 0px 2px 8px 0px ${(0,x.Fq)(f.O5,.3)};
+  backdrop-filter: blur(10px);
+
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  left: 1rem;
+`;function p(){return n.jsx(u,{children:m.map(e=>(0,r.createElement)(c,{...e,key:e.href}))})}var b=t(6343);let y=(0,d.Z)(b.default)`
+  justify-content: unset;
+  height: 100vh;
+  padding-bottom: 16px;
+`,S=d.Z.aside`
+  padding: 16px;
+  width: 100%;
+  background-color: ${f.Yf};
+  border-bottom: ${f.T5};
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 1rem;
+`;function H(){return n.jsx(S,{children:n.jsx(o.Z,{variant:"heading5",children:"Wellbe"})})}function j({children:e}){return(0,n.jsxs)(y,{children:[n.jsx(H,{}),e,n.jsx(p,{})]})}},7267:(e,i,t)=>{"use strict";t.r(i),t.d(i,{default:()=>c});var n=t(2295),r=t(9738),o=t(7760),l=t(5434),d=t(1025),s=t.n(d),h=t(3741),a=t(6331);let f={breakpoints:{values:{xs:374,sm:680,md:1e3,lg:1280,xl:1920}},spacing:[0,4,8,16,18,24,32,64],typography:{fontFamily:s().style.fontFamily,...h.R},palette:{background:{default:a.Yf},text:{primary:a.Vl,secondary:a.Gw},primary:{main:a.H3},secondary:{main:a.Vl,light:a.O5},error:{main:a.if},warning:{main:a.mM},success:{main:a.qX},card:{main:a.YB},natural:{main:a.il,light:a.Y4},white:{main:a.Yf},black:{main:a.Sx}}},g=(0,r.Z)(f);function c({children:e}){return(0,n.jsxs)(o.Z,{theme:g,children:[n.jsx(l.ZP,{}),e]})}},6331:(e,i,t)=>{"use strict";t.d(i,{$g:()=>b,Gw:()=>m,H3:()=>l,O5:()=>x,Sx:()=>o,T5:()=>p,Vl:()=>d,Y4:()=>f,YB:()=>c,Yf:()=>r,if:()=>s,il:()=>g,mM:()=>a,qX:()=>h});var n=t(5575);let r="#FFFFFF",o="#000000",l="#FF962F",d="#222222",s="#DB0000",h="#88FD2C",a="#FFE352",f="#F4F4F4",g="#D9D9D9",c=(0,n.Fq)(g,.1),m=(0,n.Fq)(o,.6),x=(0,n.Fq)(d,.8),u=(0,n.Fq)(d,.3),p=`0.2px solid ${u}`,b="background: rgba(255, 255, 255, 0.38); backdrop-filter: blur(10px);"},3741:(e,i,t)=>{"use strict";t.d(i,{R:()=>n});let n={heading1:{fontSize:"3rem",fontWeight:500,lineHeight:"110%"},heading2:{fontSize:"2.5rem",fontWeight:500,lineHeight:"110%"},heading3:{fontSize:"2rem",fontWeight:500,lineHeight:"125%"},heading3Bold:{fontSize:"2rem",fontWeight:700,lineHeight:"125%"},heading4:{fontSize:"1.5rem",fontWeight:500,lineHeight:"130%"},heading4Bold:{fontSize:"1.5rem",fontWeight:700,lineHeight:"130%"},heading5:{fontSize:"22px",fontWeight:400,lineHeight:"135%"},heading5Bold:{fontSize:"22px",fontWeight:700,lineHeight:"130%"},heading6:{fontSize:"1.125rem",fontWeight:500,lineHeight:"135%"},bodyXLSemiBold:{fontSize:"1.125rem",fontWeight:700,lineHeight:"140%"},bodyXLMedium:{fontSize:"1.125rem",fontWeight:500,lineHeight:"140%"},bodyXLRegular:{fontSize:"1.125rem",fontWeight:400,lineHeight:"140%"},bodyLSemiBold:{fontSize:"1rem",fontWeight:700,lineHeight:"150%"},bodyLMedium:{fontSize:"1rem",fontWeight:500,lineHeight:"150%"},bodyLRegular:{fontSize:"1rem",fontWeight:400,lineHeight:"140%"},bodyMSemiBold:{fontSize:"0.875rem",fontWeight:700,lineHeight:"150%"},bodyMMedium:{fontSize:"0.875rem",fontWeight:500,lineHeight:"150%"},bodyMRegular:{fontSize:"0.875rem",fontWeight:400,lineHeight:"150%"},bodySSemiBold:{fontSize:"0.75rem",fontWeight:700,lineHeight:"150%"},bodySMedium:{fontSize:"0.75rem",fontWeight:500,lineHeight:"150%"},bodySRegular:{fontSize:"0.75rem",fontWeight:400,lineHeight:"150%"},bodySLight:{fontSize:"0.75rem",fontWeight:300,lineHeight:"150%"},bodyXSSemiBold:{fontSize:"0.625rem",fontWeight:700,lineHeight:"150%"},bodyXSMedium:{fontSize:"0.625rem",fontWeight:500,lineHeight:"150%"},bodyXSRegular:{fontSize:"0.625rem",fontWeight:400,lineHeight:"150%"}}},2287:(e,i,t)=>{"use strict";t.r(i),t.d(i,{default:()=>b,metadata:()=>p});var n=t(5036),r=t(6843);let o=(0,r.createProxy)(String.raw`/Users/viktoriayarema/Desktop/personal/wellbe/src/app/_theme/ThemeRegister.tsx`),{__esModule:l,$$typeof:d}=o,s=o.default,h=(0,r.createProxy)(String.raw`/Users/viktoriayarema/Desktop/personal/wellbe/src/app/_layouts/MobileLayout/index.tsx`),{__esModule:a,$$typeof:f}=h,g=h.default,c=(0,r.createProxy)(String.raw`/Users/viktoriayarema/Desktop/personal/wellbe/src/app/_components/Layout/FlexColumn/index.tsx`),{__esModule:m,$$typeof:x}=c,u=c.default,p={title:"Wellbe",description:"Wellbe Booking: Premier Wellness & Self-Care Services | Book Online Now"};function b({children:e}){return n.jsx("html",{lang:"en",children:n.jsx(s,{children:n.jsx("body",{children:n.jsx(g,{children:n.jsx(u,{px:"1rem",children:e})})})})})}}};
