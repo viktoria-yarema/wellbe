@@ -1,8 +1,6 @@
 {
-  "/_not-found": "app/_not-found.js",
-  "/(modules)/appointment/test-id/page": "app/(modules)/appointment/test-id/page.js",
-  "/(modules)/profile/page": "app/(modules)/profile/page.js",
-  "/(modules)/schedule/page": "app/(modules)/schedule/page.js",
   "/(modules)/search/page": "app/(modules)/search/page.js",
-  "/(modules)/home/page": "app/(modules)/home/page.js"
+  "/(modules)/schedule/page": "app/(modules)/schedule/page.js",
+  "/(modules)/home/page": "app/(modules)/home/page.js",
+  "/(modules)/profile/page": "app/(modules)/profile/page.js"
 }
