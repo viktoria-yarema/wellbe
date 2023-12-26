@@ -2,18 +2,40 @@
 # https://github.com/firebase/firebase-tools
 
 name: Deploy to Firebase Hosting on merge
-'on':
+"on":
   push:
     branches:
       - dev
 jobs:
   build_and_deploy:
+    # runs-on: ubuntu-latest
+    # steps:
+    #   - uses: actions/checkout@v3
+    #   - uses: FirebaseExtended/action-hosting-deploy@v0
+    #     with:
+    #       repoToken: "${{ secrets.GITHUB_TOKEN }}"
+    #       firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_WELLBE_BOOK_DEV }}"
+    #       channelId: live
+    #       projectId: wellbe-book-dev
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
-      - uses: FirebaseExtended/action-hosting-deploy@v0
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run export
+
+      - name: Deploy to Firebase
+        uses: w9jds/firebase-action@master
         with:
-          repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_WELLBE_BOOK_DEV }}'
+          args: deploy --only hosting
+          repoToken: "${{ secrets.FIREBASE_TOKEN}}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_WELLBE_BOOK_DEV }}"
           channelId: live
           projectId: wellbe-book-dev
+        # env:
+        #   FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
