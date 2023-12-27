@@ -1,6 +1,0 @@
-{
-  "/(modules)/search/page": "app/(modules)/search/page.js",
-  "/(modules)/schedule/page": "app/(modules)/schedule/page.js",
-  "/(modules)/home/page": "app/(modules)/home/page.js",
-  "/(modules)/profile/page": "app/(modules)/profile/page.js"
-}

@@ -16,13 +16,6 @@
       "static/css/ee2235b3b7d22633.css",
       "static/chunks/app/layout-e1c4eaa007c36546.js"
     ],
-    "/(modules)/appointment/[id]/page": [
-      "static/chunks/webpack-d8cc305239492d15.js",
-      "static/chunks/fd9d1056-7985359dfbc19ce5.js",
-      "static/chunks/938-7be7a4c5bac73b78.js",
-      "static/chunks/main-app-cc4b15953358f12a.js",
-      "static/chunks/app/(modules)/appointment/[id]/page-2fe71786f91717de.js"
-    ],
     "/(modules)/home/page": [
       "static/chunks/webpack-d8cc305239492d15.js",
       "static/chunks/fd9d1056-7985359dfbc19ce5.js",
@@ -37,14 +30,14 @@
       "static/chunks/fd9d1056-7985359dfbc19ce5.js",
       "static/chunks/938-7be7a4c5bac73b78.js",
       "static/chunks/main-app-cc4b15953358f12a.js",
-      "static/chunks/app/(modules)/profile/page-760f4813e1021e12.js"
+      "static/chunks/app/(modules)/profile/page-aad75a9b8169e43e.js"
     ],
     "/(modules)/schedule/page": [
       "static/chunks/webpack-d8cc305239492d15.js",
       "static/chunks/fd9d1056-7985359dfbc19ce5.js",
       "static/chunks/938-7be7a4c5bac73b78.js",
       "static/chunks/main-app-cc4b15953358f12a.js",
-      "static/chunks/app/(modules)/schedule/page-170aa760973eadf1.js"
+      "static/chunks/app/(modules)/schedule/page-7df1e2c21f2dedf5.js"
     ],
     "/(modules)/search/page": [
       "static/chunks/webpack-d8cc305239492d15.js",
@@ -53,7 +46,7 @@
       "static/chunks/main-app-cc4b15953358f12a.js",
       "static/chunks/109-1e7e5f31d13d3990.js",
       "static/chunks/23-f2685bc61e00afdf.js",
-      "static/chunks/app/(modules)/search/page-cad7fa6e66f715fd.js"
+      "static/chunks/app/(modules)/search/page-c18dfb930a095f2e.js"
     ],
     "/(modules)/search/error": [
       "static/chunks/webpack-d8cc305239492d15.js",
@@ -61,6 +54,13 @@
       "static/chunks/938-7be7a4c5bac73b78.js",
       "static/chunks/main-app-cc4b15953358f12a.js",
       "static/chunks/app/(modules)/search/error-34fd38543da283ff.js"
+    ],
+    "/(modules)/appointment/[id]/page": [
+      "static/chunks/webpack-d8cc305239492d15.js",
+      "static/chunks/fd9d1056-7985359dfbc19ce5.js",
+      "static/chunks/938-7be7a4c5bac73b78.js",
+      "static/chunks/main-app-cc4b15953358f12a.js",
+      "static/chunks/app/(modules)/appointment/[id]/page-2fe71786f91717de.js"
     ]
   }
 }
