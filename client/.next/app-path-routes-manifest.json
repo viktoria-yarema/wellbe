@@ -1,1 +1,1 @@
-{"/_not-found":"/_not-found","/(modules)/home/page":"/home","/(modules)/profile/page":"/profile","/(modules)/schedule/page":"/schedule","/(modules)/search/page":"/search","/(modules)/appointment/[id]/page":"/appointment/[id]"}
+{"/_not-found":"/_not-found","/(modules)/appointment/[id]/page":"/appointment/[id]","/(modules)/home/page":"/home","/(modules)/profile/page":"/profile","/(modules)/search/page":"/search","/(modules)/schedule/page":"/schedule"}

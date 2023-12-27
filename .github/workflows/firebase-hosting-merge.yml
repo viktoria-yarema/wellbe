@@ -23,8 +23,10 @@ jobs:
 
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          repoToken: "${{ secrets.GITHUB_TOKEN }}"
-          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_WELLBE_BOOK_DEV }}"
+          # repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          # firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_WELLBE_BOOK_DEV }}"
           channelId: live
           projectId: wellbe-book-dev
           entryPoint: client
+        env:
+          FIREBASE_CLI_EXPERIMENTS: webframeworks
