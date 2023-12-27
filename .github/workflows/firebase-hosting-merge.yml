@@ -11,11 +11,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      # Navigate to the client directory and install dependencies
+      # Install dependencies using npm install
       - name: Install dependencies
         run: |
           cd client
-          npm ci
+          npm install --force 
 
       # Build the Next.js app
       - name: Build Next.js app
@@ -31,6 +31,5 @@ jobs:
           channelId: live
           projectId: wellbe-book-dev
         env:
-          # Set the working directory for the deployment
           FIREBASE_CLI_PREVIEWS: hostingchannels
           PROJECT_PATH: client
