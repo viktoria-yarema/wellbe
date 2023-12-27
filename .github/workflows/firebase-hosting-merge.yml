@@ -1,17 +1,36 @@
 name: Deploy to Firebase Hosting on merge
-"on":
+
+on:
   push:
     branches:
       - dev
+
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: npm ci && npm run build
+
+      # Navigate to the client directory and install dependencies
+      - name: Install dependencies
+        run: |
+          cd client
+          npm ci
+
+      # Build the Next.js app
+      - name: Build Next.js app
+        run: |
+          cd client
+          npm run build
+
+      # Deploy to Firebase Hosting
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_WELLBE_BOOK_DEV }}"
           channelId: live
           projectId: wellbe-book-dev
+        env:
+          # Set the working directory for the deployment
+          FIREBASE_CLI_PREVIEWS: hostingchannels
+          PROJECT_PATH: client
