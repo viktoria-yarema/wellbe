@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sections": [
+    {"offset": {"line": 5, "column": 0}, "map": {"version":3,"sources":["/turbopack/[project]/src/app/_layouts/MainLayout/index.tsx"],"sourcesContent":["\"use client\";\n\nimport { QueryClient, QueryClientProvider } from \"react-query\";\nimport MobileLayout from \"../MobileLayout\";\nimport AuthLayout from \"../AuthLayout\";\n\n// Create a client\nconst queryClient = new QueryClient();\n\ntype MainLayoutProps = {\n  children: React.ReactNode;\n};\n\nexport default function MainLayout({ children }: MainLayoutProps) {\n  return (\n    <QueryClientProvider client={queryClient}>\n      <AuthLayout />\n      {/* <MobileLayout>{children}</MobileLayout> */}\n    </QueryClientProvider>\n  );\n}\n"],"names":[],"mappings":";;;;;;;;;AAAA;;;;AAMA,kBAAkB;AAClB,MAAM,cAAc;AAML,SAAS,WAAW,EAAE,QAAQ,EAAmB;IAC9D,qBACE;QAAqB,QAAQ;kBAC3B,cAAA;;;;;;;;;;AAIN"}},
+    {"offset": {"line": 34, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

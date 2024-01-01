@@ -1,17 +1,20 @@
-import { AppointmentType } from "@/app/(entities)/appointment/types";
+"use client";
+import { useAppointments } from "@/app/(entities)/appointment/queries/useAppointments";
+import { AppointmentStatus } from "@/app/(entities)/appointment/types";
+import AppointmentCard from "@/app/_components/AppointmentCard";
+import FlexColumn from "@/app/_components/Layout/FlexColumn";
 
-type Response = {
-  appointments: AppointmentType[];
-  totalCount: number;
+type AppointmentsListProps = {
+  status: AppointmentStatus;
 };
 
-export default function AppointmentsList() {
+export default function AppointmentsList({ status }: AppointmentsListProps) {
+  const { data: appointments } = useAppointments({ status });
   return (
-    <div>
-      Appointments list
-      {/* {appointments?.appointments?.map((item) => (
-        <div key={item.id}>{item.companyName}</div>
-      ))} */}
-    </div>
+    <FlexColumn rowGap={"1rem"}>
+      {appointments?.map((item) => (
+        <AppointmentCard key={item.id} card={item} />
+      ))}
+    </FlexColumn>
   );
 }

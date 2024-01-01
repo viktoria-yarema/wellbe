@@ -14,7 +14,7 @@ export const StyledAppointmentCard = styled(Flex)`
 
 export const StyledTimeBlock = styled(FlexColumn)`
   justify-content: center;
-  padding: 1.25rem 1rem 0.75rem;
+  padding: 1.5rem 1rem 0.75rem;
   border-left: ${BORDER};
   position: relative;
 

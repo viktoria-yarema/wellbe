@@ -9,6 +9,7 @@ import {
   COLOR_GREY_LIGHT,
   COLOR_GREY_MEDIUM,
   COLOR_PRIMARY,
+  COLOR_PRIMARY_DARK,
   COLOR_SECONDARY,
   COLOR_SECONDARY_LIGHTEN,
   COLOR_SUCCESS,
@@ -49,6 +50,7 @@ export const themeOptions: ThemeOptions = {
     },
     primary: {
       main: COLOR_PRIMARY,
+      dark: COLOR_PRIMARY_DARK,
     },
     secondary: {
       main: COLOR_SECONDARY,

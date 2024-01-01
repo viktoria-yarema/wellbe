@@ -2,6 +2,7 @@ export type Company = {
   id: string;
   email: string;
   phone: string;
+  pictureUrl: string;
   extraPhones?: string[];
   name: string;
   shortDescription: string;
@@ -13,7 +14,7 @@ export type Company = {
   staff: string[]; // todo: type for staff
   updateAt: Date;
   createAt: Date;
-  socialMedia: string[]; // todo: enum for SM
+  socialMedia?: string[]; // todo: enum for SM
   schedule: string[]; // todo: makeUp the schedule modal
   portfolio?: string[]; // todo: make the model for image
 };

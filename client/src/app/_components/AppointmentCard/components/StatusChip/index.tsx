@@ -16,7 +16,16 @@ export default function StatusChip({ status }: AppointmentCardProps) {
 
   return (
     <Flex bgcolor={color} p={"4px 16px"} borderRadius={"18px"}>
-      <Typography variant="bodySRegular">{title}</Typography>
+      <Typography
+        variant="bodySRegular"
+        color={
+          status === AppointmentStatus.Canceled ||  status === AppointmentStatus.RequestToChangeDate 
+            ? "background.default"
+            : "text.primary"
+        }
+      >
+        {title}
+      </Typography>
     </Flex>
   );
 }

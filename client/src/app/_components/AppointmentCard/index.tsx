@@ -15,17 +15,21 @@ import ArrowUpwardIcon from "@/app/_assets/icons/ArrowUpwardIcon";
 import { COLOR_TEXT_SECONDARY } from "@/app/_theme/colors";
 import Avatar from "../Avatar";
 import { useRouter } from "next/navigation";
+import getStorageDownloadLink from "@/app/_global/getStorageDownloadLink";
+import { useCompanyQuery } from "@/app/(entities)/company/queries/useCompanyQuery";
 
 type AppointmentCardProps = {
   card: AppointmentType;
 };
 
 export default function AppointmentCard({ card }: AppointmentCardProps) {
-  const { companyName, serviceName, status, staff, date, companyImg, id } =
-    card;
-  const { monthAndWeek, day, time } = extractDateInfo(date);
-
+  const { serviceName, status, staff, appointmentDate, id, companyId } = card;
+  const { monthAndWeek, day, time } = extractDateInfo(appointmentDate);
   const router = useRouter();
+
+  const { data: company } = useCompanyQuery(companyId);
+
+  const img = getStorageDownloadLink(company?.pictureUrl);
 
   return (
     <StyledAppointmentCard
@@ -37,15 +41,17 @@ export default function AppointmentCard({ card }: AppointmentCardProps) {
           <StatusChip status={status} />
         </Flex>
         <FlexColumn>
-          <Typography variant="bodyMMedium">{serviceName}</Typography>
-          <Typography variant="bodySRegular" color="secondary.light">
+          <Typography variant="bodyLMedium">{serviceName}</Typography>
+          <Typography variant="bodyMRegular" color="secondary.light">
             Staff: {staff}
           </Typography>
         </FlexColumn>
         <Flex columnGap={"0.5rem"} alignContent={"center"}>
-          <Avatar src={companyImg} alt={companyName} size={"xs"} />
+          {img && (
+            <Avatar src={img} alt={company?.name ?? "avatar"} size={"xs"} />
+          )}
           <Typography variant="bodyMMedium" color="secondary.main">
-            {companyName}
+            {company?.name}
           </Typography>
         </Flex>
       </FlexColumn>

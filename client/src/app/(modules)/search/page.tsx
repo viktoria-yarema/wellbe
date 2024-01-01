@@ -7,7 +7,7 @@ import AppointmentsList from "./components/AppointmentsList";
 
 export default function SearchPage() {
   const [tab, setTab] = useState(AppointmentStatus.Approved);
-  console.log("search page");
+
   return (
     <div>
       <TabPanel<AppointmentStatus>
@@ -16,7 +16,7 @@ export default function SearchPage() {
         setActiveTab={setTab}
       />
       <Suspense fallback={<div>Loading...</div>}>
-        <AppointmentsList />
+        <AppointmentsList status={tab} />
       </Suspense>
     </div>
   );

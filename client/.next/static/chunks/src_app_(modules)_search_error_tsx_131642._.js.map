@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sections": [
+    {"offset": {"line": 5, "column": 0}, "map": {"version":3,"sources":["/turbopack/[project]/src/app/(modules)/search/error.tsx"],"sourcesContent":["\"use client\";\n\nexport function ErrorSearch() {\n  return <div>Error search</div>;\n}\n"],"names":[],"mappings":";;;;;AAAA;;AAEO,SAAS;IACd,qBAAO,wLAAC;kBAAI;;;;;;AACd;KAFgB"}},
+    {"offset": {"line": 24, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import ThemeRegistry from "./_theme/ThemeRegister";
-import MobileLayout from "./_layouts/MobileLayout";
 import FlexColumn from "./_components/Layout/FlexColumn";
+import { StrictMode } from "react";
+import MainLayout from "./_layouts";
 
 export const metadata: Metadata = {
   title: "Wellbe",
@@ -18,9 +19,11 @@ export default function RootLayout({
     <html lang="en">
       <ThemeRegistry>
         <body>
-          <MobileLayout>
-            <FlexColumn px="1rem">{children}</FlexColumn>
-          </MobileLayout>
+          <StrictMode>
+            <MainLayout>
+              <FlexColumn px="1rem">{children}</FlexColumn>
+            </MainLayout>
+          </StrictMode>
         </body>
       </ThemeRegistry>
     </html>

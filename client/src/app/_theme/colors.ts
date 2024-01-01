@@ -5,6 +5,7 @@ import { alpha } from "@mui/material";
 export const COLOR_WHITE = "#FFFFFF";
 export const COLOR_BLACK = "#000000";
 export const COLOR_PRIMARY = "#FF962F";
+export const COLOR_PRIMARY_DARK = "#DC6C1D";
 export const COLOR_SECONDARY = "#222222";
 export const COLOR_ERROR = "#DB0000";
 export const COLOR_SUCCESS = "#88FD2C";

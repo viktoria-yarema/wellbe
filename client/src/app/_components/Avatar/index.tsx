@@ -18,7 +18,13 @@ export default function Avatar({ src, alt, size }: AvatarProps) {
 
   return (
     <StyledAvatar width={sizeMap[size]} height={sizeMap[size]}>
-      <Image src={src} alt={alt} width={sizeMap[size]} height={sizeMap[size]} />
+      <Image
+        src={src}
+        alt={alt}
+        width={sizeMap[size]}
+        height={sizeMap[size]}
+        layout="responsive"
+      />
     </StyledAvatar>
   );
 }

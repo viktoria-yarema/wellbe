@@ -10,7 +10,7 @@ export const StyledCompanyCard = styled(Flex)`
   border-radius: 12px;
   position: relative;
   background-color: ${COLOR_GREY_MEDIUM};
-  width: ${COMPANY_CARD_WIDTH}px;
+  /* width: ${COMPANY_CARD_WIDTH}px; */
   height: ${COMPANY_CARD_HEIGH}px;
 
   img {
@@ -18,6 +18,7 @@ export const StyledCompanyCard = styled(Flex)`
     top: 0;
     left: 0;
     border-radius: 12px;
+    width: 100% !important;
   }
 `;
 

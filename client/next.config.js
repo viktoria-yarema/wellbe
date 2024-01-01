@@ -8,8 +8,7 @@ const nextConfig = {
     },
   },
   images: {
-    domains: ["www.google.com", "google.com"],
-    formats: ["image/avif", "image/webp"],
+    domains: ["firebasestorage.googleapis.com"],
   },
 };
 
