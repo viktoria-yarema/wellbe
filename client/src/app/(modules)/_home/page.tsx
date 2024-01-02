@@ -1,12 +1,11 @@
-"use client";
-import { useCompaniesQuery } from "@/app/(entities)/company/queries/useCompaniesQuery";
+import { getCompanies } from "@/app/(entities)/company/api/getCompanies";
 import { Company } from "@/app/(entities)/company/types";
 import CompanyCard from "@/app/_components/CompanyCard";
-import Flex from "@/app/_components/Layout/Flex";
 import { Box } from "@mui/material";
 
-export default function HomePage() {
-  const { data: companies } = useCompaniesQuery();
+export default async function HomePage() {
+  const companies = await getCompanies();
+
   return (
     <Box
       flexWrap={"wrap"}
@@ -18,7 +17,7 @@ export default function HomePage() {
       }}
     >
       {companies?.map((company: Company) => (
-        <CompanyCard company={company} />
+        <CompanyCard company={company} key={company.id} />
       ))}
     </Box>
   );

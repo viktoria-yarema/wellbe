@@ -2,7 +2,7 @@
 import React from "react";
 import Flex from "../Layout/Flex";
 import { AppointmentType } from "@/app/(entities)/appointment/types";
-import StatusChip from "./components/StatusChip";
+import StatusChip from "../StatusChip";
 import { Typography } from "@mui/material";
 import FlexColumn from "../Layout/FlexColumn";
 import {

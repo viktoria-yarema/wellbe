@@ -1,5 +1,3 @@
-"use client";
-
 import { ButtonProps } from "@mui/material/Button";
 import { StyledSecondaryButton } from "./styled";
 

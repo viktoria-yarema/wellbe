@@ -4,7 +4,7 @@ import { useUserStore } from "../../user/store/useUserStore";
 import { ServerUser } from "../../user/types";
 
 export const useUserDetailsQuery = () => {
-  const { firebaseUser, setUser } = useUserStore();
+  const { firebaseUser, setUser, user } = useUserStore();
 
   return useQuery({
     queryKey: ["userDetails", (firebaseUser as ServerUser)?.uid],
@@ -13,6 +13,8 @@ export const useUserDetailsQuery = () => {
         (firebaseUser as ServerUser)?.uid ?? ""
       );
       setUser(user);
+
+      return user;
     },
     enabled: Boolean(firebaseUser),
   });

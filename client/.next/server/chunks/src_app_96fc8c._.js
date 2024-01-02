@@ -193,7 +193,6 @@ __turbopack_esm__({
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/future/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$Buttons$2f$PrimaryButton$2f$styled$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/_components/Buttons/PrimaryButton/styled.ts [app-ssr] (ecmascript)");
 "__TURBOPACK__ecmascript__hoisting__location__";
-"use client";
 ;
 ;
 function PrimaryButton({ title, ...props }) {
@@ -205,7 +204,7 @@ function PrimaryButton({ title, ...props }) {
         children: title
     }, void 0, false, {
         fileName: "<[project]/src/app/_components/Buttons/PrimaryButton/index.tsx>",
-        lineNumber: 12,
+        lineNumber: 10,
         columnNumber: 5
     }, this);
 }

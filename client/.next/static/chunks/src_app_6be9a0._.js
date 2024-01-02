@@ -350,6 +350,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$styled$2f$dist$2f$emotion$2d$styled$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@emotion/styled/dist/emotion-styled.browser.esm.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@mui/material/Box/Box.js [app-client] (ecmascript)");
 "__TURBOPACK__ecmascript__hoisting__location__";
+"use client";
 ;
 ;
 ;
@@ -363,7 +364,7 @@ function Flex({ children, ...props }) {
         children: children
     }, void 0, false, {
         fileName: "<[project]/src/app/_components/Layout/Flex/index.tsx>",
-        lineNumber: 12,
+        lineNumber: 14,
         columnNumber: 10
     }, this);
 }
@@ -460,69 +461,18 @@ const appointmentStatusLabels = [
 ];
 
 })()),
-"[project]/src/app/_components/AppointmentCard/components/StatusChip/constants.ts [app-client] (ecmascript)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, p: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, g: global, __dirname, k: __turbopack_refresh__ }) => (() => {
-"use strict";
+"[project]/src/app/_components/AppointmentCard/components/StatusChip/constants.ts [app-client] (ecmascript)": (function({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, p: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, g: global, __dirname, k: __turbopack_refresh__, m: module, e: exports, t: require }) { !function() {
 
-__turbopack_esm__({
-    "statusColors": ()=>statusColors
-});
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f28$entities$292f$appointment$2f$types$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/(entities)/appointment/types.ts [app-client] (ecmascript)");
-"__TURBOPACK__ecmascript__hoisting__location__";
-;
-const statusColors = {
-    [__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f28$entities$292f$appointment$2f$types$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AppointmentStatus"].Approved]: "success.main",
-    [__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f28$entities$292f$appointment$2f$types$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AppointmentStatus"].Pending]: "warning.main",
-    [__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f28$entities$292f$appointment$2f$types$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AppointmentStatus"].Canceled]: "error.main",
-    [__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f28$entities$292f$appointment$2f$types$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AppointmentStatus"].RequestToChangeDate]: "info.main"
-};
+const e = new Error("Could not parse module '[project]/src/app/_components/AppointmentCard/components/StatusChip/constants.ts'");
+e.code = 'MODULE_UNPARSEABLE';
+throw e;
+}.call(this) }),
+"[project]/src/app/_components/AppointmentCard/components/StatusChip/index.tsx [app-client] (ecmascript)": (function({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, p: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, g: global, __dirname, k: __turbopack_refresh__, m: module, e: exports, t: require }) { !function() {
 
-})()),
-"[project]/src/app/_components/AppointmentCard/components/StatusChip/index.tsx [app-client] (ecmascript)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, p: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, g: global, __dirname, k: __turbopack_refresh__ }) => (() => {
-"use strict";
-
-__turbopack_esm__({
-    "default": ()=>StatusChip
-});
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f28$entities$292f$appointment$2f$types$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/(entities)/appointment/types.ts [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$Layout$2f$Flex$2f$index$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/_components/Layout/Flex/index.tsx [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$7b$export__default__as__Typography$7d$__ = __turbopack_import__("[project]/node_modules/@mui/material/Typography/Typography.js [app-client] (ecmascript) {export default as Typography}");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$AppointmentCard$2f$components$2f$StatusChip$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/_components/AppointmentCard/components/StatusChip/constants.ts [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f28$entities$292f$appointment$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/(entities)/appointment/constants.ts [app-client] (ecmascript)");
-"__TURBOPACK__ecmascript__hoisting__location__";
-;
-;
-;
-;
-;
-;
-function StatusChip({ status }) {
-    const color = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$AppointmentCard$2f$components$2f$StatusChip$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["statusColors"][status];
-    const title = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f28$entities$292f$appointment$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["appointmentStatusLabels"].find((item)=>item.value === status)?.label ?? "";
-    return /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$Layout$2f$Flex$2f$index$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-        bgcolor: color,
-        p: "4px 16px",
-        borderRadius: "18px",
-        children: /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$7b$export__default__as__Typography$7d$__["Typography"], {
-            variant: "bodySRegular",
-            color: status === __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f28$entities$292f$appointment$2f$types$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AppointmentStatus"].Canceled || status === __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f28$entities$292f$appointment$2f$types$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AppointmentStatus"].RequestToChangeDate ? "background.default" : "text.primary",
-            children: title
-        }, void 0, false, {
-            fileName: "<[project]/src/app/_components/AppointmentCard/components/StatusChip/index.tsx>",
-            lineNumber: 19,
-            columnNumber: 7
-        }, this)
-    }, void 0, false, {
-        fileName: "<[project]/src/app/_components/AppointmentCard/components/StatusChip/index.tsx>",
-        lineNumber: 18,
-        columnNumber: 5
-    }, this);
-}
-_c = StatusChip;
-var _c;
-__turbopack_refresh__.register(_c, "StatusChip");
-
-})()),
+const e = new Error("Could not parse module '[project]/src/app/_components/AppointmentCard/components/StatusChip/index.tsx'");
+e.code = 'MODULE_UNPARSEABLE';
+throw e;
+}.call(this) }),
 "[project]/src/app/_components/AppointmentCard/index.tsx [app-client] (ecmascript)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, p: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, g: global, __dirname, k: __turbopack_refresh__ }) => (() => {
 "use strict";
 
@@ -531,7 +481,7 @@ __turbopack_esm__({
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$Layout$2f$Flex$2f$index$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/_components/Layout/Flex/index.tsx [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$AppointmentCard$2f$components$2f$StatusChip$2f$index$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/_components/AppointmentCard/components/StatusChip/index.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$StatusChip$2f$index$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/_components/StatusChip/index.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$7b$export__default__as__Typography$7d$__ = __turbopack_import__("[project]/node_modules/@mui/material/Typography/Typography.js [app-client] (ecmascript) {export default as Typography}");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$Layout$2f$FlexColumn$2f$index$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/_components/Layout/FlexColumn/index.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$AppointmentCard$2f$styled$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/_components/AppointmentCard/styled.ts [app-client] (ecmascript)");
@@ -574,7 +524,7 @@ function AppointmentCard({ card }) {
                 p: "0.75rem 1rem",
                 children: [
                     /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$Layout$2f$Flex$2f$index$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                        children: /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$AppointmentCard$2f$components$2f$StatusChip$2f$index$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        children: /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$StatusChip$2f$index$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                             status: status
                         }, void 0, false, {
                             fileName: "<[project]/src/app/_components/AppointmentCard/index.tsx>",

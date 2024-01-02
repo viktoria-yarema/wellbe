@@ -59,15 +59,15 @@ __turbopack_esm__({
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/future/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_layouts$2f$PageDetailsLayout$2f$styled$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/_layouts/PageDetailsLayout/styled.ts [app-ssr] (ecmascript)");
 "__TURBOPACK__ecmascript__hoisting__location__";
-"use client";
 ;
 ;
 function PageDetailsLayout({ children }) {
     return /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_layouts$2f$PageDetailsLayout$2f$styled$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledContainer"], {
+        pt: "1rem",
         children: children
     }, void 0, false, {
         fileName: "<[project]/src/app/_layouts/PageDetailsLayout/index.tsx>",
-        lineNumber: 11,
+        lineNumber: 10,
         columnNumber: 10
     }, this);
 }
@@ -124,7 +124,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f28$entities$292
 ;
 ;
 const useUserDetailsQuery = ()=>{
-    const { firebaseUser, setUser } = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f28$entities$292f$user$2f$store$2f$useUserStore$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useUserStore"]();
+    const { firebaseUser, setUser, user } = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f28$entities$292f$user$2f$store$2f$useUserStore$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useUserStore"]();
+    console.log(user, firebaseUser, "user");
     return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$useQuery$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useQuery"]({
         queryKey: [
             "userDetails",
@@ -133,6 +134,7 @@ const useUserDetailsQuery = ()=>{
         queryFn: async ()=>{
             const user = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f28$entities$292f$user$2f$api$2f$__getUserDetails$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getUserDetails"](firebaseUser?.uid ?? "");
             setUser(user);
+            return user;
         },
         enabled: Boolean(firebaseUser)
     });
@@ -424,7 +426,6 @@ __turbopack_esm__({
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/future/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$Buttons$2f$PrimaryButton$2f$styled$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/_components/Buttons/PrimaryButton/styled.ts [app-ssr] (ecmascript)");
 "__TURBOPACK__ecmascript__hoisting__location__";
-"use client";
 ;
 ;
 function PrimaryButton({ title, ...props }) {
@@ -436,7 +437,7 @@ function PrimaryButton({ title, ...props }) {
         children: title
     }, void 0, false, {
         fileName: "<[project]/src/app/_components/Buttons/PrimaryButton/index.tsx>",
-        lineNumber: 12,
+        lineNumber: 10,
         columnNumber: 5
     }, this);
 }
@@ -1346,6 +1347,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$styled$2f$dist$2f$emotion$2d$styled$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@emotion/styled/dist/emotion-styled.esm.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@mui/material/Box/Box.js [app-ssr] (ecmascript)");
 "__TURBOPACK__ecmascript__hoisting__location__";
+"use client";
 ;
 ;
 ;
@@ -1360,7 +1362,7 @@ function FlexCenter({ children, ...props }) {
         children: children
     }, void 0, false, {
         fileName: "<[project]/src/app/_components/Layout/FlexCenter/index.tsx>",
-        lineNumber: 14,
+        lineNumber: 16,
         columnNumber: 10
     }, this);
 }
@@ -1513,9 +1515,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_layouts$2f$Au
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_global$2f$queryClient$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/_global/queryClient.ts [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/future/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_global$2f$GlobalSideEffects$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/_global/GlobalSideEffects.tsx [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$router$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/router.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/navigation.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_layouts$2f$PageDetailsLayout$2f$index$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/_layouts/PageDetailsLayout/index.tsx [app-ssr] (ecmascript)");
 "__TURBOPACK__ecmascript__hoisting__location__";
 "use client";
+;
 ;
 ;
 ;
@@ -1530,40 +1534,46 @@ const LazyReactQueryDevtools = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$
         })));
 function MainLayout({ children }) {
     const { firebaseUser, user } = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f28$entities$292f$user$2f$store$2f$useUserStore$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useUserStore"]();
-    const router = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$router$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRouter"]();
-    const { id } = router.query;
-    console.log(firebaseUser, "firebaseUser");
-    console.log(user, "user");
+    // TODO: Refactor it
+    const pathname = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["usePathname"]();
+    const isNestedPAge = pathname.split("/").length > 2;
     return /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$QueryClientProvider$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["QueryClientProvider"], {
         client: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_global$2f$queryClient$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["queryClient"],
         children: [
             /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_global$2f$GlobalSideEffects$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["GlobalSideEffects"], {}, void 0, false, {
                 fileName: "<[project]/src/app/_layouts/index.tsx>",
-                lineNumber: 33,
+                lineNumber: 31,
                 columnNumber: 8
             }, this),
-            firebaseUser && /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_layouts$2f$PrivateLayout$2f$index$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+            firebaseUser && !isNestedPAge && /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_layouts$2f$PrivateLayout$2f$index$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                 children: children
             }, void 0, false, {
                 fileName: "<[project]/src/app/_layouts/index.tsx>",
-                lineNumber: 34,
-                columnNumber: 24
+                lineNumber: 33,
+                columnNumber: 9
+            }, this),
+            firebaseUser && isNestedPAge && /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_layouts$2f$PageDetailsLayout$2f$index$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                children: children
+            }, void 0, false, {
+                fileName: "<[project]/src/app/_layouts/index.tsx>",
+                lineNumber: 36,
+                columnNumber: 9
             }, this),
             firebaseUser === null && /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_layouts$2f$AuthLayout$2f$index$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "<[project]/src/app/_layouts/index.tsx>",
-                lineNumber: 36,
+                lineNumber: 38,
                 columnNumber: 33
             }, this),
             firebaseUser === false && "Loading...",
             /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"](LazyReactQueryDevtools, {}, void 0, false, {
                 fileName: "<[project]/src/app/_layouts/index.tsx>",
-                lineNumber: 38,
+                lineNumber: 40,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "<[project]/src/app/_layouts/index.tsx>",
-        lineNumber: 32,
+        lineNumber: 30,
         columnNumber: 5
     }, this);
 }

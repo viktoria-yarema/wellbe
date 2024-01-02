@@ -1,4 +1,3 @@
-"use client";
 import { StyledContainer } from "./styled";
 
 type PageDetailsLayoutProps = {
@@ -8,5 +7,5 @@ type PageDetailsLayoutProps = {
 export default function PageDetailsLayout({
   children,
 }: PageDetailsLayoutProps) {
-  return <StyledContainer>{children}</StyledContainer>;
+  return <StyledContainer pt={"1rem"}>{children}</StyledContainer>;
 }

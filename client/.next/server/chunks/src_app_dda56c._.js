@@ -546,7 +546,6 @@ __turbopack_esm__({
     "default": ()=>HomePage
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/future/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f28$entities$292f$company$2f$queries$2f$useCompaniesQuery$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/(entities)/company/queries/useCompaniesQuery.ts [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$CompanyCard$2f$index$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/_components/CompanyCard/index.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$7b$export__default__as__Box$7d$__ = __turbopack_import__("[project]/node_modules/@mui/material/Box/Box.js [app-ssr] (ecmascript) {export default as Box}");
 "__TURBOPACK__ecmascript__hoisting__location__";
@@ -554,9 +553,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$mat
 ;
 ;
 ;
-;
 function HomePage() {
-    const { data: companies } = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f28$entities$292f$company$2f$queries$2f$useCompaniesQuery$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCompaniesQuery"]();
+    // const { data: companies } = useCompaniesQuery();
     return /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$7b$export__default__as__Box$7d$__["Box"], {
         flexWrap: "wrap",
         gap: "1rem",
@@ -569,12 +567,12 @@ function HomePage() {
                 company: company
             }, void 0, false, {
                 fileName: "<[project]/src/app/(modules)/_home/page.tsx>",
-                lineNumber: 21,
+                lineNumber: 20,
                 columnNumber: 9
             }, this))
     }, void 0, false, {
         fileName: "<[project]/src/app/(modules)/_home/page.tsx>",
-        lineNumber: 11,
+        lineNumber: 10,
         columnNumber: 5
     }, this);
 }

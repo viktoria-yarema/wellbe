@@ -1,9 +1,9 @@
 (globalThis.TURBOPACK = globalThis.TURBOPACK || []).push([
-    "static/chunks/src_app_(modules)_search_page_tsx_2fda0c._.js",
+    "static/chunks/src_app_(modules)_search_page_tsx_e786d3._.js",
     {},
 ]);
 (globalThis.TURBOPACK_CHUNK_LISTS = globalThis.TURBOPACK_CHUNK_LISTS || []).push({
-  "path": "static/chunks/src_app_(modules)_search_page_tsx_2fda0c._.js",
+  "path": "static/chunks/src_app_(modules)_search_page_tsx_e786d3._.js",
   "chunks": [
     "static/chunks/node_modules_next_dist_compiled_react_fc8b96._.js",
     "static/chunks/node_modules_next_dist_compiled_micromatch_index_cf75e5.js",
@@ -15,7 +15,7 @@
     "static/chunks/node_modules_@mui_material_83b560._.js",
     "static/chunks/node_modules_@mui_system_esm_67ce7e._.js",
     "static/chunks/node_modules_ad6883._.js",
-    "static/chunks/src_app_6be9a0._.js"
+    "static/chunks/src_app_ce6a46._.js"
   ],
   "source": "dynamic"
 });

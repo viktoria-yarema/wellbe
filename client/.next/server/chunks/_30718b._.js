@@ -227,11 +227,12 @@ const getAppointment = async (id)=>{
 "use strict";
 
 __turbopack_esm__({
-    "default": ()=>AppointmentID
+    "default": ()=>AppointmentId
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/future/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f28$entities$292f$appointment$2f$api$2f$getAppointment$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/(entities)/appointment/api/getAppointment.ts [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f28$entities$292f$appointment$2f$utilities$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/(entities)/appointment/utilities.ts [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$Header$2f$index$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/_components/Header/index.tsx [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$Layout$2f$FlexColumn$2f$index$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/_components/Layout/FlexColumn/index.tsx [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@mui/material/index.js [app-rsc] (ecmascript)");
 "__TURBOPACK__ecmascript__hoisting__location__";
@@ -240,74 +241,89 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$mat
 ;
 ;
 ;
-async function AppointmentID({ params }) {
+;
+async function AppointmentId({ params }) {
     const appointment = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f28$entities$292f$appointment$2f$api$2f$getAppointment$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getAppointment"](params.id);
     const { monthAndWeek, day, time } = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f28$entities$292f$appointment$2f$utilities$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["extractDateInfo"](appointment.appointmentDate);
-    console.log(appointment, "appointment");
     return /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$Layout$2f$FlexColumn$2f$index$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-        alignItems: "center",
-        rowGap: "1rem",
         children: [
-            /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Typography"], {
-                variant: "heading3Bold",
-                color: "text.primary",
-                children: [
-                    monthAndWeek,
-                    " ",
-                    day
-                ]
-            }, void 0, true, {
-                fileName: "<[project]/src/app/(modules)/appointment/[id]/page.tsx>",
-                lineNumber: 18,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Typography"], {
-                variant: "bodyXLRegular",
-                color: "text.secondary",
-                children: appointment.serviceName
+            /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$Header$2f$index$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Header"], {
+                children: "hey"
             }, void 0, false, {
                 fileName: "<[project]/src/app/(modules)/appointment/[id]/page.tsx>",
-                lineNumber: 21,
+                lineNumber: 19,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$Layout$2f$FlexColumn$2f$index$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                 alignItems: "center",
+                rowGap: "1rem",
                 children: [
                     /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Typography"], {
-                        variant: "heading4Bold",
+                        variant: "heading3Bold",
                         color: "text.primary",
                         children: [
-                            "Price - ",
-                            appointment.price,
-                            "$"
+                            monthAndWeek,
+                            " ",
+                            day
                         ]
                     }, void 0, true, {
                         fileName: "<[project]/src/app/(modules)/appointment/[id]/page.tsx>",
-                        lineNumber: 25,
+                        lineNumber: 21,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Typography"], {
-                        variant: "bodyLRegular",
+                        variant: "bodyXLRegular",
                         color: "text.secondary",
+                        children: appointment.serviceName
+                    }, void 0, false, {
+                        fileName: "<[project]/src/app/(modules)/appointment/[id]/page.tsx>",
+                        lineNumber: 24,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$Layout$2f$FlexColumn$2f$index$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                        alignItems: "center",
                         children: [
-                            "Time - ",
-                            time
+                            /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Typography"], {
+                                variant: "heading4Bold",
+                                color: "text.primary",
+                                children: [
+                                    "Price - ",
+                                    appointment.price,
+                                    "$"
+                                ]
+                            }, void 0, true, {
+                                fileName: "<[project]/src/app/(modules)/appointment/[id]/page.tsx>",
+                                lineNumber: 28,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Typography"], {
+                                variant: "bodyLRegular",
+                                color: "text.secondary",
+                                children: [
+                                    "Time - ",
+                                    time
+                                ]
+                            }, void 0, true, {
+                                fileName: "<[project]/src/app/(modules)/appointment/[id]/page.tsx>",
+                                lineNumber: 31,
+                                columnNumber: 11
+                            }, this)
                         ]
                     }, void 0, true, {
                         fileName: "<[project]/src/app/(modules)/appointment/[id]/page.tsx>",
-                        lineNumber: 28,
+                        lineNumber: 27,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "<[project]/src/app/(modules)/appointment/[id]/page.tsx>",
-                lineNumber: 24,
+                lineNumber: 20,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "<[project]/src/app/(modules)/appointment/[id]/page.tsx>",
-        lineNumber: 17,
+        lineNumber: 18,
         columnNumber: 5
     }, this);
 }
