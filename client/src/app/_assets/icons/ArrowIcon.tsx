@@ -3,11 +3,10 @@ import { COLOR_GREY_MEDIUM } from "@/app/_theme/colors";
 import { IconType } from "@/app/_theme/types";
 
 const ArrowIcon: FC<IconType> = ({ color = COLOR_GREY_MEDIUM }) => (
-  <svg width="24" height="26" viewBox="0 0 26 26" fill={color}>
+  <svg width="22" height="24" viewBox="0 0 22 24" fill={color}>
     <path
-      d="M18.8319 5.994L10.1899 13.4286L18.092 20.4239L17.1304 21.7961L7.53155 13.4006L17.3052 5.20929L18.8319 5.994Z"
+      d="M14.2815 5.78159L8.17747 12.136L14.0694 18.4999L14.0709 20.0822L6.21977 12.134L14.2799 4.08358L14.2815 5.78159Z"
       fill={color}
-      fill-opacity="0.6"
     />
   </svg>
 );

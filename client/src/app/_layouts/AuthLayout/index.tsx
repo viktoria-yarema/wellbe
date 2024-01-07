@@ -5,7 +5,7 @@ import SignUp from "./views/SignUp";
 import { useState } from "react";
 import { ToggleAuthMethodEnum } from "./components/ToggleAuthMethod/types";
 import ToggleAuthMethod from "./components/ToggleAuthMethod";
-import { Typography } from "@mui/material";
+import Typography from "@mui/material/Typography";
 import Title from "./components/Title";
 import LogIn from "./views/LogIn";
 

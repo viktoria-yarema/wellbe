@@ -3,7 +3,7 @@ import { useUserStore } from "@/app/(entities)/user/store/useUserStore";
 import PrimaryButton from "@/app/_components/Buttons/PrimaryButton";
 import FlexColumn from "@/app/_components/Layout/FlexColumn";
 import { auth } from "@/app/firebase";
-import { Typography } from "@mui/material";
+import Typography from "@mui/material/Typography";
 import { signOut } from "firebase/auth";
 
 export default function ProfilePage() {

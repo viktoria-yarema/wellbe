@@ -1,0 +1,367 @@
+(globalThis.TURBOPACK = globalThis.TURBOPACK || []).push(["static/chunks/src_app_f1aa29._.js", {
+
+"[project]/src/app/_components/Layout/FlexColumn/index.tsx [app-client] (ecmascript)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, p: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, g: global, __dirname, k: __turbopack_refresh__ }) => (() => {
+"use strict";
+
+__turbopack_esm__({
+    "default": ()=>FlexColumn
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$styled$2f$dist$2f$emotion$2d$styled$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@emotion/styled/dist/emotion-styled.browser.esm.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@mui/material/Box/Box.js [app-client] (ecmascript)");
+"__TURBOPACK__ecmascript__hoisting__location__";
+"use client";
+;
+;
+;
+const Component = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$styled$2f$dist$2f$emotion$2d$styled$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
+_c = Component;
+function FlexColumn({ children, ...props }) {
+    return /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"](Component, {
+        ...props,
+        children: children
+    }, void 0, false, {
+        fileName: "<[project]/src/app/_components/Layout/FlexColumn/index.tsx>",
+        lineNumber: 16,
+        columnNumber: 10
+    }, this);
+}
+_c1 = FlexColumn;
+var _c, _c1;
+__turbopack_refresh__.register(_c, "Component");
+__turbopack_refresh__.register(_c1, "FlexColumn");
+
+})()),
+"[project]/src/app/_theme/colors.ts [app-client] (ecmascript)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, p: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, g: global, __dirname, k: __turbopack_refresh__ }) => (() => {
+"use strict";
+
+__turbopack_esm__({
+    "BORDER": ()=>BORDER,
+    "COLOR_BLACK": ()=>COLOR_BLACK,
+    "COLOR_BORDER": ()=>COLOR_BORDER,
+    "COLOR_CARD": ()=>COLOR_CARD,
+    "COLOR_ERROR": ()=>COLOR_ERROR,
+    "COLOR_GREY_LIGHT": ()=>COLOR_GREY_LIGHT,
+    "COLOR_GREY_MEDIUM": ()=>COLOR_GREY_MEDIUM,
+    "COLOR_INFO": ()=>COLOR_INFO,
+    "COLOR_PRIMARY": ()=>COLOR_PRIMARY,
+    "COLOR_PRIMARY_DARK": ()=>COLOR_PRIMARY_DARK,
+    "COLOR_SECONDARY": ()=>COLOR_SECONDARY,
+    "COLOR_SECONDARY_LIGHTEN": ()=>COLOR_SECONDARY_LIGHTEN,
+    "COLOR_SUCCESS": ()=>COLOR_SUCCESS,
+    "COLOR_TEXT_SECONDARY": ()=>COLOR_TEXT_SECONDARY,
+    "COLOR_WARN": ()=>COLOR_WARN,
+    "COLOR_WHITE": ()=>COLOR_WHITE,
+    "GLASS_MORPHISM": ()=>GLASS_MORPHISM
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$system$2f$esm$2f$colorManipulator$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@mui/system/esm/colorManipulator.js [app-client] (ecmascript)");
+"__TURBOPACK__ecmascript__hoisting__location__";
+"use client";
+;
+const COLOR_WHITE = "#FFFFFF";
+const COLOR_BLACK = "#000000";
+const COLOR_PRIMARY = "#FF962F";
+const COLOR_PRIMARY_DARK = "#DC6C1D";
+const COLOR_SECONDARY = "#222222";
+const COLOR_ERROR = "#DB0000";
+const COLOR_SUCCESS = "#88FD2C";
+const COLOR_INFO = "#64D1FF";
+const COLOR_WARN = "#FFE352";
+const COLOR_GREY_LIGHT = "#F4F4F4";
+const COLOR_GREY_MEDIUM = "#D9D9D9";
+const COLOR_CARD = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$system$2f$esm$2f$colorManipulator$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["alpha"](COLOR_GREY_MEDIUM, 0.1);
+_c = COLOR_CARD;
+const COLOR_TEXT_SECONDARY = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$system$2f$esm$2f$colorManipulator$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["alpha"](COLOR_BLACK, 0.6);
+_c1 = COLOR_TEXT_SECONDARY;
+const COLOR_SECONDARY_LIGHTEN = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$system$2f$esm$2f$colorManipulator$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["alpha"](COLOR_SECONDARY, 0.8);
+_c2 = COLOR_SECONDARY_LIGHTEN;
+const COLOR_BORDER = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$system$2f$esm$2f$colorManipulator$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["alpha"](COLOR_SECONDARY, 0.3);
+_c3 = COLOR_BORDER;
+const BORDER = `0.2px solid ${COLOR_BORDER}`;
+const GLASS_MORPHISM = "background: rgba(255, 255, 255, 0.38); backdrop-filter: blur(10px);";
+var _c, _c1, _c2, _c3;
+__turbopack_refresh__.register(_c, "COLOR_CARD");
+__turbopack_refresh__.register(_c1, "COLOR_TEXT_SECONDARY");
+__turbopack_refresh__.register(_c2, "COLOR_SECONDARY_LIGHTEN");
+__turbopack_refresh__.register(_c3, "COLOR_BORDER");
+
+})()),
+"[project]/src/app/_assets/icons/ArrowIcon.tsx [app-client] (ecmascript)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, p: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, g: global, __dirname, k: __turbopack_refresh__ }) => (() => {
+"use strict";
+
+__turbopack_esm__({
+    "default": ()=>__TURBOPACK__default__export__
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_theme$2f$colors$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/_theme/colors.ts [app-client] (ecmascript)");
+"__TURBOPACK__ecmascript__hoisting__location__";
+;
+;
+const ArrowIcon = ({ color = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_theme$2f$colors$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["COLOR_GREY_MEDIUM"] })=>/*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"]("svg", {
+        width: "24",
+        height: "26",
+        viewBox: "0 0 26 26",
+        fill: color,
+        children: /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"]("path", {
+            d: "M18.8319 5.994L10.1899 13.4286L18.092 20.4239L17.1304 21.7961L7.53155 13.4006L17.3052 5.20929L18.8319 5.994Z",
+            fill: color,
+            fillOpacity: "0.6"
+        }, void 0, false, {
+            fileName: "<[project]/src/app/_assets/icons/ArrowIcon.tsx>",
+            lineNumber: 7,
+            columnNumber: 5
+        }, this)
+    }, void 0, false, {
+        fileName: "<[project]/src/app/_assets/icons/ArrowIcon.tsx>",
+        lineNumber: 6,
+        columnNumber: 3
+    }, this);
+_c = ArrowIcon;
+const __TURBOPACK__default__export__ = ArrowIcon;
+var _c;
+__turbopack_refresh__.register(_c, "ArrowIcon");
+
+})()),
+"[project]/src/app/_components/Layout/FlexCenter/index.tsx [app-client] (ecmascript)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, p: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, g: global, __dirname, k: __turbopack_refresh__ }) => (() => {
+"use strict";
+
+__turbopack_esm__({
+    "default": ()=>FlexCenter
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$styled$2f$dist$2f$emotion$2d$styled$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@emotion/styled/dist/emotion-styled.browser.esm.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@mui/material/Box/Box.js [app-client] (ecmascript)");
+"__TURBOPACK__ecmascript__hoisting__location__";
+"use client";
+;
+;
+;
+const Component = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$styled$2f$dist$2f$emotion$2d$styled$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+_c = Component;
+function FlexCenter({ children, ...props }) {
+    return /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"](Component, {
+        ...props,
+        children: children
+    }, void 0, false, {
+        fileName: "<[project]/src/app/_components/Layout/FlexCenter/index.tsx>",
+        lineNumber: 16,
+        columnNumber: 10
+    }, this);
+}
+_c1 = FlexCenter;
+var _c, _c1;
+__turbopack_refresh__.register(_c, "Component");
+__turbopack_refresh__.register(_c1, "FlexCenter");
+
+})()),
+"[project]/src/app/_components/Layout/Flex/index.tsx [app-client] (ecmascript)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, p: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, g: global, __dirname, k: __turbopack_refresh__ }) => (() => {
+"use strict";
+
+__turbopack_esm__({
+    "default": ()=>Flex
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$styled$2f$dist$2f$emotion$2d$styled$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@emotion/styled/dist/emotion-styled.browser.esm.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@mui/material/Box/Box.js [app-client] (ecmascript)");
+"__TURBOPACK__ecmascript__hoisting__location__";
+"use client";
+;
+;
+;
+const Component = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$styled$2f$dist$2f$emotion$2d$styled$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])`
+  display: flex;
+`;
+_c = Component;
+function Flex({ children, ...props }) {
+    return /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"](Component, {
+        ...props,
+        children: children
+    }, void 0, false, {
+        fileName: "<[project]/src/app/_components/Layout/Flex/index.tsx>",
+        lineNumber: 14,
+        columnNumber: 10
+    }, this);
+}
+_c1 = Flex;
+var _c, _c1;
+__turbopack_refresh__.register(_c, "Component");
+__turbopack_refresh__.register(_c1, "Flex");
+
+})()),
+"[project]/src/app/_components/Header/styled.ts [app-client] (ecmascript)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, p: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, g: global, __dirname, k: __turbopack_refresh__ }) => (() => {
+"use strict";
+
+__turbopack_esm__({
+    "StyledHeader": ()=>StyledHeader,
+    "StyledIconWrapper": ()=>StyledIconWrapper
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$styled$2f$dist$2f$emotion$2d$styled$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@emotion/styled/dist/emotion-styled.browser.esm.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$Layout$2f$Flex$2f$index$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/_components/Layout/Flex/index.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$Layout$2f$FlexCenter$2f$index$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/_components/Layout/FlexCenter/index.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_theme$2f$colors$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/_theme/colors.ts [app-client] (ecmascript)");
+"__TURBOPACK__ecmascript__hoisting__location__";
+"use client";
+;
+;
+;
+;
+const StyledHeader = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$styled$2f$dist$2f$emotion$2d$styled$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"](__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$Layout$2f$Flex$2f$index$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])`
+  height: 38px;
+  justify-content: space-between;
+`;
+const StyledIconWrapper = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$styled$2f$dist$2f$emotion$2d$styled$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"](__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$Layout$2f$FlexCenter$2f$index$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])`
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_theme$2f$colors$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["GLASS_MORPHISM"]};
+  background-color: ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_theme$2f$colors$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["COLOR_GREY_LIGHT"]};
+`;
+
+})()),
+"[project]/src/app/_components/Header/index.tsx [app-client] (ecmascript)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, p: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, g: global, __dirname, k: __turbopack_refresh__ }) => (() => {
+"use strict";
+
+__turbopack_esm__({
+    "default": ()=>Header
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$Header$2f$styled$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/_components/Header/styled.ts [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_assets$2f$icons$2f$ArrowIcon$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/_assets/icons/ArrowIcon.tsx [app-client] (ecmascript)");
+"__TURBOPACK__ecmascript__hoisting__location__";
+;
+var _s = __turbopack_refresh__.signature();
+"use client";
+;
+;
+;
+function Header({ children }) {
+    _s();
+    const router = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]();
+    return /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$Header$2f$styled$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["StyledHeader"], {
+        children: [
+            /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$Header$2f$styled$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["StyledIconWrapper"], {
+                onClick: ()=>router.back(),
+                children: /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_assets$2f$icons$2f$ArrowIcon$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                    color: "text.secondary"
+                }, void 0, false, {
+                    fileName: "<[project]/src/app/_components/Header/index.tsx>",
+                    lineNumber: 16,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "<[project]/src/app/_components/Header/index.tsx>",
+                lineNumber: 15,
+                columnNumber: 7
+            }, this),
+            children
+        ]
+    }, void 0, true, {
+        fileName: "<[project]/src/app/_components/Header/index.tsx>",
+        lineNumber: 14,
+        columnNumber: 5
+    }, this);
+}
+_s(Header, "fN7XvhJ+p5oE6+Xlo0NJmXpxjC8=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]
+    ];
+});
+_c = Header;
+var _c;
+__turbopack_refresh__.register(_c, "Header");
+
+})()),
+"[project]/src/app/(entities)/company/api/getCompanyId.ts [app-client] (ecmascript)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, p: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, g: global, __dirname, k: __turbopack_refresh__ }) => (() => {
+"use strict";
+
+__turbopack_esm__({
+    "getCompanyId": ()=>getCompanyId
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
+"__TURBOPACK__ecmascript__hoisting__location__";
+const getCompanyId = async (id)=>{
+    const url = `${("TURBOPACK compile-time value", "https://europe-west1-wellbe-book-dev.cloudfunctions.net/")}getCompany?id=${id}`;
+    const response = await fetch(url);
+    if (!response.ok) {
+        // Log or return additional error information
+        const errorBody = await response.text();
+        console.error("Error fetching company data:", errorBody);
+        throw new Error(`Error fetching company: ${response.status} - ${errorBody}`);
+    }
+    return response.json();
+};
+
+})()),
+"[project]/src/app/(modules)/company/[id]/page.tsx [app-client] (ecmascript)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, p: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, g: global, __dirname, k: __turbopack_refresh__ }) => (() => {
+"use strict";
+
+__turbopack_esm__({
+    "CompanyDetails": ()=>CompanyDetails
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f28$entities$292f$company$2f$api$2f$getCompanyId$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/(entities)/company/api/getCompanyId.ts [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$Header$2f$index$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/_components/Header/index.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$Layout$2f$FlexColumn$2f$index$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/_components/Layout/FlexColumn/index.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@mui/material/Typography/Typography.js [app-client] (ecmascript)");
+"__TURBOPACK__ecmascript__hoisting__location__";
+"use client ";
+;
+;
+;
+;
+;
+async function CompanyDetails({ params }) {
+    const { id } = params;
+    const company = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f28$entities$292f$company$2f$api$2f$getCompanyId$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getCompanyId"](id);
+    return /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$Layout$2f$FlexColumn$2f$index$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+        p: 0,
+        children: [
+            /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$Header$2f$index$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                children: /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"]("div", {}, void 0, false, {
+                    fileName: "<[project]/src/app/(modules)/company/[id]/page.tsx>",
+                    lineNumber: 14,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "<[project]/src/app/(modules)/company/[id]/page.tsx>",
+                lineNumber: 13,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$Layout$2f$FlexColumn$2f$index$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                children: /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                    variant: "heading3Bold",
+                    children: company.name
+                }, void 0, false, {
+                    fileName: "<[project]/src/app/(modules)/company/[id]/page.tsx>",
+                    lineNumber: 17,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "<[project]/src/app/(modules)/company/[id]/page.tsx>",
+                lineNumber: 16,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "<[project]/src/app/(modules)/company/[id]/page.tsx>",
+        lineNumber: 12,
+        columnNumber: 5
+    }, this);
+}
+_c = CompanyDetails;
+var _c;
+__turbopack_refresh__.register(_c, "CompanyDetails");
+
+})()),
+}]);
+
+//# sourceMappingURL=src_app_f1aa29._.js.map

@@ -1,3 +1,5 @@
+import { GroupServices } from "../services/types";
+
 export type Company = {
   id: string;
   email: string;
@@ -17,4 +19,12 @@ export type Company = {
   socialMedia?: string[]; // todo: enum for SM
   schedule: string[]; // todo: makeUp the schedule modal
   portfolio?: string[]; // todo: make the model for image
+  groupsServices: GroupServices[];
 };
+
+export enum CompanyTabs {
+  GENERAL = "General",
+  SERVICES = "Services",
+  PORTFOLIO = "Portfolio",
+  REVIEWS = "Reviews",
+}

@@ -166,6 +166,7 @@ const fonts = {
 __turbopack_esm__({
     "StyledPrimaryButton": ()=>StyledPrimaryButton
 });
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$dist$2f$emotion$2d$react$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$7b$locals$7d$__ = __turbopack_import__("[project]/node_modules/@emotion/react/dist/emotion-react.esm.js [app-ssr] (ecmascript) {locals}");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Button$2f$Button$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@mui/material/Button/Button.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$styled$2f$dist$2f$emotion$2d$styled$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@emotion/styled/dist/emotion-styled.esm.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_theme$2f$fonts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/_theme/fonts.ts [app-ssr] (ecmascript)");
@@ -174,14 +175,22 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_theme$2f$font
 ;
 ;
 ;
-const StyledPrimaryButton = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$styled$2f$dist$2f$emotion$2d$styled$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Button$2f$Button$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])({
-    ...__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_theme$2f$fonts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["fonts"].bodyXLRegular,
-    borderRadius: "12px",
-    padding: "12px 16px",
-    textTransform: "unset",
-    boxShadow: "unset",
-    minWidth: "138px"
-});
+;
+const StyledPrimaryButton = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$styled$2f$dist$2f$emotion$2d$styled$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Button$2f$Button$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])`
+  ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_theme$2f$fonts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["fonts"].bodyXLRegular};
+  border-radius: 12px;
+  padding: 12px 16px;
+  text-transform: unset;
+  box-shadow: unset;
+  min-width: 138px;
+
+  ${(props)=>props.size === "small" && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$dist$2f$emotion$2d$react$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$7b$locals$7d$__["css"]`
+      ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_theme$2f$fonts$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["fonts"].bodySLight};
+      min-width: auto;
+      padding: 0.4rem 1.5rem;
+      border-radius: 16px;
+    `}
+`;
 
 })()),
 

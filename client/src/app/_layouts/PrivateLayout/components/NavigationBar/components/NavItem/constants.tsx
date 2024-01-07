@@ -1,3 +1,9 @@
+import {
+  HOME_PAGE_PATH,
+  PROFILE_PAGE_PATH,
+  SCHEDULE_PAGE_PATH,
+  SEARCH_PAGE_PATH,
+} from "@/app/_global/routes";
 import HomeIcon from "../../../../../../_assets/icons/HomeIcon";
 import ProfileIcon from "../../../../../../_assets/icons/ProfileIcon";
 import ScheduleIcon from "../../../../../../_assets/icons/ScheduleIcon";
@@ -8,21 +14,21 @@ export const navMap: NavItem[] = [
   {
     name: "Home",
     Icon: HomeIcon,
-    href: "/",
+    href: HOME_PAGE_PATH,
   },
   {
     name: "Search",
     Icon: SearchIcon,
-    href: "/search",
+    href: SEARCH_PAGE_PATH,
   },
   {
     name: "Schedule",
     Icon: ScheduleIcon,
-    href: "/schedule",
+    href: SCHEDULE_PAGE_PATH,
   },
   {
     name: "Profile",
     Icon: ProfileIcon,
-    href: "/profile",
+    href: PROFILE_PAGE_PATH,
   },
 ];

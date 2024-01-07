@@ -8,7 +8,7 @@ type HeaderProps = {
   children: React.ReactNode;
 };
 
-export function Header({ children }: HeaderProps) {
+export default function Header({ children }: HeaderProps) {
   const router = useRouter();
   return (
     <StyledHeader>

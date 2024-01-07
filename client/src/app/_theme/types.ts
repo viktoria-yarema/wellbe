@@ -1,4 +1,4 @@
-import { Breakpoints, Theme } from "@mui/material/styles";
+import { Breakpoints, Theme } from "@mui/material/styles/";
 import "@mui/styles";
 import React from "react";
 

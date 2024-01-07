@@ -3,7 +3,7 @@ import React from "react";
 import Flex from "../Layout/Flex";
 import { AppointmentType } from "@/app/(entities)/appointment/types";
 import StatusChip from "../StatusChip";
-import { Typography } from "@mui/material";
+import Typography from "@mui/material/Typography";
 import FlexColumn from "../Layout/FlexColumn";
 import {
   StyledAppointmentCard,

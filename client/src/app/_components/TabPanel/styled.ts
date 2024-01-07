@@ -8,7 +8,7 @@ import Tabs from "@mui/material/Tabs";
 export const StyledTab = styled(Tab)({
   ...fonts.bodyMRegular,
   borderRadius: "8px",
-  padding: "8px 12px",
+  padding: "4px 12px",
   boxShadow: "unset",
   textTransform: "unset",
   minHeight: "32px",
@@ -19,6 +19,7 @@ export const StyledTab = styled(Tab)({
     border: "unset",
   },
   border: BORDER,
+  boxSizing: "border-box",
 });
 
 export const StyledTabs = styled(Tabs)`
@@ -33,5 +34,9 @@ export const StyledTabs = styled(Tabs)`
     &::-webkit-scrollbar {
       display: none;
     }
+  }
+
+  &.MuiTabs-root {
+    min-height: unset;
   }
 `;

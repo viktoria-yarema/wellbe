@@ -66,14 +66,13 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_theme$2f$colo
 ;
 ;
 const ArrowIcon = ({ color = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_theme$2f$colors$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["COLOR_GREY_MEDIUM"] })=>/*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"]("svg", {
-        width: "24",
-        height: "26",
-        viewBox: "0 0 26 26",
+        width: "22",
+        height: "24",
+        viewBox: "0 0 22 24",
         fill: color,
         children: /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"]("path", {
-            d: "M18.8319 5.994L10.1899 13.4286L18.092 20.4239L17.1304 21.7961L7.53155 13.4006L17.3052 5.20929L18.8319 5.994Z",
-            fill: color,
-            "fill-opacity": "0.6"
+            d: "M14.2815 5.78159L8.17747 12.136L14.0694 18.4999L14.0709 20.0822L6.21977 12.134L14.2799 4.08358L14.2815 5.78159Z",
+            fill: color
         }, void 0, false, {
             fileName: "<[project]/src/app/_assets/icons/ArrowIcon.tsx>",
             lineNumber: 7,
@@ -194,7 +193,7 @@ const StyledIconWrapper = __TURBOPACK__imported__module__$5b$project$5d2f$node_m
 "use strict";
 
 __turbopack_esm__({
-    "Header": ()=>Header
+    "default": ()=>Header
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");

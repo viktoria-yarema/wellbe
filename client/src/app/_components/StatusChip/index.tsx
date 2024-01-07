@@ -1,6 +1,6 @@
 import React from "react";
 import { AppointmentStatus } from "@/app/(entities)/appointment/types";
-import { Typography } from "@mui/material";
+import Typography from "@mui/material/Typography";
 import { statusColors } from "./constants";
 import { appointmentStatusLabels } from "@/app/(entities)/appointment/constants";
 import FlexCenter from "../Layout/FlexCenter";
