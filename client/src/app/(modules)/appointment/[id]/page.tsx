@@ -5,7 +5,7 @@ import FlexColumn from "@/app/_components/Layout/FlexColumn";
 import Typography from "@mui/material/Typography";
 import ActionBar from "./components/ActionBar";
 import StatusChip from "@/app/_components/StatusChip";
-import { CompanyButton } from "./components/CompanyButton";
+import CompanyButton from "./components/CompanyButton";
 import { getCompanyId } from "@/app/(entities)/company/api/getCompanyId";
 
 export default async function AppointmentId({

@@ -509,7 +509,7 @@ var _s = __turbopack_refresh__.signature();
 ;
 function AccordionServices({ servicesGroups }) {
     _s();
-    const [expanded, setExpanded] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"](false);
+    const [expanded, setExpanded] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"](servicesGroups[0].id);
     const handleChange = (panel)=>{
         const openedValue = panel === expanded ? false : panel;
         setExpanded(openedValue);
@@ -533,7 +533,7 @@ function AccordionServices({ servicesGroups }) {
                                 children: group.name
                             }, void 0, false, {
                                 fileName: "<[project]/src/app/_components/AccordionServices/index.tsx>",
-                                lineNumber: 49,
+                                lineNumber: 51,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$AccordionServices$2f$styled$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["StyledArrow"], {
@@ -542,18 +542,18 @@ function AccordionServices({ servicesGroups }) {
                                     color: "text.primary"
                                 }, void 0, false, {
                                     fileName: "<[project]/src/app/_components/AccordionServices/index.tsx>",
-                                    lineNumber: 51,
+                                    lineNumber: 53,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "<[project]/src/app/_components/AccordionServices/index.tsx>",
-                                lineNumber: 50,
+                                lineNumber: 52,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "<[project]/src/app/_components/AccordionServices/index.tsx>",
-                        lineNumber: 45,
+                        lineNumber: 47,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$AccordionDetails$2f$AccordionDetails$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -561,11 +561,11 @@ function AccordionServices({ servicesGroups }) {
                         sx: {
                             padding: 0
                         },
-                        children: group.services.map((service)=>/*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+                        children: group.services.map((service)=>/*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"]("div", {
                                 children: [
                                     /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Divider$2f$Divider$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                         fileName: "<[project]/src/app/_components/AccordionServices/index.tsx>",
-                                        lineNumber: 60,
+                                        lineNumber: 62,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$AccordionServices$2f$styled$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["StyledAccordionContent"], {
@@ -576,7 +576,7 @@ function AccordionServices({ servicesGroups }) {
                                                 children: service.name
                                             }, void 0, false, {
                                                 fileName: "<[project]/src/app/_components/AccordionServices/index.tsx>",
-                                                lineNumber: 62,
+                                                lineNumber: 64,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -586,7 +586,7 @@ function AccordionServices({ servicesGroups }) {
                                                 children: service.timestamp
                                             }, void 0, false, {
                                                 fileName: "<[project]/src/app/_components/AccordionServices/index.tsx>",
-                                                lineNumber: 65,
+                                                lineNumber: 67,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -597,7 +597,7 @@ function AccordionServices({ servicesGroups }) {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "<[project]/src/app/_components/AccordionServices/index.tsx>",
-                                                lineNumber: 72,
+                                                lineNumber: 74,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$Buttons$2f$PrimaryButton$2f$index$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -606,35 +606,39 @@ function AccordionServices({ servicesGroups }) {
                                                 onClick: handleBook
                                             }, void 0, false, {
                                                 fileName: "<[project]/src/app/_components/AccordionServices/index.tsx>",
-                                                lineNumber: 75,
+                                                lineNumber: 77,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, service.id, true, {
                                         fileName: "<[project]/src/app/_components/AccordionServices/index.tsx>",
-                                        lineNumber: 61,
+                                        lineNumber: 63,
                                         columnNumber: 17
                                     }, this)
                                 ]
-                            }, void 0, true))
+                            }, service.id, true, {
+                                fileName: "<[project]/src/app/_components/AccordionServices/index.tsx>",
+                                lineNumber: 61,
+                                columnNumber: 15
+                            }, this))
                     }, void 0, false, {
                         fileName: "<[project]/src/app/_components/AccordionServices/index.tsx>",
-                        lineNumber: 54,
+                        lineNumber: 56,
                         columnNumber: 11
                     }, this)
                 ]
             }, group.id, true, {
                 fileName: "<[project]/src/app/_components/AccordionServices/index.tsx>",
-                lineNumber: 39,
+                lineNumber: 41,
                 columnNumber: 9
             }, this))
     }, void 0, false, {
         fileName: "<[project]/src/app/_components/AccordionServices/index.tsx>",
-        lineNumber: 37,
+        lineNumber: 39,
         columnNumber: 5
     }, this);
 }
-_s(AccordionServices, "DuL5jiiQQFgbn7gBKAyxwS/H4Ek=");
+_s(AccordionServices, "t80BBu2R/P41oeSWXhQEKE5BCUY=");
 _c = AccordionServices;
 var _c;
 __turbopack_refresh__.register(_c, "AccordionServices");

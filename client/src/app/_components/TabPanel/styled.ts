@@ -1,7 +1,7 @@
 "use client";
 import styled from "@emotion/styled";
 import { fonts } from "@/app/_theme/fonts";
-import { BORDER, COLOR_SECONDARY, COLOR_WHITE } from "@/app/_theme/colors";
+import { BORDER, COLOR_SECONDARY_LIGHTEN, COLOR_WHITE } from "@/app/_theme/colors";
 import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
 
@@ -14,7 +14,7 @@ export const StyledTab = styled(Tab)({
   minHeight: "32px",
   minWidth: "unset",
   "&.Mui-selected": {
-    background: COLOR_SECONDARY,
+    background: COLOR_SECONDARY_LIGHTEN,
     color: COLOR_WHITE,
     border: "unset",
   },

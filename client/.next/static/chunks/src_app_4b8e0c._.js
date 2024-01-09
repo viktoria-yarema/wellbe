@@ -79,10 +79,10 @@ const COLOR_TEXT_SECONDARY = __TURBOPACK__imported__module__$5b$project$5d2f$nod
 _c1 = COLOR_TEXT_SECONDARY;
 const COLOR_SECONDARY_LIGHTEN = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$system$2f$esm$2f$colorManipulator$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["alpha"](COLOR_SECONDARY, 0.8);
 _c2 = COLOR_SECONDARY_LIGHTEN;
-const COLOR_BORDER = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$system$2f$esm$2f$colorManipulator$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["alpha"](COLOR_SECONDARY, 0.3);
+const COLOR_BORDER = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$system$2f$esm$2f$colorManipulator$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["alpha"](COLOR_SECONDARY, 0.2);
 _c3 = COLOR_BORDER;
 const BORDER = `0.2px solid ${COLOR_BORDER}`;
-const GLASS_MORPHISM = "background: rgba(255, 255, 255, 0.38); backdrop-filter: blur(10px);";
+const GLASS_MORPHISM = "background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(10px);";
 var _c, _c1, _c2, _c3;
 __turbopack_refresh__.register(_c, "COLOR_CARD");
 __turbopack_refresh__.register(_c1, "COLOR_TEXT_SECONDARY");
@@ -105,13 +105,24 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f
 ;
 ;
 const StyledCompanyHeading = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$styled$2f$dist$2f$emotion$2d$styled$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"](__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$Layout$2f$FlexColumn$2f$index$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])`
-  /* position: relative; */
   background-color: ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_theme$2f$colors$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["COLOR_GREY_MEDIUM"]};
   position: fixed;
   left: 0;
   top: 0;
   right: 0;
-  z-index: -1;
+  z-index: 100;
+  padding: 1rem;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 220px;
+    background-color: ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_theme$2f$colors$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["COLOR_SECONDARY_LIGHTEN"]};
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 
   img {
     position: absolute;

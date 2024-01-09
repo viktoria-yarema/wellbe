@@ -62,10 +62,10 @@ const COLOR_TEXT_SECONDARY = __TURBOPACK__imported__module__$5b$project$5d2f$nod
 _c1 = COLOR_TEXT_SECONDARY;
 const COLOR_SECONDARY_LIGHTEN = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$system$2f$esm$2f$colorManipulator$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["alpha"](COLOR_SECONDARY, 0.8);
 _c2 = COLOR_SECONDARY_LIGHTEN;
-const COLOR_BORDER = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$system$2f$esm$2f$colorManipulator$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["alpha"](COLOR_SECONDARY, 0.3);
+const COLOR_BORDER = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$system$2f$esm$2f$colorManipulator$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["alpha"](COLOR_SECONDARY, 0.2);
 _c3 = COLOR_BORDER;
 const BORDER = `0.2px solid ${COLOR_BORDER}`;
-const GLASS_MORPHISM = "background: rgba(255, 255, 255, 0.38); backdrop-filter: blur(10px);";
+const GLASS_MORPHISM = "background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(10px);";
 var _c, _c1, _c2, _c3;
 __turbopack_refresh__.register(_c, "COLOR_CARD");
 __turbopack_refresh__.register(_c1, "COLOR_TEXT_SECONDARY");
@@ -271,7 +271,7 @@ __turbopack_refresh__.register(_c, "Avatar");
 "use strict";
 
 __turbopack_esm__({
-    "CompanyButton": ()=>CompanyButton
+    "default": ()=>__TURBOPACK__default__export__
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$Avatar$2f$index$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/_components/Avatar/index.tsx [app-client] (ecmascript)");
@@ -296,7 +296,7 @@ var _s = __turbopack_refresh__.signature();
 ;
 ;
 ;
-function CompanyButton({ companyImage, companyId, companyName }) {
+const CompanyButton = ({ companyImage, companyId, companyName })=>{
     _s();
     const router = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]();
     const img = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_global$2f$getStorageDownloadLink$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"](companyImage);
@@ -346,13 +346,14 @@ function CompanyButton({ companyImage, companyId, companyName }) {
         lineNumber: 32,
         columnNumber: 5
     }, this);
-}
+};
 _s(CompanyButton, "fN7XvhJ+p5oE6+Xlo0NJmXpxjC8=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]
     ];
 });
 _c = CompanyButton;
+const __TURBOPACK__default__export__ = CompanyButton;
 var _c;
 __turbopack_refresh__.register(_c, "CompanyButton");
 

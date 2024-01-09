@@ -21,7 +21,9 @@ type AccordionServicesProps = {
 export default function AccordionServices({
   servicesGroups,
 }: AccordionServicesProps) {
-  const [expanded, setExpanded] = useState<string | false>(false);
+  const [expanded, setExpanded] = useState<string | false>(
+    servicesGroups[0].id ?? false
+  );
 
   const handleChange = (panel: string) => {
     const openedValue = panel === expanded ? false : panel;
@@ -56,7 +58,7 @@ export default function AccordionServices({
             sx={{ padding: 0 }}
           >
             {group.services.map((service) => (
-              <>
+              <div key={service.id}>
                 <Divider />
                 <StyledAccordionContent key={service.id}>
                   <Typography variant="bodyMRegular" noWrap>
@@ -78,7 +80,7 @@ export default function AccordionServices({
                     onClick={handleBook}
                   />
                 </StyledAccordionContent>
-              </>
+              </div>
             ))}
           </AccordionDetails>
         </StyledAccordion>

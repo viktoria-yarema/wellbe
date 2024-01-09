@@ -1,13 +1,17 @@
 "use client";
 import { companyTabsLabels } from "@/app/(entities)/company/contstants";
+import { useCompanyStore } from "@/app/(entities)/company/store/useCompanyStore";
 import { CompanyTabs } from "@/app/(entities)/company/types";
 import TabPanel from "@/app/_components/TabPanel";
-import { useState } from "react";
 
 export default function Tabs() {
-  const [tab, setTab] = useState(CompanyTabs.SERVICES);
+  const { tab, setTab } = useCompanyStore();
 
   return (
-    <TabPanel<CompanyTabs> tabs={companyTabsLabels} activeTab={tab} setActiveTab={setTab} />
+    <TabPanel<CompanyTabs>
+      tabs={companyTabsLabels}
+      activeTab={tab}
+      setActiveTab={setTab}
+    />
   );
 }

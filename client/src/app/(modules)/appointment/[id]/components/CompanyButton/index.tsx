@@ -15,11 +15,11 @@ type CompanyButtonProps = {
   companyId: string;
 };
 
-export function CompanyButton({
+const CompanyButton = ({
   companyImage,
   companyId,
   companyName,
-}: CompanyButtonProps) {
+}: CompanyButtonProps) => {
   const router = useRouter();
   const img = getStorageDownloadLink(companyImage);
   const path = COMPANY_DETAILS_PAGE_PATH.replace("id", companyId);
@@ -37,4 +37,6 @@ export function CompanyButton({
       </FlexCenter>
     </StyledCompanyButton>
   );
-}
+};
+
+export default CompanyButton;

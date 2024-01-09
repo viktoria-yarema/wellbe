@@ -1,3 +1,4 @@
+"use client";
 import { Company } from "@/app/(entities)/company/types";
 import Typography from "@mui/material/Typography";
 import Image from "next/image";
@@ -10,16 +11,22 @@ import {
   StyledRate,
 } from "./styled";
 import getStorageDownloadLink from "@/app/_global/getStorageDownloadLink";
+import { useRouter } from "next/navigation";
+import { COMPANY_DETAILS_PAGE_PATH } from "@/app/_global/routes";
 
 type CompanyCardProps = {
   company: Company;
 };
 
 export default function CompanyCard({ company }: CompanyCardProps) {
-  const { name, rate, opinion, pictureUrl } = company;
+  const router = useRouter();
+  const { name, rate, opinion, pictureUrl, id } = company;
   const img = getStorageDownloadLink(pictureUrl);
+
   return (
-    <StyledCompanyCard>
+    <StyledCompanyCard
+      onClick={() => router.push(COMPANY_DETAILS_PAGE_PATH.replace("id", id))}
+    >
       <Image
         src={img}
         alt={name}

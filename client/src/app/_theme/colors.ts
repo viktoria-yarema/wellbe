@@ -16,8 +16,8 @@ export const COLOR_GREY_MEDIUM = "#D9D9D9";
 export const COLOR_CARD = alpha(COLOR_GREY_MEDIUM, 0.1);
 export const COLOR_TEXT_SECONDARY = alpha(COLOR_BLACK, 0.6);
 export const COLOR_SECONDARY_LIGHTEN = alpha(COLOR_SECONDARY, 0.8);
-export const COLOR_BORDER = alpha(COLOR_SECONDARY, 0.3);
+export const COLOR_BORDER = alpha(COLOR_SECONDARY, 0.2);
 
 export const BORDER = `0.2px solid ${COLOR_BORDER}`;
 export const GLASS_MORPHISM =
-  "background: rgba(255, 255, 255, 0.38); backdrop-filter: blur(10px);";
+  "background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(10px);";
