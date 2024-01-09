@@ -22,7 +22,7 @@ export const getAppointments = async (request, response) => {
       let query = admin
         .firestore()
         .collection("appointments")
-        .where("status", "in", [status])
+        .where("status", "==", status)
         // .orderBy("appointmentDate")
         .limit(limitParam);
 
