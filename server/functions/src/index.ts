@@ -1,5 +1,6 @@
 import { getAppointment } from "./entities/appointments/getAppointment";
 import { getAppointments } from "./entities/appointments/getAppointments";
+import { getCompanyComments } from "./entities/comments/getCompanyComments";
 import { getCompanies } from "./entities/company/getCompanies";
 import { getCompany } from "./entities/company/getCompany";
 import { getUserDetails } from "./entities/user/getUserDetails";
@@ -34,3 +35,7 @@ exports.getCompanies = functions
 exports.getAppointment = functions
   .region("europe-west1")
   .https.onRequest(getAppointment);
+
+exports.getCompanyComments = functions
+  .region("europe-west1")
+  .https.onRequest(getCompanyComments);

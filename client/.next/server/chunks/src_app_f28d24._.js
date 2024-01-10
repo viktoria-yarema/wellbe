@@ -233,7 +233,7 @@ const StyledTab = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2
     minHeight: "32px",
     minWidth: "unset",
     "&.Mui-selected": {
-        background: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_theme$2f$colors$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["COLOR_SECONDARY_LIGHTEN"],
+        background: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_theme$2f$colors$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["COLOR_SECONDARY"],
         color: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_theme$2f$colors$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["COLOR_WHITE"],
         border: "unset"
     },
@@ -335,7 +335,9 @@ function TabPanel({ tabs, activeTab, setActiveTab }) {
 "use strict";
 
 __turbopack_esm__({
-    "CompanyTabs": ()=>CompanyTabs
+    "CompanyScheduleVariant": ()=>CompanyScheduleVariant,
+    "CompanyTabs": ()=>CompanyTabs,
+    "SocialMediaVariant": ()=>SocialMediaVariant
 });
 let CompanyTabs;
 (function(CompanyTabs) {
@@ -344,6 +346,24 @@ let CompanyTabs;
     CompanyTabs["PORTFOLIO"] = "Portfolio";
     CompanyTabs["REVIEWS"] = "Reviews";
 })(CompanyTabs || (CompanyTabs = {}));
+let SocialMediaVariant;
+(function(SocialMediaVariant) {
+    SocialMediaVariant["FACEBOOK"] = "facebook";
+    SocialMediaVariant["INSTAGRAM"] = "instagram";
+    SocialMediaVariant["TIK_TOK"] = "tiktok";
+    SocialMediaVariant["WHATS_APP"] = "whatsApp";
+    SocialMediaVariant["TELEGRAM"] = "telegram";
+})(SocialMediaVariant || (SocialMediaVariant = {}));
+let CompanyScheduleVariant;
+(function(CompanyScheduleVariant) {
+    CompanyScheduleVariant["MONDAY"] = "monday";
+    CompanyScheduleVariant["TUESDAY"] = "tuesday";
+    CompanyScheduleVariant["WEDNESDAY"] = "wednesday";
+    CompanyScheduleVariant["THURSDAY"] = "thursday";
+    CompanyScheduleVariant["FRIDAY"] = "friday";
+    CompanyScheduleVariant["SATURDAY"] = "saturday";
+    CompanyScheduleVariant["SUNDAY"] = "sunday";
+})(CompanyScheduleVariant || (CompanyScheduleVariant = {}));
 
 })()),
 "[project]/src/app/(entities)/company/store/useCompanyStore.ts [app-ssr] (ecmascript)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, p: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__ }) => (() => {

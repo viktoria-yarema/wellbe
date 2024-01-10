@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { StyledAvatar } from "./styled";
+import getStorageDownloadLink from "@/app/_global/getStorageDownloadLink";
 
 type AvatarProps = {
   src: string;
@@ -16,10 +17,12 @@ export default function Avatar({ src, alt, size }: AvatarProps) {
     xl: 92,
   };
 
+  const img = getStorageDownloadLink(src);
+  console.log(img, src, "img");
   return (
     <StyledAvatar width={sizeMap[size]} height={sizeMap[size]}>
       <Image
-        src={src}
+        src={img}
         alt={alt}
         width={sizeMap[size]}
         height={sizeMap[size]}

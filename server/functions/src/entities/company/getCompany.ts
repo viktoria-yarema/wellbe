@@ -17,7 +17,7 @@ export const getCompany = async (req, res) => {
         return res.status(404).send("Company not found");
       }
 
-      const companyData = doc.data();
+      const companyData = { id: doc.id, ...doc.data() };
       return res.status(200).json(companyData);
     } catch (error) {
       console.error("Error getting company details:", error);

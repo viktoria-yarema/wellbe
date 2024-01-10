@@ -29,8 +29,6 @@ export default function AppointmentCard({ card }: AppointmentCardProps) {
 
   const { data: company } = useCompanyQuery(companyId);
 
-  const img = getStorageDownloadLink(company?.pictureUrl);
-
   return (
     <StyledAppointmentCard
       bgcolor={"card.main"}
@@ -47,8 +45,12 @@ export default function AppointmentCard({ card }: AppointmentCardProps) {
           </Typography>
         </FlexColumn>
         <Flex columnGap={"0.5rem"} alignContent={"center"}>
-          {img && (
-            <Avatar src={img} alt={company?.name ?? "avatar"} size={"xs"} />
+          {company?.pictureUrl && (
+            <Avatar
+              src={company?.pictureUrl}
+              alt={company?.name ?? "avatar"}
+              size={"xs"}
+            />
           )}
           <Typography variant="bodyMMedium" color="secondary.main">
             {company?.name}

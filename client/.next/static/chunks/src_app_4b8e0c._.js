@@ -117,8 +117,12 @@ const StyledCompanyHeading = __TURBOPACK__imported__module__$5b$project$5d2f$nod
     content: "";
     display: block;
     width: 100%;
-    height: 220px;
-    background-color: ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_theme$2f$colors$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["COLOR_SECONDARY_LIGHTEN"]};
+    height: 180px;
+    background: linear-gradient(
+      0deg,
+      transparent 0%,
+      ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_theme$2f$colors$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["COLOR_SECONDARY_LIGHTEN"]} 70%
+    );
     position: absolute;
     top: 0;
     left: 0;

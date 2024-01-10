@@ -30,15 +30,21 @@ __turbopack_esm__({
     "default": ()=>General
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$Layout$2f$FlexColumn$2f$index$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/_components/Layout/FlexColumn/index.tsx [app-client] (ecmascript)");
 "__TURBOPACK__ecmascript__hoisting__location__";
 ;
-function General() {
-    return /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"]("div", {
-        children: "General"
+;
+function General({ company }) {
+    return /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$Layout$2f$FlexColumn$2f$index$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+        children: /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"](Contacts, {}, void 0, false, {
+            fileName: "<[project]/src/app/(modules)/company/[id]/components/Content/sections/General/index.tsx>",
+            lineNumber: 17,
+            columnNumber: 7
+        }, this)
     }, void 0, false, {
         fileName: "<[project]/src/app/(modules)/company/[id]/components/Content/sections/General/index.tsx>",
-        lineNumber: 4,
-        columnNumber: 10
+        lineNumber: 16,
+        columnNumber: 5
     }, this);
 }
 _c = General;
@@ -799,7 +805,9 @@ function Content({ company }) {
     _s();
     const { tab } = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f28$entities$292f$company$2f$store$2f$useCompanyStore$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCompanyStore"]();
     const tabsContent = {
-        [__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f28$entities$292f$company$2f$types$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CompanyTabs"].GENERAL]: /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f28$modules$292f$company$2f5b$id$5d2f$components$2f$Content$2f$sections$2f$General$2f$index$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+        [__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f28$entities$292f$company$2f$types$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CompanyTabs"].GENERAL]: /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f28$modules$292f$company$2f5b$id$5d2f$components$2f$Content$2f$sections$2f$General$2f$index$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+            company: company
+        }, void 0, false, {
             fileName: "<[project]/src/app/(modules)/company/[id]/components/Content/index.tsx>",
             lineNumber: 18,
             columnNumber: 28

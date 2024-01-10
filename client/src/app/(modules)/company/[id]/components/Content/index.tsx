@@ -15,11 +15,11 @@ export default function Content({ company }: ContentProps) {
   const { tab } = useCompanyStore();
 
   const tabsContent = {
-    [CompanyTabs.GENERAL]: <General />,
+    [CompanyTabs.GENERAL]: <General company={company} />,
     [CompanyTabs.SERVICES]: (
       <Services groupsServices={company.groupsServices} />
     ),
-    [CompanyTabs.REVIEWS]: <Reviews />,
+    [CompanyTabs.REVIEWS]: <Reviews companyId={company.id} />,
     [CompanyTabs.PORTFOLIO]: <Portfolio />,
   };
 

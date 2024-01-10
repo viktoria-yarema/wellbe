@@ -19,8 +19,12 @@ export const StyledCompanyHeading = styled(FlexColumn)`
     content: "";
     display: block;
     width: 100%;
-    height: 220px;
-    background-color: ${COLOR_SECONDARY_LIGHTEN};
+    height: 180px;
+    background: linear-gradient(
+      0deg,
+      transparent 0%,
+      ${COLOR_SECONDARY_LIGHTEN} 70%
+    );
     position: absolute;
     top: 0;
     left: 0;
