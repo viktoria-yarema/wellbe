@@ -1,8 +1,12 @@
+import { createAppointment } from "./entities/appointments/createAppointment";
 import { getAppointment } from "./entities/appointments/getAppointment";
 import { getAppointments } from "./entities/appointments/getAppointments";
 import { getCompanyComments } from "./entities/comments/getCompanyComments";
 import { getCompanies } from "./entities/company/getCompanies";
 import { getCompany } from "./entities/company/getCompany";
+import { getCompanyService } from "./entities/services/getCompanyService";
+import { getCompanyServices } from "./entities/services/getCompanyServices";
+import { getGroupsServices } from "./entities/services/getGroupsServices";
 import { getUserDetails } from "./entities/user/getUserDetails";
 import { createUserDocument } from "./triggers/createUserDocument";
 
@@ -39,3 +43,19 @@ exports.getAppointment = functions
 exports.getCompanyComments = functions
   .region("europe-west1")
   .https.onRequest(getCompanyComments);
+
+exports.getCompanyServices = functions
+  .region("europe-west1")
+  .https.onRequest(getCompanyServices);
+
+exports.getCompanyService = functions
+  .region("europe-west1")
+  .https.onRequest(getCompanyService);
+
+exports.getGroupsServices = functions
+  .region("europe-west1")
+  .https.onRequest(getGroupsServices);
+
+exports.createAppointment = functions
+  .region("europe-west1")
+  .https.onRequest(createAppointment);

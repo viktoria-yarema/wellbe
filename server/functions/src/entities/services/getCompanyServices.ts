@@ -1,7 +1,7 @@
 const cors = require("cors")({ origin: true });
 const admin = require("firebase-admin");
 
-export const getCompanyComments = async (req, res) => {
+export const getCompanyServices = async (req, res) => {
   cors(req, res, async () => {
     const companyId = req.query.id;
     if (!companyId) {
@@ -17,17 +17,19 @@ export const getCompanyComments = async (req, res) => {
         return res.status(404).send("Company not found");
       }
 
-      // Fetch comments from the subcollection
-      const commentsRef = companyRef.collection("comments");
-      const commentsSnapshot = await commentsRef.get();
-      const comments = commentsSnapshot.docs.map((doc) => ({
+      const servicesRef = companyRef
+        .collection("services")
+        .where("active", "==", true);
+
+      const servicesSnapshot = await servicesRef.get();
+      const services = servicesSnapshot.docs.map((doc) => ({
         id: doc.id,
         ...doc.data(),
       }));
 
-      return res.status(200).json(comments);
+      return res.status(200).json(services);
     } catch (error) {
-      console.error("Error getting company details:", error);
+      console.error("Error getting company services:", error);
       return res.status(500).send("Internal Server Error");
     }
   });
