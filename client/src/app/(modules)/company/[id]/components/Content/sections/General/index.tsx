@@ -9,7 +9,6 @@ type GeneralProps = {
 };
 
 export default function General({ company }: GeneralProps) {
-
   return (
     <FlexColumn rowGap={"1rem"}>
       <Schedule schedule={company.schedule} />

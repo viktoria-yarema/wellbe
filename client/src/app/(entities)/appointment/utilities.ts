@@ -1,7 +1,13 @@
 import { Timestamp } from "firebase/firestore";
+import { AvailableTime } from "./types";
 
-export const extractDateInfo = (date: Timestamp) => {
-  const firebaseTimestampToDate = new Date(date._seconds * 1000);
+export const extractDateInfo = (date?: AvailableTime) => {
+  if (!date?.start || !date?.end) {
+    return;
+  }
+
+  const firebaseTimestampToDate = new Date(date.start._seconds * 1000);
+  const firebaseTimestampEndToDate = new Date(date.end._seconds * 1000);
 
   const options: Intl.DateTimeFormatOptions = {
     hour: "2-digit",
@@ -14,9 +20,12 @@ export const extractDateInfo = (date: Timestamp) => {
     "en-US",
     options
   );
-  const endTime = new Date(
-    firebaseTimestampToDate.getTime() + 60 * 60000
-  ).toLocaleTimeString("en-US", options);
+
+  const endTime = firebaseTimestampEndToDate.toLocaleTimeString(
+    "en-US",
+    options
+  );
+
   const time = `${startTime} - ${endTime}`;
 
   // Format the day as "DD"

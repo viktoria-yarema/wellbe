@@ -4,7 +4,7 @@ export const getCompanyComments = async (
   companyId: string
 ): Promise<Comment[]> => {
   const url = `${process.env.NEXT_PUBLIC_API_MAIN}getCompanyComments?id=${companyId}`;
-  const response = await fetch(url, { cache: "force-cache" });
+  const response = await fetch(url);
 
   if (!response.ok) {
     // Log or return additional error information

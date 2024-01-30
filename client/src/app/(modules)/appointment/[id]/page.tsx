@@ -7,6 +7,7 @@ import ActionBar from "./components/ActionBar";
 import StatusChip from "@/app/_components/StatusChip";
 import CompanyButton from "./components/CompanyButton";
 import { getCompanyId } from "@/app/(entities)/company/api/getCompanyId";
+import { Suspense } from "react";
 
 export default async function AppointmentId({
   params,
@@ -14,11 +15,9 @@ export default async function AppointmentId({
   params: { id: string };
 }) {
   const appointment = await getAppointment(params.id);
-  const { monthAndWeek, day, time } = extractDateInfo(
-    appointment.appointmentDate
-  );
-
   const company = await getCompanyId(appointment.companyId);
+
+  const date = extractDateInfo(appointment.appointmentDate.start);
 
   return (
     <FlexColumn p={0}>
@@ -28,7 +27,7 @@ export default async function AppointmentId({
       </Header>
       <FlexColumn alignItems={"center"} rowGap={"1rem"} m="60px 0 82px">
         <Typography variant="heading3Bold" color={"text.primary"}>
-          {monthAndWeek} {day}
+          {date?.monthAndWeek} {date?.day}
         </Typography>
         <Typography variant="bodyXLRegular" color={"text.secondary"}>
           {appointment.serviceName}
@@ -38,15 +37,17 @@ export default async function AppointmentId({
             Price - {appointment.price}$
           </Typography>
           <Typography variant="bodyLRegular" color={"text.secondary"}>
-            Time - {time}
+            Time - {date?.time}
           </Typography>
         </FlexColumn>
       </FlexColumn>
-      <CompanyButton
-        companyImage={company.pictureUrl}
-        companyName={company.name}
-        companyId={appointment.companyId}
-      />
+      <Suspense fallback="Loading company">
+        <CompanyButton
+          companyImage={company.pictureUrl}
+          companyName={company.name}
+          companyId={appointment.companyId}
+        />
+      </Suspense>
       <ActionBar status={appointment.status} />
     </FlexColumn>
   );

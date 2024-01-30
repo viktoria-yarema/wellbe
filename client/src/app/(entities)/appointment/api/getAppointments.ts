@@ -1,3 +1,4 @@
+"use server";
 import { AppointmentStatus, AppointmentType } from "../types";
 
 export const getAppointments = async ({

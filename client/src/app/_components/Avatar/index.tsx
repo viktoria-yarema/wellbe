@@ -18,7 +18,7 @@ export default function Avatar({ src, alt, size }: AvatarProps) {
   };
 
   const img = getStorageDownloadLink(src);
-  console.log(img, src, "img");
+
   return (
     <StyledAvatar width={sizeMap[size]} height={sizeMap[size]}>
       <Image

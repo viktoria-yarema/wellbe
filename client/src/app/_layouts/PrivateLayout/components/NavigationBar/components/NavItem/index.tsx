@@ -1,11 +1,11 @@
 import Typography from "@mui/material/Typography";
-import { NavItem } from "./types";
+import { NavItemType } from "./types";
 import FlexCenter from "@/app/_components/Layout/FlexCenter";
 import { StyledNavItem } from "./styled";
 import { COLOR_GREY_MEDIUM, COLOR_PRIMARY } from "@/app/_theme/colors";
 import { usePathname } from "next/navigation";
 
-type NavItemProps = NavItem;
+type NavItemProps = NavItemType;
 
 export default function NavItem({ name, href, Icon }: NavItemProps) {
   const pathname = usePathname();

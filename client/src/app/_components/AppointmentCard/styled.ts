@@ -8,15 +8,21 @@ export const StyledAppointmentCard = styled(Flex)`
   justify-content: space-between;
   border-radius: 18px;
   border: ${BORDER};
+`;
 
-  /* box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.08); */
+export const StyledContent = styled(FlexColumn)`
+  row-gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  justify-content: space-around;
 `;
 
 export const StyledTimeBlock = styled(FlexColumn)`
   justify-content: center;
-  padding: 1.5rem 1rem 0.75rem;
   border-left: ${BORDER};
   position: relative;
+  max-width: 40%;
+  min-width: 40%;
+  row-gap: 0.5rem;
 
   span {
     text-align: center;

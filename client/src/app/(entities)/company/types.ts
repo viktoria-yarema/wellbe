@@ -1,4 +1,6 @@
+import { Timestamp } from "firebase-admin/firestore";
 import { GroupServices } from "../services/types";
+import { Staff } from "../staff/types";
 
 export type Company = {
   id: string;
@@ -13,12 +15,12 @@ export type Company = {
   rate: number;
   opinion: number;
   location: string;
-  staff: string[]; // todo: type for staff
-  updateAt: Date;
-  createAt: Date;
+  staff: Staff[];
+  updateAt: Timestamp;
+  createAt: Timestamp;
   socialMedia?: SocialMedia[];
   schedule: CompanySchedule[];
-  portfolio?: string[]; // todo: make the model for image
+  portfolio?: Portfolio[];
   groupsServices: GroupServices[];
 };
 
@@ -55,4 +57,9 @@ export enum CompanyScheduleVariant {
 export type CompanySchedule = {
   day: CompanyScheduleVariant;
   timestamp: string;
+};
+
+export type Portfolio = {
+  url: string;
+  title?: string;
 };

@@ -6,6 +6,7 @@ module.exports = {
 __turbopack_esm__({
     "BORDER": ()=>BORDER,
     "COLOR_BLACK": ()=>COLOR_BLACK,
+    "COLOR_BLUE_GREY": ()=>COLOR_BLUE_GREY,
     "COLOR_BORDER": ()=>COLOR_BORDER,
     "COLOR_CARD": ()=>COLOR_CARD,
     "COLOR_ERROR": ()=>COLOR_ERROR,
@@ -37,6 +38,7 @@ const COLOR_INFO = "#64D1FF";
 const COLOR_WARN = "#FFE352";
 const COLOR_GREY_LIGHT = "#F4F4F4";
 const COLOR_GREY_MEDIUM = "#D9D9D9";
+const COLOR_BLUE_GREY = "#AAC4E7";
 const COLOR_CARD = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$system$2f$esm$2f$colorManipulator$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["alpha"](COLOR_GREY_MEDIUM, 0.1);
 const COLOR_TEXT_SECONDARY = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$system$2f$esm$2f$colorManipulator$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["alpha"](COLOR_BLACK, 0.6);
 const COLOR_SECONDARY_LIGHTEN = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$system$2f$esm$2f$colorManipulator$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["alpha"](COLOR_SECONDARY, 0.8);
@@ -158,6 +160,7 @@ const StyledHeader = __TURBOPACK__imported__module__$5b$project$5d2f$node_module
   height: 38px;
   justify-content: space-between;
   z-index: 100;
+  align-items: center;
 `;
 const StyledIconWrapper = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$styled$2f$dist$2f$emotion$2d$styled$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"](__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$Layout$2f$FlexCenter$2f$index$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])`
   width: 36px;

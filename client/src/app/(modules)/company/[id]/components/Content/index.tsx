@@ -2,10 +2,13 @@
 
 import { useCompanyStore } from "@/app/(entities)/company/store/useCompanyStore";
 import { Company, CompanyTabs } from "@/app/(entities)/company/types";
-import Services from "./sections/Services";
-import Portfolio from "./sections/Portfolio";
-import General from "./sections/General";
-import Reviews from "./sections/Reviews";
+import dynamic from "next/dynamic";
+import { Suspense } from "react";
+
+const ReviewsDynamic = dynamic(() => import("./sections/Reviews"));
+const PortfolioDynamic = dynamic(() => import("./sections/Portfolio"));
+const GeneralDynamic = dynamic(() => import("./sections/General"));
+const ServicesDynamic = dynamic(() => import("./sections/Services"));
 
 type ContentProps = {
   company: Company;
@@ -15,13 +18,13 @@ export default function Content({ company }: ContentProps) {
   const { tab } = useCompanyStore();
 
   const tabsContent = {
-    [CompanyTabs.GENERAL]: <General company={company} />,
-    [CompanyTabs.SERVICES]: (
-      <Services groupsServices={company.groupsServices} />
+    [CompanyTabs.GENERAL]: <GeneralDynamic company={company} />,
+    [CompanyTabs.SERVICES]: <ServicesDynamic companyId={company.id} />,
+    [CompanyTabs.REVIEWS]: <ReviewsDynamic companyId={company.id} />,
+    [CompanyTabs.PORTFOLIO]: (
+      <PortfolioDynamic portfolioImages={company.portfolio ?? []} />
     ),
-    [CompanyTabs.REVIEWS]: <Reviews companyId={company.id} />,
-    [CompanyTabs.PORTFOLIO]: <Portfolio />,
   };
 
-  return <div>{tabsContent[tab]}</div>;
+  return <Suspense fallback="Loading tab data...">{tabsContent[tab]}</Suspense>;
 }

@@ -1,4 +1,13 @@
 {
-  "node": {},
+  "node": {
+    "0d3edab888fc662c2aed6b541f7aaf4d9eaf5977": {
+      "workers": {
+        "app/(modules)/company/[id]/page": "[project]/.next-internal/server/app/(modules)/company/[id]/page/actions.js/(ACTIONS_MODULE0)/[project]/src/app/(entities)/company/api/getCompanyId.ts [app-rsc] (ecmascript) (ecmascript)"
+      },
+      "layer": {
+        "app/(modules)/company/[id]/page": "rsc"
+      }
+    }
+  },
   "edge": {}
 }

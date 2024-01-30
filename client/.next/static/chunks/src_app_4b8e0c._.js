@@ -42,6 +42,7 @@ __turbopack_refresh__.register(_c1, "FlexColumn");
 __turbopack_esm__({
     "BORDER": ()=>BORDER,
     "COLOR_BLACK": ()=>COLOR_BLACK,
+    "COLOR_BLUE_GREY": ()=>COLOR_BLUE_GREY,
     "COLOR_BORDER": ()=>COLOR_BORDER,
     "COLOR_CARD": ()=>COLOR_CARD,
     "COLOR_ERROR": ()=>COLOR_ERROR,
@@ -73,6 +74,7 @@ const COLOR_INFO = "#64D1FF";
 const COLOR_WARN = "#FFE352";
 const COLOR_GREY_LIGHT = "#F4F4F4";
 const COLOR_GREY_MEDIUM = "#D9D9D9";
+const COLOR_BLUE_GREY = "#AAC4E7";
 const COLOR_CARD = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$system$2f$esm$2f$colorManipulator$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["alpha"](COLOR_GREY_MEDIUM, 0.1);
 _c = COLOR_CARD;
 const COLOR_TEXT_SECONDARY = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$system$2f$esm$2f$colorManipulator$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["alpha"](COLOR_BLACK, 0.6);
@@ -94,7 +96,8 @@ __turbopack_refresh__.register(_c3, "COLOR_BORDER");
 "use strict";
 
 __turbopack_esm__({
-    "StyledCompanyHeading": ()=>StyledCompanyHeading
+    "StyledCompanyHeading": ()=>StyledCompanyHeading,
+    "StyledHeaderWrapper": ()=>StyledHeaderWrapper
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$styled$2f$dist$2f$emotion$2d$styled$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@emotion/styled/dist/emotion-styled.browser.esm.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_theme$2f$colors$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/_theme/colors.ts [app-client] (ecmascript)");
@@ -106,36 +109,22 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f
 ;
 const StyledCompanyHeading = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$styled$2f$dist$2f$emotion$2d$styled$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"](__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$Layout$2f$FlexColumn$2f$index$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])`
   background-color: ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_theme$2f$colors$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["COLOR_GREY_MEDIUM"]};
-  position: fixed;
   left: 0;
   top: 0;
   right: 0;
   z-index: 100;
-  padding: 1rem;
-
-  &::before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 180px;
-    background: linear-gradient(
-      0deg,
-      transparent 0%,
-      ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_theme$2f$colors$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["COLOR_SECONDARY_LIGHTEN"]} 70%
-    );
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
 
   img {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100% !important;
-
     z-index: -1;
+    object-fit: cover;
   }
+`;
+const StyledHeaderWrapper = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$styled$2f$dist$2f$emotion$2d$styled$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].div`
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  right: 1rem;
 `;
 
 })()),

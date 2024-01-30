@@ -1,43 +1,58 @@
 "use client";
 import React from "react";
 import Flex from "../Layout/Flex";
-import { AppointmentType } from "@/app/(entities)/appointment/types";
+import {
+  AppointmentStatus,
+  AvailableTime,
+} from "@/app/(entities)/appointment/types";
 import StatusChip from "../StatusChip";
 import Typography from "@mui/material/Typography";
 import FlexColumn from "../Layout/FlexColumn";
 import {
   StyledAppointmentCard,
   StyledArrowWrapper,
+  StyledContent,
   StyledTimeBlock,
 } from "./styled";
 import { extractDateInfo } from "@/app/(entities)/appointment/utilities";
 import ArrowUpwardIcon from "@/app/_assets/icons/ArrowUpwardIcon";
 import { COLOR_TEXT_SECONDARY } from "@/app/_theme/colors";
 import Avatar from "../Avatar";
-import { useRouter } from "next/navigation";
-import getStorageDownloadLink from "@/app/_global/getStorageDownloadLink";
 import { useCompanyQuery } from "@/app/(entities)/company/queries/useCompanyQuery";
+import PriceChip from "./components/PriceChip";
 
 type AppointmentCardProps = {
-  card: AppointmentType;
+  price: string;
+  companyId: string;
+  serviceName: string;
+  status?: AppointmentStatus;
+  staff: string;
+  appointmentDate?: AvailableTime | null;
+  isVisiblePrice?: boolean;
+  handleClick?: () => void;
 };
 
-export default function AppointmentCard({ card }: AppointmentCardProps) {
-  const { serviceName, status, staff, appointmentDate, id, companyId } = card;
-  const { monthAndWeek, day, time } = extractDateInfo(appointmentDate);
-  const router = useRouter();
-
+export default function AppointmentCard({
+  price,
+  staff,
+  status,
+  appointmentDate,
+  serviceName,
+  companyId,
+  isVisiblePrice,
+  handleClick,
+}: AppointmentCardProps) {
+  const date = appointmentDate && extractDateInfo(appointmentDate);
   const { data: company } = useCompanyQuery(companyId);
 
   return (
-    <StyledAppointmentCard
-      bgcolor={"card.main"}
-      onClick={() => router.push(`/appointment/${id}`)}
-    >
-      <FlexColumn rowGap={"0.5rem"} p="0.75rem 1rem">
-        <Flex>
-          <StatusChip status={status} />
-        </Flex>
+    <StyledAppointmentCard bgcolor={"card.main"} onClick={handleClick}>
+      <StyledContent>
+        {status && (
+          <Flex>
+            <StatusChip status={status} />
+          </Flex>
+        )}
         <FlexColumn>
           <Typography variant="bodyLMedium">{serviceName}</Typography>
           <Typography variant="bodyMRegular" color="secondary.light">
@@ -56,20 +71,33 @@ export default function AppointmentCard({ card }: AppointmentCardProps) {
             {company?.name}
           </Typography>
         </Flex>
-      </FlexColumn>
-      <StyledTimeBlock>
-        <StyledArrowWrapper>
-          <ArrowUpwardIcon color={COLOR_TEXT_SECONDARY} />
-        </StyledArrowWrapper>
-        <Typography variant="bodyMRegular" color="text.primary">
-          {monthAndWeek}
-        </Typography>
-        <Typography variant="bodyMSemiBold" color="text.primary">
-          {day}
-        </Typography>
-        <Typography variant="bodyMRegular" color="text.secondary">
-          {time}
-        </Typography>
+      </StyledContent>
+      <StyledTimeBlock
+        p={isVisiblePrice ? "1rem 1rem 0.75rem" : "1.5rem 1rem 0.75rem"}
+      >
+        {!isVisiblePrice && (
+          <StyledArrowWrapper>
+            <ArrowUpwardIcon color={COLOR_TEXT_SECONDARY} />
+          </StyledArrowWrapper>
+        )}
+        {date ? (
+          <>
+            <Typography variant="bodyMRegular" color="text.primary">
+              {date.monthAndWeek}
+            </Typography>
+            <Typography variant="bodyMSemiBold" color="text.primary">
+              {date.day}
+            </Typography>
+            <Typography variant="bodyMRegular" color="text.secondary">
+              {date.time}
+            </Typography>
+          </>
+        ) : (
+          <Typography variant="bodyMRegular" color="text.secondary">
+            Not selected appointment time yet
+          </Typography>
+        )}
+        {isVisiblePrice && <PriceChip price={price} />}
       </StyledTimeBlock>
     </StyledAppointmentCard>
   );

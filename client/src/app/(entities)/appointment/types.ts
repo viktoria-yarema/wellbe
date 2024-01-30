@@ -7,16 +7,18 @@ export enum AppointmentStatus {
   RequestToChangeDate = "REQUEST_TO_CHANGE_DATE",
 }
 
+export type AvailableTime = {
+  start: Timestamp;
+  end: Timestamp;
+};
+
 export type AppointmentType = {
   id: string;
   status: AppointmentStatus;
   serviceName: string;
   staff: string;
-  appointmentDate: Timestamp;
+  appointmentDate: AvailableTime;
   createdAt: Timestamp;
   price: string;
   companyId: string;
-  // companyImg: string;
-  // companyName: string;
-  // location: string;
 };

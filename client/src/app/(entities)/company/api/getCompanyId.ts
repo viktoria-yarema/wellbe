@@ -1,3 +1,4 @@
+"use server";
 import { Company } from "../types";
 
 export const getCompanyId = async (id: string): Promise<Company> => {

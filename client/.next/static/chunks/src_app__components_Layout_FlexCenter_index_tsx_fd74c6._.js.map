@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sections": [
-    {"offset": {"line": 5, "column": 0}, "map": {"version":3,"sources":["/turbopack/[project]/src/app/_components/Layout/FlexCenter/index.tsx"],"sourcesContent":["\"use client\";\n\nimport styled from \"@emotion/styled\";\nimport Box, { BoxProps } from \"@mui/material/Box\";\nimport { ReactNode } from \"react\";\n\nconst Component = styled(Box)`\n  display: flex;\n  justify-content: center;\n  align-items: center;\n`;\n\ntype FlexCenterProps = { children: ReactNode } & BoxProps;\n\nexport default function FlexCenter({ children, ...props }: FlexCenterProps) {\n  return <Component {...props}>{children}</Component>;\n}\n"],"names":[],"mappings":";;;;;;;AAAA;;;;AAMA,MAAM,YAAY,+VAAW,CAAC;;;;AAI9B,CAAC;KAJK;AAQS,SAAS,WAAW,EAAE,QAAQ,EAAE,GAAG,OAAwB;IACxE,qBAAO,wLAAC;QAAW,GAAG,KAAK;kBAAG;;;;;;AAChC;MAFwB"}},
-    {"offset": {"line": 36, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}

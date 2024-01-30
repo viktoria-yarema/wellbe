@@ -7,7 +7,7 @@ import AuthLayout from "./AuthLayout";
 import { queryClient } from "../_global/queryClient";
 import { lazy } from "react";
 import { GlobalSideEffects } from "../_global/GlobalSideEffects";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import PageDetailsLayout from "./PageDetailsLayout";
 
 const LazyReactQueryDevtools = lazy(() =>
@@ -21,7 +21,7 @@ type MainLayoutProps = {
 };
 
 export default function MainLayout({ children }: MainLayoutProps) {
-  const { firebaseUser, user } = useUserStore();
+  const { firebaseUser } = useUserStore();
   // TODO: Refactor it
   const pathname = usePathname();
   const isNestedPAge = pathname.split("/").length > 2;

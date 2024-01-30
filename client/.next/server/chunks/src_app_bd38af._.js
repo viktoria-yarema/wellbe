@@ -124,7 +124,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f28$entities$292
 ;
 ;
 const useUserDetailsQuery = ()=>{
-    const { firebaseUser, setUser, user } = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f28$entities$292f$user$2f$store$2f$useUserStore$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useUserStore"]();
+    const { firebaseUser, setUser } = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f28$entities$292f$user$2f$store$2f$useUserStore$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useUserStore"]();
     return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$useQuery$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useQuery"]({
         queryKey: [
             "userDetails",
@@ -155,8 +155,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$firebase$2
 "__TURBOPACK__ecmascript__hoisting__location__";
 ;
 ;
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
     apiKey: ("TURBOPACK compile-time value", "AIzaSyB25YcCvvbCi47SJXpHvi8tyn7aCNRkUPs"),
     authDomain: ("TURBOPACK compile-time value", "wellbe-book-dev.firebaseapp.com"),
@@ -164,7 +162,7 @@ const firebaseConfig = {
     storageBucket: ("TURBOPACK compile-time value", "wellbe-book-dev.appspot.com"),
     messagingSenderId: ("TURBOPACK compile-time value", "214145781191"),
     appId: ("TURBOPACK compile-time value", "1:214145781191:web:013d3b2aa9073949235de2"),
-    measurementId: "G-E14Y999ME1"
+    measurementId: ("TURBOPACK compile-time value", "G-E14Y999ME1")
 };
 const app = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$7b$facade$7d$__["initializeApp"](firebaseConfig);
 const auth = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$firebase$2f$auth$2f$dist$2f$node$2d$esm$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$7b$facade$7d$__["getAuth"](app);
@@ -437,19 +435,28 @@ __turbopack_esm__({
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/future/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$Buttons$2f$PrimaryButton$2f$styled$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/_components/Buttons/PrimaryButton/styled.ts [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$CircularProgress$2f$CircularProgress$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$7b$export__default__as__CircularProgress$7d$__ = __turbopack_import__("[project]/node_modules/@mui/material/CircularProgress/CircularProgress.js [app-ssr] (ecmascript) {export default as CircularProgress}");
 "__TURBOPACK__ecmascript__hoisting__location__";
 ;
 ;
-function PrimaryButton({ title, ...props }) {
+;
+function PrimaryButton({ title, loading, ...props }) {
     return /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$Buttons$2f$PrimaryButton$2f$styled$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledPrimaryButton"], {
         color: "primary",
         variant: "contained",
         size: "large",
         ...props,
-        children: title
+        children: loading ? /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$CircularProgress$2f$CircularProgress$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$7b$export__default__as__CircularProgress$7d$__["CircularProgress"], {
+            size: 18,
+            color: "secondary"
+        }, void 0, false, {
+            fileName: "<[project]/src/app/_components/Buttons/PrimaryButton/index.tsx>",
+            lineNumber: 23,
+            columnNumber: 18
+        }, this) : title
     }, void 0, false, {
         fileName: "<[project]/src/app/_components/Buttons/PrimaryButton/index.tsx>",
-        lineNumber: 10,
+        lineNumber: 17,
         columnNumber: 5
     }, this);
 }
@@ -594,6 +601,7 @@ function LogIn() {
 __turbopack_esm__({
     "BORDER": ()=>BORDER,
     "COLOR_BLACK": ()=>COLOR_BLACK,
+    "COLOR_BLUE_GREY": ()=>COLOR_BLUE_GREY,
     "COLOR_BORDER": ()=>COLOR_BORDER,
     "COLOR_CARD": ()=>COLOR_CARD,
     "COLOR_ERROR": ()=>COLOR_ERROR,
@@ -625,6 +633,7 @@ const COLOR_INFO = "#64D1FF";
 const COLOR_WARN = "#FFE352";
 const COLOR_GREY_LIGHT = "#F4F4F4";
 const COLOR_GREY_MEDIUM = "#D9D9D9";
+const COLOR_BLUE_GREY = "#AAC4E7";
 const COLOR_CARD = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$system$2f$esm$2f$colorManipulator$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["alpha"](COLOR_GREY_MEDIUM, 0.1);
 const COLOR_TEXT_SECONDARY = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$system$2f$esm$2f$colorManipulator$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["alpha"](COLOR_BLACK, 0.6);
 const COLOR_SECONDARY_LIGHTEN = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$system$2f$esm$2f$colorManipulator$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["alpha"](COLOR_SECONDARY, 0.8);
@@ -1032,6 +1041,7 @@ function AuthLayout() {
 "use strict";
 
 __turbopack_esm__({
+    "StyledLogoTitle": ()=>StyledLogoTitle,
     "StyledTopBar": ()=>StyledTopBar
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$styled$2f$dist$2f$emotion$2d$styled$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@emotion/styled/dist/emotion-styled.esm.js [app-ssr] (ecmascript)");
@@ -1050,6 +1060,9 @@ const StyledTopBar = __TURBOPACK__imported__module__$5b$project$5d2f$node_module
 
   margin-bottom: 1rem;
 `;
+const StyledLogoTitle = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$styled$2f$dist$2f$emotion$2d$styled$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].span`
+  font-size: 24px;
+`;
 
 })()),
 "[project]/src/app/_layouts/PrivateLayout/components/TopBar/index.tsx [app-ssr] (ecmascript)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, p: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__ }) => (() => {
@@ -1059,25 +1072,22 @@ __turbopack_esm__({
     "default": ()=>TopBar
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/future/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@mui/material/Typography/Typography.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_layouts$2f$PrivateLayout$2f$components$2f$TopBar$2f$styled$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/_layouts/PrivateLayout/components/TopBar/styled.ts [app-ssr] (ecmascript)");
 "__TURBOPACK__ecmascript__hoisting__location__";
 ;
 ;
-;
 function TopBar() {
     return /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_layouts$2f$PrivateLayout$2f$components$2f$TopBar$2f$styled$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledTopBar"], {
-        children: /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-            variant: "heading5",
+        children: /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_layouts$2f$PrivateLayout$2f$components$2f$TopBar$2f$styled$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledLogoTitle"], {
             children: "Wellbe"
         }, void 0, false, {
             fileName: "<[project]/src/app/_layouts/PrivateLayout/components/TopBar/index.tsx>",
-            lineNumber: 7,
+            lineNumber: 6,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "<[project]/src/app/_layouts/PrivateLayout/components/TopBar/index.tsx>",
-        lineNumber: 6,
+        lineNumber: 5,
         columnNumber: 5
     }, this);
 }
@@ -1298,6 +1308,7 @@ const __TURBOPACK__default__export__ = HomeIcon;
 
 __turbopack_esm__({
     "APPOINTMENT_DETAILS_PAGE_PATH": ()=>APPOINTMENT_DETAILS_PAGE_PATH,
+    "BOOK_PATH": ()=>BOOK_PATH,
     "COMPANY_DETAILS_PAGE_PATH": ()=>COMPANY_DETAILS_PAGE_PATH,
     "HOME_PAGE_PATH": ()=>HOME_PAGE_PATH,
     "PROFILE_PAGE_PATH": ()=>PROFILE_PAGE_PATH,
@@ -1310,6 +1321,7 @@ const SCHEDULE_PAGE_PATH = "/schedule";
 const PROFILE_PAGE_PATH = "/profile";
 const APPOINTMENT_DETAILS_PAGE_PATH = "/appointment/id";
 const COMPANY_DETAILS_PAGE_PATH = "/company/id";
+const BOOK_PATH = "/booking/id";
 
 })()),
 "[project]/src/app/_layouts/PrivateLayout/components/NavigationBar/components/NavItem/constants.tsx [app-ssr] (ecmascript)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, p: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__ }) => (() => {
@@ -1566,7 +1578,7 @@ const LazyReactQueryDevtools = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$
             default: module.ReactQueryDevtools
         })));
 function MainLayout({ children }) {
-    const { firebaseUser, user } = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f28$entities$292f$user$2f$store$2f$useUserStore$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useUserStore"]();
+    const { firebaseUser } = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f28$entities$292f$user$2f$store$2f$useUserStore$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useUserStore"]();
     // TODO: Refactor it
     const pathname = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["usePathname"]();
     const isNestedPAge = pathname.split("/").length > 2;

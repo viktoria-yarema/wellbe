@@ -3,12 +3,13 @@ import SecondaryButton from "@/app/_components/Buttons/SecondaryButton";
 import { StyledActionsBar } from "./styled";
 import { AppointmentStatus } from "@/app/(entities)/appointment/types";
 import { actionTitlesByStatus } from "./utils";
+import ActionBar from "@/app/_components/Buttons/ActionBar";
 
 type ActionBar = {
   status: AppointmentStatus;
 };
 
-export default function ActionBar({ status }: ActionBar) {
+export default function ActionBarAppointment({ status }: ActionBar) {
   const title = actionTitlesByStatus[status];
 
   if (status === AppointmentStatus.Canceled) {
@@ -16,9 +17,9 @@ export default function ActionBar({ status }: ActionBar) {
   }
 
   return (
-    <StyledActionsBar>
+    <ActionBar>
       <SecondaryButton title="Cancel" />
       <PrimaryButton title={title} />
-    </StyledActionsBar>
+    </ActionBar>
   );
 }

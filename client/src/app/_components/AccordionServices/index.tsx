@@ -1,5 +1,5 @@
 "use client";
-import { GroupServices } from "@/app/(entities)/services/types";
+import { ModifiedGroupServices } from "@/app/(entities)/services/types";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import { useState } from "react";
@@ -10,20 +10,20 @@ import {
   StyledAccordionHeading,
   StyledArrow,
 } from "./styled";
-import Divider from "@mui/material/Divider";
 import ArrowIcon from "@/app/_assets/icons/ArrowIcon";
+import { Divider } from "@mui/material";
 import PrimaryButton from "../Buttons/PrimaryButton";
 
 type AccordionServicesProps = {
-  servicesGroups: GroupServices[];
+  servicesGroups: ModifiedGroupServices[];
+  handleAction: (serviceId: string) => void;
 };
 
 export default function AccordionServices({
   servicesGroups,
+  handleAction,
 }: AccordionServicesProps) {
-  const [expanded, setExpanded] = useState<string | false>(
-    servicesGroups[0].id ?? false
-  );
+  const [expanded, setExpanded] = useState<string | false>(false);
 
   const handleChange = (panel: string) => {
     const openedValue = panel === expanded ? false : panel;
@@ -31,18 +31,23 @@ export default function AccordionServices({
     setExpanded(openedValue);
   };
 
-  const handleBook = (event: React.MouseEvent<HTMLElement>) => {
+  const handleBook = (
+    event: React.MouseEvent<HTMLElement>,
+    serviceId: string
+  ) => {
     event.stopPropagation();
+    handleAction(serviceId);
   };
 
   return (
     <FlexColumn rowGap={"1rem"}>
-      {servicesGroups?.map((group) => (
+      {servicesGroups?.map((group, index) => (
         <StyledAccordion
           expanded={expanded === group.id}
           onClick={() => handleChange(group.id)}
           key={group.id}
           elevation={0}
+          defaultExpanded={index === 0}
         >
           <StyledAccordionHeading
             id={group.id}
@@ -69,7 +74,7 @@ export default function AccordionServices({
                     color={"text.secondary"}
                     noWrap
                   >
-                    {service.timestamp}
+                    {service.duration}
                   </Typography>
                   <Typography variant="bodyMSemiBold">
                     ${Number(service.price).toFixed()}
@@ -77,7 +82,7 @@ export default function AccordionServices({
                   <PrimaryButton
                     title={"Book"}
                     size="small"
-                    onClick={handleBook}
+                    onClick={(e) => handleBook(e, service.id)}
                   />
                 </StyledAccordionContent>
               </div>
