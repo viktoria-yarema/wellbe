@@ -39,9 +39,9 @@ export default function YourAppointment({
       <Title title={"Your appointment"} />
       <AppointmentCard
         isVisiblePrice
-        appointmentDate={selectedTime}
+        availableTime={selectedTime}
         companyId={companyId}
-        serviceName={serviceName}
+        name={serviceName}
         price={price}
         staff={staff}
       />

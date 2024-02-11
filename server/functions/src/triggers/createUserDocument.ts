@@ -1,4 +1,4 @@
-const admin = require("firebase-admin");
+import admin from "firebase-admin";
 import { type User as FirebaseUser } from "firebase/auth";
 
 // admin.initializeApp();

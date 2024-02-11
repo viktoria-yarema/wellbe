@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { getAppointment } from "@/app/(entities)/appointment/api/getAppointment";
 import { extractDateInfo } from "@/app/(entities)/appointment/utilities";
 import Header from "@/app/_components/Header";
@@ -7,17 +8,17 @@ import ActionBar from "./components/ActionBar";
 import StatusChip from "@/app/_components/StatusChip";
 import CompanyButton from "./components/CompanyButton";
 import { getCompanyId } from "@/app/(entities)/company/api/getCompanyId";
-import { Suspense } from "react";
 
 export default async function AppointmentId({
   params,
 }: {
-  params: { id: string };
+  params: { slug: string[] };
 }) {
-  const appointment = await getAppointment(params.id);
+  const [id, userId] = params.slug;
+  const appointment = await getAppointment(id, userId);
   const company = await getCompanyId(appointment.companyId);
 
-  const date = extractDateInfo(appointment.appointmentDate.start);
+  const date = extractDateInfo(appointment.availableTime);
 
   return (
     <FlexColumn p={0}>
@@ -30,7 +31,7 @@ export default async function AppointmentId({
           {date?.monthAndWeek} {date?.day}
         </Typography>
         <Typography variant="bodyXLRegular" color={"text.secondary"}>
-          {appointment.serviceName}
+          {appointment.name}
         </Typography>
         <FlexColumn alignItems={"center"}>
           <Typography variant="heading4Bold" color={"text.primary"}>

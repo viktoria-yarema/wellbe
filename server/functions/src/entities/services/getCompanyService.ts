@@ -34,7 +34,33 @@ export const getCompanyService = async (req, res) => {
         return res.status(404).send("Active service not found");
       }
 
+      // const bookedAppointmentsQuerySnapshot = await companyRef
+      //   .collection("bookedAppointments")
+      //   .where("status", "!=", "FINISHED")
+      //   .get();
+
+      // const serviceAvailableTime = servicesQuerySnapshot.docs.filter(
+      //   (serviceDoc) => {
+      //     const serviceAvailableTimeMillis = new Date(
+      //       serviceDoc.data().availableTime.start,
+      //     ).getTime();
+
+      //     return !bookedAppointmentsQuerySnapshot.docs.some((bookedDoc) => {
+      //       const bookedTimeMillis = new Date(
+      //         bookedDoc.data().availableTime.start.seconds * 1000,
+      //       ).getTime();
+
+      //       return bookedTimeMillis === serviceAvailableTimeMillis;
+      //     });
+      //   },
+      // );
+
       const serviceSnapshot = servicesQuerySnapshot.docs[0];
+
+      // const availableTime = bookedAppointmentsQuerySnapshot.docs.length
+      //   ? serviceAvailableTime
+      //   : serviceSnapshot.data().availableTime;
+
       const serviceData = {
         id: serviceSnapshot.id,
         ...serviceSnapshot.data(),

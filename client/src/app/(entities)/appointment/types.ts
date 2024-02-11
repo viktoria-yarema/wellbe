@@ -5,6 +5,7 @@ export enum AppointmentStatus {
   Canceled = "CANCELED",
   Pending = "PENDING",
   RequestToChangeDate = "REQUEST_TO_CHANGE_DATE",
+  Finished = "FINISHED",
 }
 
 export type AvailableTime = {
@@ -15,9 +16,9 @@ export type AvailableTime = {
 export type AppointmentType = {
   id: string;
   status: AppointmentStatus;
-  serviceName: string;
+  name: string;
   staff: string;
-  appointmentDate: AvailableTime;
+  availableTime: AvailableTime;
   createdAt: Timestamp;
   price: string;
   companyId: string;

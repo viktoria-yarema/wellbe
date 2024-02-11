@@ -1,5 +1,6 @@
 "use server";
 
+import { revalidateTag } from "next/cache";
 import { Service } from "../types";
 
 export const getCompanyService = async (
@@ -7,7 +8,10 @@ export const getCompanyService = async (
   serviceId: string
 ): Promise<Service> => {
   const url = `${process.env.NEXT_PUBLIC_API_MAIN}getCompanyService?companyId=${companyId}&serviceId=${serviceId}`;
-  const response = await fetch(url, { cache: "force-cache" });
+  const response = await fetch(url, {
+    cache: "force-cache",
+    next: { tags: ["companyService"] },
+  });
 
   if (!response.ok) {
     // Log or return additional error information
@@ -20,3 +24,7 @@ export const getCompanyService = async (
 
   return response.json();
 };
+
+export default async function revalidateGetCompanyService() {
+  revalidateTag("companyService");
+}

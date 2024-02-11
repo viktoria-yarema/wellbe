@@ -12,8 +12,35 @@ import { createUserDocument } from "./triggers/createUserDocument";
 
 const admin = require("firebase-admin");
 admin.initializeApp();
-
 const functions = require("firebase-functions");
+// const express = require("express");
+// const cors = require("cors");
+
+// const corsOptions = {
+//   origin: function (origin, callback) {
+//     const whitelist = [
+//       "http://localhost:3000",
+//       "https://wellbe-book-dev.web.app",
+//     ];
+
+//     if (!origin || whitelist.includes(origin)) {
+//       callback(null, true);
+//     } else {
+//       callback(new Error("Not allowed by CORS"));
+//     }
+//   },
+// };
+
+// const app = express();
+// app.use(cors(corsOptions));
+// app.use(express.json());
+
+// export const mainApp = express();
+// mainApp.use("/api", app);
+
+// app.post("/createAppointment", createAppointment);
+
+// exports.api = functions.region("europe-west1").https.onRequest(mainApp);
 
 exports.getAppointments = functions
   .region("europe-west1")

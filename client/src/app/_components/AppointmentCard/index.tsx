@@ -24,10 +24,10 @@ import PriceChip from "./components/PriceChip";
 type AppointmentCardProps = {
   price: string;
   companyId: string;
-  serviceName: string;
+  name: string;
   status?: AppointmentStatus;
   staff: string;
-  appointmentDate?: AvailableTime | null;
+  availableTime?: AvailableTime | null;
   isVisiblePrice?: boolean;
   handleClick?: () => void;
 };
@@ -36,13 +36,13 @@ export default function AppointmentCard({
   price,
   staff,
   status,
-  appointmentDate,
-  serviceName,
+  availableTime,
+  name,
   companyId,
   isVisiblePrice,
   handleClick,
 }: AppointmentCardProps) {
-  const date = appointmentDate && extractDateInfo(appointmentDate);
+  const date = availableTime && extractDateInfo(availableTime);
   const { data: company } = useCompanyQuery(companyId);
 
   return (
@@ -54,7 +54,7 @@ export default function AppointmentCard({
           </Flex>
         )}
         <FlexColumn>
-          <Typography variant="bodyLMedium">{serviceName}</Typography>
+          <Typography variant="bodyLMedium">{name}</Typography>
           <Typography variant="bodyMRegular" color="secondary.light">
             Staff: {staff}
           </Typography>

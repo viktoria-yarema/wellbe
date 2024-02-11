@@ -1,5 +1,5 @@
 const cors = require("cors")({ origin: true });
-const admin = require("firebase-admin");
+import admin from "firebase-admin";
 
 export const getUserDetails = async (req, res) => {
   cors(req, res, async () => {

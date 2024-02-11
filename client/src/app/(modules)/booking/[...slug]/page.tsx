@@ -16,7 +16,7 @@ export default async function BookingPage({
   const [companyId, serviceId] = params.slug;
 
   const service = await getCompanyService(companyId, serviceId);
-
+  console.log(service.availableTime, "service");
   return (
     <FlexColumn rowGap={"3rem"} justifyContent={"space-between"}>
       <Header>

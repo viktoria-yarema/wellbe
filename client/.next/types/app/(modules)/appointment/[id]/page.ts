@@ -1,8 +1,8 @@
 // File: /Users/viktoriayarema/Desktop/personal/wellbe/client/src/app/(modules)/appointment/[id]/page.tsx
-import * as entry from '../../../../../../src/app/(modules)/appointment/[id]/page.js'
+import * as entry from '../../../../../../src/app/(modules)/appointment/[id]/page.jsx'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
-type TEntry = typeof import('../../../../../../src/app/(modules)/appointment/[id]/page.js')
+type TEntry = typeof import('../../../../../../src/app/(modules)/appointment/[id]/page.jsx')
 
 // Check that the entry is a valid entry
 checkFields<Diff<{

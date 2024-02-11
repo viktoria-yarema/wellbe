@@ -11,31 +11,34 @@ export enum AppointmentStatus {
 export const getAppointments = async (request, response) => {
   cors(request, response, async () => {
     try {
-      const limitParam = parseInt(request.query.limit) || 10;
-      const lastSeenId = request.query.lastSeenId; // ID of the last item seen
+      // const limitParam = parseInt(request.query.limit) || 10;
       const status = request.query.status;
+      const userId = request.query.userId;
 
       if (!status) {
         return response.status(400).send("Status parameter is required");
       }
 
-      let query = admin
-        .firestore()
-        .collection("appointments")
-        .where("status", "==", status)
-        // .orderBy("appointmentDate")
-        .limit(limitParam);
-
-      if (lastSeenId) {
-        const lastSeenDoc = await admin
-          .firestore()
-          .collection("appointments")
-          .doc(lastSeenId)
-          .get();
-        query = query.startAfter(lastSeenDoc);
+      if (!userId) {
+        return response.status(400).send("User ID is required");
       }
 
+      const db = admin.firestore();
+
+      const query = db
+        .collection("users")
+        .doc(userId)
+        .collection("appointments")
+        .where("status", "==", status);
+      // .orderBy("appointmentDate") // Assuming 'appointmentDate' is a sortable field you have.
+      // .limit(limitParam);
+
       const snapshot = await query.get();
+
+      if (snapshot.empty) {
+        return response.status(404).send("No matching appointments found");
+      }
+
       const appointments = snapshot.docs.map((doc) => ({
         id: doc.id,
         ...doc.data(),

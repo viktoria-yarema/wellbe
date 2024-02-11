@@ -1,4 +1,3 @@
-import { Timestamp } from "firebase/firestore";
 import { AvailableTime } from "./types";
 
 export const extractDateInfo = (date?: AvailableTime) => {
