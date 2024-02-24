@@ -1,5 +1,5 @@
 const cors = require("cors")({ origin: true });
-const admin = require("firebase-admin");
+import admin from "firebase-admin";
 
 export const getUserDetails = async (req, res) => {
   cors(req, res, async () => {
@@ -25,7 +25,7 @@ export const getUserDetails = async (req, res) => {
         return;
       }
 
-      res.status(200).json(userDoc.data());
+      res.status(200).json({ ...userDoc.data(), id: userId });
     } catch (error) {
       res.status(500).send(error.message);
     }

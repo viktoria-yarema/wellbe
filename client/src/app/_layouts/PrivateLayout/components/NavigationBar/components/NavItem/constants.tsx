@@ -8,9 +8,9 @@ import HomeIcon from "../../../../../../_assets/icons/HomeIcon";
 import ProfileIcon from "../../../../../../_assets/icons/ProfileIcon";
 import ScheduleIcon from "../../../../../../_assets/icons/ScheduleIcon";
 import SearchIcon from "../../../../../../_assets/icons/SearchIcon";
-import { NavItem } from "./types";
+import { NavItemType } from "./types";
 
-export const navMap: NavItem[] = [
+export const navMap: NavItemType[] = [
   {
     name: "Home",
     Icon: HomeIcon,

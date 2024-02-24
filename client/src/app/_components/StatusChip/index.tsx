@@ -20,7 +20,7 @@ export default function StatusChip({ status, size }: AppointmentCardProps) {
   return (
     <FlexCenter
       bgcolor={color}
-      p={"4px 16px"}
+      p={"8px 16px"}
       borderRadius={"18px"}
       width={chipWidth}
     >

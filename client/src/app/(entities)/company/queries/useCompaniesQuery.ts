@@ -4,6 +4,6 @@ import { getCompanies } from "../api/getCompanies";
 export const useCompaniesQuery = () => {
   return useQuery({
     queryKey: ["companies"],
-    queryFn: () => getCompanies(),
+    queryFn: async () => await getCompanies(),
   });
 };

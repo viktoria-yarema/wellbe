@@ -17,4 +17,9 @@ export const StyledNavBar = styled.nav`
   bottom: 1rem;
   right: 1rem;
   left: 1rem;
+
+  @media (min-width: 1024px) {
+    width: 500px;
+    margin: 0 auto;
+  }
 `;

@@ -1,10 +1,12 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const cors = require("cors")({ origin: true });
-const admin = require("firebase-admin");
+import admin from "firebase-admin";
 
 export const getAppointment = async (request, response) => {
   cors(request, response, async () => {
     try {
       const appointmentId = request.query.id;
+      const userId = request.query.userId;
 
       if (!appointmentId) {
         return request.status(400).send("Appointment ID is required");
@@ -12,8 +14,11 @@ export const getAppointment = async (request, response) => {
 
       const query = admin
         .firestore()
+        .collection("users")
+        .doc(userId)
         .collection("appointments")
         .doc(appointmentId);
+
       const doc = await query.get();
 
       if (!doc.exists) {

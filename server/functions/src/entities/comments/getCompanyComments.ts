@@ -20,7 +20,10 @@ export const getCompanyComments = async (req, res) => {
       // Fetch comments from the subcollection
       const commentsRef = companyRef.collection("comments");
       const commentsSnapshot = await commentsRef.get();
-      const comments = commentsSnapshot.docs.map((doc) => doc.data());
+      const comments = commentsSnapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      }));
 
       return res.status(200).json(comments);
     } catch (error) {

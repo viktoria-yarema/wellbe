@@ -9,6 +9,8 @@ export const StyledTopBar = styled.aside`
   border-bottom: ${BORDER};
   display: flex;
   justify-content: center;
+`;
 
-  margin-bottom: 1rem;
+export const StyledLogoTitle = styled.span`
+  font-size: 24px;
 `;

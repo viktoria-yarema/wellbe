@@ -1,11 +1,18 @@
 import { ButtonProps } from "@mui/material/Button";
 import { StyledPrimaryButton } from "./styled";
+import { CircularProgress } from "@mui/material";
+import { COLOR_BLACK } from "@/app/_theme/colors";
 
 type PrimaryButtonProps = {
   title: string;
+  loading?: boolean;
 } & ButtonProps;
 
-export default function PrimaryButton({ title, ...props }: PrimaryButtonProps) {
+export default function PrimaryButton({
+  title,
+  loading,
+  ...props
+}: PrimaryButtonProps) {
   return (
     <StyledPrimaryButton
       color="primary"
@@ -13,7 +20,7 @@ export default function PrimaryButton({ title, ...props }: PrimaryButtonProps) {
       size="large"
       {...props}
     >
-      {title}
+      {loading ? <CircularProgress size={18} color="secondary" /> : title}
     </StyledPrimaryButton>
   );
 }

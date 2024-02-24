@@ -8,6 +8,7 @@ export const StyledHeader = styled(Flex)`
   height: 38px;
   justify-content: space-between;
   z-index: 100;
+  align-items: center;
 `;
 
 export const StyledIconWrapper = styled(FlexCenter)`

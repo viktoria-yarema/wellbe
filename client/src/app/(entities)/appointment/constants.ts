@@ -8,4 +8,8 @@ export const appointmentStatusLabels = [
     value: AppointmentStatus.RequestToChangeDate,
     label: "Change Date",
   },
+  {
+    value: AppointmentStatus.Finished,
+    label: "Finished",
+  },
 ];

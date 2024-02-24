@@ -42,9 +42,9 @@ export default function CompanyCard({ company }: CompanyCardProps) {
           {opinion} reviews
         </Typography>
       </StyledRate>
-      <StyledFavorite>
+      {/* <StyledFavorite>
         <FavoriteButton />
-      </StyledFavorite>
+      </StyledFavorite> */}
     </StyledCompanyCard>
   );
 }

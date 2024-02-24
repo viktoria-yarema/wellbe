@@ -26,11 +26,19 @@ export default function Contacts({
             Phone
           </Typography>
           <FlexColumn rowGap={"0.5rem"}>
-            <Link component={"a"} href={phone} sx={{ fontSize: "14px" }}>
+            <Link
+              component={"a"}
+              href={`tel:${phone}`}
+              sx={{ fontSize: "14px" }}
+            >
               {phone}
             </Link>
             {extraPhones?.map((phone) => (
-              <Link component={"a"} href={phone} sx={{ fontSize: "14px" }}>
+              <Link
+                component={"a"}
+                href={`tel:${phone}`}
+                sx={{ fontSize: "14px" }}
+              >
                 {phone}
               </Link>
             ))}

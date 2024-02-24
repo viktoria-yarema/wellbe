@@ -4,8 +4,7 @@ import FlexColumn from "@/app/_components/Layout/FlexColumn";
 import getStorageDownloadLink from "@/app/_global/getStorageDownloadLink";
 import Typography from "@mui/material/Typography";
 import Image from "next/image";
-import { StyledCompanyHeading } from "./styled";
-import FavoriteIcon from "@/app/_assets/icons/FavoriteIcon";
+import { StyledCompanyHeading, StyledHeaderWrapper } from "./styled";
 import { StyledIconWrapper } from "@/app/_components/Header/styled";
 import FavoriteOutlinedIcon from "@/app/_assets/icons/FavoriteOutlinedIcon";
 
@@ -20,17 +19,19 @@ export default function Heading({ company }: HeadingProps) {
   const img = getStorageDownloadLink(company.pictureUrl);
 
   return (
-    <FlexColumn width={"100%"} position={"relative"}>
+    <FlexColumn rowGap={"1rem"}>
       <StyledCompanyHeading>
-        <Header>
-          <StyledIconWrapper>
+        <StyledHeaderWrapper>
+          <Header>
+            {/* <StyledIconWrapper> */}
             {/* <FavoriteIcon /> */}
-            <FavoriteOutlinedIcon />
-          </StyledIconWrapper>
-        </Header>
-        <Image src={img} alt={"company"} width={500} height={180} />
+            {/* <FavoriteOutlinedIcon /> */}
+            {/* </StyledIconWrapper> */}
+          </Header>
+        </StyledHeaderWrapper>
+        <Image src={img} alt={"company"} width={360} height={180} />
       </StyledCompanyHeading>
-      <FlexColumn mt={"180px"}>
+      <FlexColumn p={"0 1rem"}>
         <Typography variant="heading4Bold">{company.name}</Typography>
         <Typography variant="bodyMRegular" color={"text.secondary"}>
           {company.shortDescription}

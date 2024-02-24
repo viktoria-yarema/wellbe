@@ -13,6 +13,7 @@ export const COLOR_INFO = "#64D1FF";
 export const COLOR_WARN = "#FFE352";
 export const COLOR_GREY_LIGHT = "#F4F4F4";
 export const COLOR_GREY_MEDIUM = "#D9D9D9";
+export const COLOR_BLUE_GREY = "#AAC4E7";
 export const COLOR_CARD = alpha(COLOR_GREY_MEDIUM, 0.1);
 export const COLOR_TEXT_SECONDARY = alpha(COLOR_BLACK, 0.6);
 export const COLOR_SECONDARY_LIGHTEN = alpha(COLOR_SECONDARY, 0.8);

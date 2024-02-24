@@ -30,4 +30,12 @@ export const StyledPrimaryButton = styled(Button)`
       padding: 0.4rem 1.5rem;
       border-radius: 16px;
     `}
+
+  ${(props) =>
+    props.size === "medium" &&
+    css`
+      ${fonts.bodyMRegular};
+      min-width: auto;
+      padding: 0.75rem;
+    `}
 `;

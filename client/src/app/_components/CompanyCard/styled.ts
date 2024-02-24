@@ -4,13 +4,12 @@ import { COLOR_GREY_MEDIUM, GLASS_MORPHISM } from "@/app/_theme/colors";
 import Flex from "../Layout/Flex";
 import FlexColumn from "../Layout/FlexColumn";
 import FlexCenter from "../Layout/FlexCenter";
-import { COMPANY_CARD_HEIGH, COMPANY_CARD_WIDTH } from "./constants";
+import { COMPANY_CARD_HEIGH } from "./constants";
 
 export const StyledCompanyCard = styled(Flex)`
   border-radius: 12px;
   position: relative;
   background-color: ${COLOR_GREY_MEDIUM};
-  /* width: ${COMPANY_CARD_WIDTH}px; */
   height: ${COMPANY_CARD_HEIGH}px;
 
   img {
