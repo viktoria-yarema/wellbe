@@ -1,5 +1,4 @@
 import { type Portfolio } from "@/app/(entities)/company/types";
-import Flex from "@/app/_components/Layout/Flex";
 import FlexColumn from "@/app/_components/Layout/FlexColumn";
 import getStorageDownloadLink from "@/app/_global/getStorageDownloadLink";
 import Typography from "@mui/material/Typography";

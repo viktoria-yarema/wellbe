@@ -1,15 +1,14 @@
 import { CreateService } from "../../services/types";
-import { AppointmentType } from "../types";
 
 export const createAppointment = async (
-  userId?: string,
+  userId: string,
   newAppointment?: CreateService | null
 ): Promise<any> => {
   return await fetch(`${process.env.NEXT_PUBLIC_API_MAIN}createAppointment`, {
     method: "POST",
     cache: "force-cache",
     headers: {
-      "Content-Type": "application/json", // Add this line
+      "Content-Type": "application/json",
     },
     body: JSON.stringify({
       userId: userId,

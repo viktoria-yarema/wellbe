@@ -1,4 +1,3 @@
-import FlexColumn from "@/app/_components/Layout/FlexColumn";
 import Typography from "@mui/material/Typography";
 import Header from "@/app/_components/Header";
 import { getCompanyService } from "@/app/(entities)/services/api/getCompanyService";
@@ -7,6 +6,7 @@ import YourAppointment from "./sections/YourAppointment";
 import { Suspense } from "react";
 import BookCalendar from "./sections/BookCalendar";
 import Actions from "./sections/Actions";
+import FlexColumn from "@/app/_components/Layout/FlexColumn";
 
 export default async function BookingPage({
   params,
@@ -14,11 +14,10 @@ export default async function BookingPage({
   params: { slug: string[] };
 }) {
   const [companyId, serviceId] = params.slug;
-
   const service = await getCompanyService(companyId, serviceId);
-  console.log(service.availableTime, "service");
+
   return (
-    <FlexColumn rowGap={"3rem"} justifyContent={"space-between"}>
+    <FlexColumn rowGap={"3rem"} justifyContent={"space-between"} px={"1rem"}>
       <Header>
         <Typography variant="bodyXLMedium">Pick your date</Typography>
         <div />

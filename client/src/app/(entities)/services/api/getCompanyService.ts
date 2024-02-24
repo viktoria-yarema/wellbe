@@ -25,6 +25,6 @@ export const getCompanyService = async (
   return response.json();
 };
 
-export default async function revalidateGetCompanyService() {
+export async function revalidateGetCompanyService() {
   revalidateTag("companyService");
 }

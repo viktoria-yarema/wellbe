@@ -2,19 +2,15 @@
 
 import FlexColumn from "@/app/_components/Layout/FlexColumn";
 import CommentCard from "./components/CommentCard";
-import { getCompanyComments } from "@/app/(entities)/comments/api/getCompanyComments";
-import { useQuery } from "@tanstack/react-query";
 import CommentsSkeleton from "./loading";
+import { useCompanyComments } from "@/app/(entities)/comments/queries/useCompanyComments";
 
 type ReviewsProps = {
   companyId: string;
 };
 
 export default function Reviews({ companyId }: ReviewsProps) {
-  const { data: comments = [], isLoading } = useQuery({
-    queryKey: ["comments", { companyId }],
-    queryFn: async () => await getCompanyComments(companyId),
-  });
+  const { data: comments = [], isLoading } = useCompanyComments(companyId);
 
   if (isLoading) {
     return <CommentsSkeleton />;

@@ -2,27 +2,16 @@
 import { AppointmentStatus, AppointmentType } from "../types";
 
 export const getAppointments = async ({
-  status,
+  statuses,
   userId,
-}: // pageParam = null,
-{
-  status: AppointmentStatus;
+}: {
+  statuses?: AppointmentStatus[];
   userId: string;
 }): Promise<AppointmentType[]> => {
-  // const queryParams = new URLSearchParams({
-  //   limit: "10",
-  // });
-
-  // if (pageParam) {
-  //   queryParams.append("lastSeenId", pageParam);
-  // }
-
+  const statusQueryParam = statuses?.join(",");
   return await fetch(
-    `${process.env.NEXT_PUBLIC_API_MAIN}getAppointments?status=${status}&userId=${userId}`
+    `${process.env.NEXT_PUBLIC_API_MAIN}getAppointments?status=${statusQueryParam}&userId=${userId}`
   ).then((response) => {
-    if (!response.ok) {
-      throw new Error("Network response was not ok");
-    }
     return response.json();
   });
 };

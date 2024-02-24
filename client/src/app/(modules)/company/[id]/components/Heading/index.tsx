@@ -23,10 +23,10 @@ export default function Heading({ company }: HeadingProps) {
       <StyledCompanyHeading>
         <StyledHeaderWrapper>
           <Header>
-            <StyledIconWrapper>
-              {/* <FavoriteIcon /> */}
-              <FavoriteOutlinedIcon />
-            </StyledIconWrapper>
+            {/* <StyledIconWrapper> */}
+            {/* <FavoriteIcon /> */}
+            {/* <FavoriteOutlinedIcon /> */}
+            {/* </StyledIconWrapper> */}
           </Header>
         </StyledHeaderWrapper>
         <Image src={img} alt={"company"} width={360} height={180} />

@@ -2,10 +2,10 @@ import { Timestamp } from "firebase/firestore";
 
 export enum AppointmentStatus {
   Approved = "APPROVED",
-  Canceled = "CANCELED",
   Pending = "PENDING",
   RequestToChangeDate = "REQUEST_TO_CHANGE_DATE",
   Finished = "FINISHED",
+  Canceled = "CANCELED",
 }
 
 export type AvailableTime = {

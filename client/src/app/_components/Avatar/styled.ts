@@ -10,4 +10,10 @@ export const StyledAvatar = styled(FlexCenter)`
     border-radius: 50%;
     object-fit: cover;
   }
+
+  .MuiAvatar-root {
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+  }
 `;

@@ -1,3 +1,5 @@
+"use client";
+
 import AccordionServices from "@/app/_components/AccordionServices";
 import { useGroupServicesQuery } from "@/app/(entities)/services/queries/useGroupServicesQuery";
 import { useRouter } from "next/navigation";

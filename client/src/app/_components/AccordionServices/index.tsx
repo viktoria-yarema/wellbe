@@ -43,7 +43,7 @@ export default function AccordionServices({
     <FlexColumn rowGap={"1rem"}>
       {servicesGroups?.map((group, index) => (
         <StyledAccordion
-          expanded={expanded === group.id}
+          expanded={expanded === group.id || index === 0}
           onClick={() => handleChange(group.id)}
           key={group.id}
           elevation={0}
@@ -77,7 +77,7 @@ export default function AccordionServices({
                     {service.duration}
                   </Typography>
                   <Typography variant="bodyMSemiBold">
-                    ${Number(service.price).toFixed()}
+                    ${Number(service.price).toFixed(2)}
                   </Typography>
                   <PrimaryButton
                     title={"Book"}

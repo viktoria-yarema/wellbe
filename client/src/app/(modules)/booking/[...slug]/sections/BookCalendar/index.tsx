@@ -16,7 +16,6 @@ export default function BookCalendar({ bookingDates }: BookCalendarProps) {
     convertTimestampToDate(date.start)
   );
 
-  console.log(bookingDates, "bookingDates");
   if (!bookingDates) {
     return null;
   }

@@ -1,10 +1,16 @@
 "use client";
 import { useUserStore } from "@/app/(entities)/user/store/useUserStore";
+import LogOutIcon from "@/app/_assets/icons/LogOutIcon";
 import PrimaryButton from "@/app/_components/Buttons/PrimaryButton";
-import FlexColumn from "@/app/_components/Layout/FlexColumn";
+import { COLOR_SECONDARY } from "@/app/_theme/colors";
 import { auth } from "@/app/firebase";
-import Typography from "@mui/material/Typography";
 import { signOut } from "firebase/auth";
+import Avatar from "@/app/_components/Avatar";
+import Flex from "@/app/_components/Layout/Flex";
+import Contacts from "./components/Contacts";
+import { StyledProfileContainer } from "./styled";
+import Divider from "@/app/_components/Divider";
+import FlexColumn from "@/app/_components/Layout/FlexColumn";
 
 export default function ProfilePage() {
   const { user } = useUserStore();
@@ -13,10 +19,29 @@ export default function ProfilePage() {
     signOut(auth);
   };
 
+  if (!user) {
+    return null;
+  }
+
   return (
-    <FlexColumn rowGap={"1rem"}>
-      <Typography variant="heading4">Hello, {user?.email} </Typography>
-      <PrimaryButton title="Log out" onClick={onSignOut} />
-    </FlexColumn>
+    <StyledProfileContainer>
+      <FlexColumn rowGap={"2rem"}>
+        <Flex columnGap={"1rem"}>
+          <Avatar alt={user.name} size={"l"} name={user.name} />
+          <Contacts
+            name={user.name}
+            email={user.email}
+            phone={user.phoneNumber}
+          />
+        </Flex>
+        <Divider />
+      </FlexColumn>
+      <PrimaryButton
+        title="Log out"
+        onClick={onSignOut}
+        startIcon={<LogOutIcon color={COLOR_SECONDARY} />}
+        sx={{ justifyContent: "flex-start" }}
+      />
+    </StyledProfileContainer>
   );
 }

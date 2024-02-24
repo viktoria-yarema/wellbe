@@ -1,14 +1,17 @@
 import Image from "next/image";
 import { StyledAvatar } from "./styled";
 import getStorageDownloadLink from "@/app/_global/getStorageDownloadLink";
+import { stringAvatar } from "./utils";
+import Avatar from "@mui/material/Avatar";
 
 type AvatarProps = {
-  src: string;
+  name?: string;
+  src?: string;
   alt: string;
   size: "xs" | "s" | "m" | "l";
 };
 
-export default function Avatar({ src, alt, size }: AvatarProps) {
+export default function AvatarComponent({ src, alt, size, name }: AvatarProps) {
   const sizeMap = {
     xs: 18,
     s: 28,
@@ -21,13 +24,17 @@ export default function Avatar({ src, alt, size }: AvatarProps) {
 
   return (
     <StyledAvatar width={sizeMap[size]} height={sizeMap[size]}>
-      <Image
-        src={img}
-        alt={alt}
-        width={sizeMap[size]}
-        height={sizeMap[size]}
-        layout="responsive"
-      />
+      {name ? (
+        <Avatar alt={`${name}`} {...stringAvatar(name)} />
+      ) : (
+        <Image
+          src={img}
+          alt={alt}
+          width={sizeMap[size]}
+          height={sizeMap[size]}
+          layout="responsive"
+        />
+      )}
     </StyledAvatar>
   );
 }

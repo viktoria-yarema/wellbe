@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Flex from "../Layout/Flex";
 import { StyledTab, StyledTabs } from "./styled";

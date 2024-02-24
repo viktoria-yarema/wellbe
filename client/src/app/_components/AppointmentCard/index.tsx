@@ -82,10 +82,10 @@ export default function AppointmentCard({
         )}
         {date ? (
           <>
-            <Typography variant="bodyMRegular" color="text.primary">
+            <Typography variant="bodyMSemiBold" color="text.primary">
               {date.monthAndWeek}
             </Typography>
-            <Typography variant="bodyMSemiBold" color="text.primary">
+            <Typography variant="bodyLSemiBold" color="text.primary">
               {date.day}
             </Typography>
             <Typography variant="bodyMRegular" color="text.secondary">

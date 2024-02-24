@@ -1,24 +1,15 @@
-import { getCompanies } from "@/app/(entities)/company/api/getCompanies";
-import { Company } from "@/app/(entities)/company/types";
-import CompanyCard from "@/app/_components/CompanyCard";
-import { Box } from "@mui/material";
+import { AppointmentStatus } from "@/app/(entities)/appointment/types";
+import AppointmentsList from "@/app/_components/AppointmentsList";
+import PageContainer from "@/app/_components/PageContainer";
+import Typography from "@mui/material/Typography";
 
-export default async function HomePage() {
-  const companies = await getCompanies();
-
+export default function HomePage() {
   return (
-    <Box
-      flexWrap={"wrap"}
-      gap="1rem"
-      sx={{
-        display: "grid",
-        gridTemplateColumns: "auto auto",
-        width: "100%",
-      }}
-    >
-      {companies?.map((company: Company) => (
-        <CompanyCard company={company} key={company.id} />
-      ))}
-    </Box>
+    <PageContainer>
+      <Typography variant="heading4Bold">Recently booked</Typography>
+      <AppointmentsList
+        status={[AppointmentStatus.Approved, AppointmentStatus.Pending]}
+      />
+    </PageContainer>
   );
 }

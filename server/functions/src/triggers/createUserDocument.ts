@@ -1,8 +1,6 @@
 import admin from "firebase-admin";
 import { type User as FirebaseUser } from "firebase/auth";
 
-// admin.initializeApp();
-
 type UserFavoriteCompanyId = string;
 type UserAppointmentsId = string;
 

@@ -1,6 +1,8 @@
+import { cancelAppointment } from "./entities/appointments/cancelAppointment";
 import { createAppointment } from "./entities/appointments/createAppointment";
 import { getAppointment } from "./entities/appointments/getAppointment";
 import { getAppointments } from "./entities/appointments/getAppointments";
+import { updateAppointment } from "./entities/appointments/updateAppointment";
 import { getCompanyComments } from "./entities/comments/getCompanyComments";
 import { getCompanies } from "./entities/company/getCompanies";
 import { getCompany } from "./entities/company/getCompany";
@@ -86,3 +88,11 @@ exports.getGroupsServices = functions
 exports.createAppointment = functions
   .region("europe-west1")
   .https.onRequest(createAppointment);
+
+exports.updateAppointment = functions
+  .region("europe-west1")
+  .https.onRequest(updateAppointment);
+
+exports.cancelAppointment = functions
+  .region("europe-west1")
+  .https.onRequest(cancelAppointment);
