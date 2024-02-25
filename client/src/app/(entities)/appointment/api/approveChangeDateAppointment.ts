@@ -1,24 +1,19 @@
-import { AppointmentType } from "../types";
-
-export const updateAppointment = async ({
+export const approveChangeDateAppointment = async ({
   appointmentId,
-  updatedAppointment,
   userId,
 }: {
   appointmentId: string;
-  updatedAppointment: AppointmentType | null;
-  userId?: string;
+  userId: string;
 }): Promise<any> => {
-  return await fetch(`${process.env.NEXT_PUBLIC_API_MAIN}updateAppointment`, {
+  return await fetch(`${process.env.NEXT_PUBLIC_API_MAIN}approveChangeDateAppointment`, {
     method: "PUT",
     cache: "force-cache",
     headers: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      userId: userId,
+      userId,
       appointmentId,
-      updatedAppointment,
     }),
   }).then((response) => {
     if (!response.ok) {

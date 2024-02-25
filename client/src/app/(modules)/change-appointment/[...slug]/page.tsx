@@ -7,19 +7,23 @@ import { Suspense } from "react";
 import BookCalendar from "./sections/BookCalendar";
 import Actions from "./sections/Actions";
 import FlexColumn from "@/app/_components/Layout/FlexColumn";
+import { getAppointment } from "@/app/(entities)/appointment/api/getAppointment";
 
-export default async function BookingPage({
+export default async function ChangeAppointmentPage({
   params,
 }: {
   params: { slug: string[] };
 }) {
-  const [companyId, serviceId] = params.slug;
+  const [userId, companyId, serviceId, appointmentId] = params.slug;
   const service = await getCompanyService(companyId, serviceId);
-
+  const appointment = await getAppointment(appointmentId, userId);
+  // const company = await getCompanyId(appointment.companyId);
+  console.log(appointment, "appointment");
+  console.log(service, "service");
   return (
     <FlexColumn rowGap={"3rem"} justifyContent={"space-between"} px={"1rem"}>
       <Header>
-        <Typography variant="bodyXLMedium">Pick your date</Typography>
+        <Typography variant="bodyXLMedium">Change your date</Typography>
         <div />
       </Header>
       <BookCalendar bookingDates={service.availableTime} />
@@ -27,15 +31,9 @@ export default async function BookingPage({
         <Timestamps serviceAvailableTime={service.availableTime} />
       </Suspense>
       <Suspense fallback={"Loading Service..."}>
-        <YourAppointment
-          companyId={companyId}
-          serviceName={service.name}
-          price={service.price}
-          staff={service.staff[0]}
-          serviceId={serviceId}
-        />
+        <YourAppointment appointment={appointment} />
       </Suspense>
-      <Actions />
+      <Actions appointmentId={appointmentId} />
     </FlexColumn>
   );
 }

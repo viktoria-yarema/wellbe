@@ -53,6 +53,8 @@ export default async function AppointmentId({
         status={appointment.status}
         userId={userId}
         appointmentId={id}
+        serviceId={appointment.serviceId}
+        companyId={appointment.companyId}
       />
     </FlexColumn>
   );

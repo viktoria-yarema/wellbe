@@ -1,3 +1,4 @@
+import { approveChangeDateAppointment } from "./entities/appointments/approveChangeDateAppointment";
 import { cancelAppointment } from "./entities/appointments/cancelAppointment";
 import { createAppointment } from "./entities/appointments/createAppointment";
 import { getAppointment } from "./entities/appointments/getAppointment";
@@ -96,3 +97,7 @@ exports.updateAppointment = functions
 exports.cancelAppointment = functions
   .region("europe-west1")
   .https.onRequest(cancelAppointment);
+
+exports.approveChangeDateAppointment = functions
+  .region("europe-west1")
+  .https.onRequest(approveChangeDateAppointment);

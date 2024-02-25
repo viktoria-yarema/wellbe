@@ -4,9 +4,9 @@ import { AppointmentStatus } from "./getAppointments";
 const cors = require("cors")({ origin: true });
 const admin = require("firebase-admin");
 
-export const updateAppointment = async (req, res) =>
+export const approveChangeDateAppointment = async (req, res) =>
   cors(req, res, async () => {
-    const { appointmentId, userId, updatedAppointment } = req.body;
+    const { appointmentId, userId } = req.body;
 
     // Validating request
     if (!appointmentId) {
@@ -24,18 +24,12 @@ export const updateAppointment = async (req, res) =>
       await userRef
         .collection("appointments")
         .doc(appointmentId)
-        .set(
-          {
-            ...updatedAppointment,
-            status: AppointmentStatus.Pending,
-            updatedAt: new Date(),
-          },
-          { merge: true },
-        );
+        .set({ status: AppointmentStatus.Approved }, { merge: true });
 
-      return res.status(200).send("Appointment was changed successfully");
+      return res.status(200).send("New Appointment data was excepted successfully");
     } catch (error) {
       console.error("Error updating appointment status:", error);
       return res.status(500).send("Internal Server Error");
     }
   });
+

@@ -10,7 +10,8 @@ type NavItemProps = NavItemType;
 export default function NavItem({ name, href, Icon }: NavItemProps) {
   const pathname = usePathname();
 
-  const isActiveLink = pathname === href;
+  const isActiveLink =
+    pathname.replace(/\?.*$/, "") === href.replace(/\?.*$/, "");
 
   const color = isActiveLink ? COLOR_PRIMARY : COLOR_GREY_MEDIUM;
 

@@ -22,4 +22,5 @@ export type AppointmentType = {
   createdAt: Timestamp;
   price: string;
   companyId: string;
+  serviceId: string;
 };
