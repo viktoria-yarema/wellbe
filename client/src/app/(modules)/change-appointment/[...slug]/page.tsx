@@ -17,9 +17,7 @@ export default async function ChangeAppointmentPage({
   const [userId, companyId, serviceId, appointmentId] = params.slug;
   const service = await getCompanyService(companyId, serviceId);
   const appointment = await getAppointment(appointmentId, userId);
-  // const company = await getCompanyId(appointment.companyId);
-  console.log(appointment, "appointment");
-  console.log(service, "service");
+
   return (
     <FlexColumn rowGap={"3rem"} justifyContent={"space-between"} px={"1rem"}>
       <Header>
