@@ -3,13 +3,12 @@
   "scripts": {
     "lint": "eslint --ext .js,.ts .",
     "build-next": "cd client && next build",
-    "predeploy": "cp -r client/.next server/functions/.next",
     "build": "tsc ",
     "build:watch": "tsc --watch",
     "serve": "npm run build && firebase emulators:start --only functions",
     "shell": "npm run build && firebase functions:shell",
     "start": "npm run shell",
-    "deploy": "predeployfirebase deploy --only functions",
+    "deploy": "firebase deploy --only functions",
     "logs": "firebase functions:log"
   },
   "engines": {

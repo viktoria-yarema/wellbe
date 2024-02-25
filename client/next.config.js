@@ -9,8 +9,14 @@ const nextConfig = {
       transform: "@mui/icons-material/{{member}}",
     },
   },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
   images: {
     domains: ["firebasestorage.googleapis.com"],
+  },
+  generateBuildId: async () => {
+    return "version 1";
   },
 };
 

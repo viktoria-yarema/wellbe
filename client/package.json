@@ -8,13 +8,15 @@
   },
   "scripts": {
     "dev": "next dev --turbo",
-    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "export": "next export",
     "deploy": "next build && firebase deploy --only hosting "
   },
   "dependencies": {
+    "@babel/cli": "^7.23.9",
+    "@babel/core": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.15.2",
@@ -22,6 +24,7 @@
     "@mui/x-date-pickers": "^6.19.0",
     "@tanstack/react-query": "^5.15.3",
     "@tanstack/react-query-devtools": "^5.15.3",
+    "cross-env": "^7.0.3",
     "date-fns": "^3.2.0",
     "dayjs": "^1.11.10",
     "firebase": "^10.8.0",
@@ -31,8 +34,10 @@
     "formik": "^2.4.5",
     "login": "^0.8.0",
     "million": "^2.6.4",
+    "next-firebase": "^1.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "rimraf": "^5.0.5",
     "zustand": "^4.4.7"
   },
   "devDependencies": {

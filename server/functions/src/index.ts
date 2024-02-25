@@ -13,24 +13,31 @@ import { getGroupsServices } from "./entities/services/getGroupsServices";
 import { getUserDetails } from "./entities/user/getUserDetails";
 import { createUserDocument } from "./triggers/createUserDocument";
 
+const cors = require("cors")({ origin: true });
+
 const admin = require("firebase-admin");
 admin.initializeApp();
 const functions = require("firebase-functions");
 
 const next = require("next");
 
-// Set up SSR
-const dev = process.env.NODE_ENV !== "production";
 const app = next({
-  dev,
   // Specify the path to your Next.js project
-  conf: { distDir: "../client/.next" },
+  conf: { distDir: "dist/client" },
 });
+
 const handle = app.getRequestHandler();
 
-exports.nextServer = functions.https.onRequest((req, res) => {
-  return app.prepare().then(() => handle(req, res));
-});
+exports.nextServer = functions
+  .runWith({
+    memory: "4GB",
+  })
+  .region("europe-west1")
+  .https.onRequest((req, res) => {
+    return cors(req, res, () => {
+      return app.prepare().then(() => handle(req, res));
+    });
+  });
 
 exports.getAppointments = functions
   .region("europe-west1")
