@@ -16,34 +16,21 @@ import { createUserDocument } from "./triggers/createUserDocument";
 const admin = require("firebase-admin");
 admin.initializeApp();
 const functions = require("firebase-functions");
-// const express = require("express");
-// const cors = require("cors");
 
-// const corsOptions = {
-//   origin: function (origin, callback) {
-//     const whitelist = [
-//       "http://localhost:3000",
-//       "https://wellbe-book-dev.web.app",
-//     ];
+const next = require("next");
 
-//     if (!origin || whitelist.includes(origin)) {
-//       callback(null, true);
-//     } else {
-//       callback(new Error("Not allowed by CORS"));
-//     }
-//   },
-// };
+// Set up SSR
+const dev = process.env.NODE_ENV !== "production";
+const app = next({
+  dev,
+  // Specify the path to your Next.js project
+  conf: { distDir: "../client/.next" },
+});
+const handle = app.getRequestHandler();
 
-// const app = express();
-// app.use(cors(corsOptions));
-// app.use(express.json());
-
-// export const mainApp = express();
-// mainApp.use("/api", app);
-
-// app.post("/createAppointment", createAppointment);
-
-// exports.api = functions.region("europe-west1").https.onRequest(mainApp);
+exports.nextServer = functions.https.onRequest((req, res) => {
+  return app.prepare().then(() => handle(req, res));
+});
 
 exports.getAppointments = functions
   .region("europe-west1")

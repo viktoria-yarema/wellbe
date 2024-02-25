@@ -7,6 +7,7 @@ import Image from "next/image";
 import { StyledCompanyHeading, StyledHeaderWrapper } from "./styled";
 import { StyledIconWrapper } from "@/app/_components/Header/styled";
 import FavoriteOutlinedIcon from "@/app/_assets/icons/FavoriteOutlinedIcon";
+import FavoriteIcon from "@/app/_assets/icons/FavoriteIcon";
 
 type HeadingProps = {
   company: Pick<
@@ -23,10 +24,10 @@ export default function Heading({ company }: HeadingProps) {
       <StyledCompanyHeading>
         <StyledHeaderWrapper>
           <Header>
-            {/* <StyledIconWrapper> */}
-            {/* <FavoriteIcon /> */}
-            {/* <FavoriteOutlinedIcon /> */}
-            {/* </StyledIconWrapper> */}
+            <StyledIconWrapper>
+              <FavoriteIcon />
+              <FavoriteOutlinedIcon />
+            </StyledIconWrapper>
           </Header>
         </StyledHeaderWrapper>
         <Image src={img} alt={"company"} width={360} height={180} />

@@ -5,4 +5,5 @@ export const statusColors = {
   [AppointmentStatus.Pending]: "warning.main",
   [AppointmentStatus.Canceled]: "error.main",
   [AppointmentStatus.RequestToChangeDate]: "info.main",
+  [AppointmentStatus.Finished]: "secondary.main",
 };

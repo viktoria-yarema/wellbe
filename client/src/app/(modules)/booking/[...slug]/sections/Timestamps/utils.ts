@@ -2,12 +2,11 @@
 
 import { AvailableTime } from "@/app/(entities)/appointment/types";
 import { format, isBefore, isSameDay } from "date-fns";
-import { Timestamp } from "firebase-admin/firestore";
 
-export const convertTimestampToDate = (timeStamp: Timestamp) =>
+export const convertTimestampToDate = (timeStamp: CustomTimestamp) =>
   new Date(timeStamp?._seconds * 1000);
 
-export const formatAvailableTime = (timeStamp: Timestamp) => {
+export const formatAvailableTime = (timeStamp: CustomTimestamp) => {
   const date = convertTimestampToDate(timeStamp);
   const formattedTime = format(date, "h:mma");
 

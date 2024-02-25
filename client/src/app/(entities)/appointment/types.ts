@@ -9,8 +9,8 @@ export enum AppointmentStatus {
 }
 
 export type AvailableTime = {
-  start: Timestamp;
-  end: Timestamp;
+  start: CustomTimestamp;
+  end: CustomTimestamp;
 };
 
 export type AppointmentType = {

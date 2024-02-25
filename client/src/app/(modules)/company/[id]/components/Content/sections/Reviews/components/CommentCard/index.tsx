@@ -14,6 +14,7 @@ export default function CommentCard({ comment }: CommentProps) {
   const { reviewerId, reviewerName, reviewerImage, description, date, rate } =
     comment;
 
+  // @ts-ignore
   const postedDate = new Date(date._seconds * 1000);
   const normalizedTate = format(postedDate, "MMMM dd, yyyy");
 

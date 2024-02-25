@@ -4,8 +4,9 @@ export const extractDateInfo = (date?: AvailableTime) => {
   if (!date?.start || !date?.end) {
     return;
   }
-
+  // @ts-ignore
   const firebaseTimestampToDate = new Date(date.start._seconds * 1000);
+  // @ts-ignore
   const firebaseTimestampEndToDate = new Date(date.end._seconds * 1000);
 
   const options: Intl.DateTimeFormatOptions = {

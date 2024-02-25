@@ -31,9 +31,11 @@ export default function Timestamps({ serviceAvailableTime }: TimestampsProps) {
         {isAvailableTime &&
           availableTimeByDate.map((time) => (
             <StyledTimeChip
+              // @ts-ignore
               key={time.start._seconds}
               onClick={() => setSelectedTime(time)}
               className={
+                // @ts-ignore
                 selectedTime?.start._seconds === time.start._seconds
                   ? "active"
                   : ""

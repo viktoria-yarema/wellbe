@@ -15,7 +15,7 @@ const nextConfig = {
 };
 
 const millionConfig = {
-  auto: true, // if you're using RSC: auto: { rsc: true },
+  auto: true,
 };
 
 module.exports = million.next(nextConfig, millionConfig);
