@@ -11,5 +11,19 @@
     "frameworksBackend": {
       "region": "europe-west1"
     }
+  },
+  "functions": {
+    "source": "server/functions",
+    "runtime": "nodejs18",
+    "ignore": [
+      "**/src/**",
+      "**/.vscode/**",
+      ".firebase/**",
+      ".firebaserc",
+      "firebase.json",
+      "**/node_modules/**",
+      "**/public/**",
+      "**/.next/cache/**"
+    ]
   }
 }

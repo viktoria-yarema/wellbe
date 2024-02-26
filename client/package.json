@@ -1,7 +1,7 @@
 {
   "name": "wellbe",
   "version": "0.1.0",
-  "main": "server.js",
+  "main": "../server/functions/src/index.ts",
   "private": true,
   "browser": {
     "child_process": false
@@ -11,7 +11,7 @@
     "start": "next start",
     "lint": "next lint",
     "export": "next export",
-    "deploy": "next build && firebase deploy --only hosting "
+    "deploy": "firebase deploy --only functions:nextjsServer,hosting"
   },
   "dependencies": {
     "@babel/cli": "^7.23.9",
@@ -28,17 +28,17 @@
     "date-fns": "^3.2.0",
     "dayjs": "^1.11.10",
     "firebase": "^10.8.0",
-    "firebase-admin": "^11.0.0",
-    "firebase-functions": "^4.5.0",
+    "firebase-admin": "^12.0.0",
+    "firebase-functions": "^4.7.0",
     "firebase-tools": "^13.0.2",
     "formik": "^2.4.5",
     "login": "^0.8.0",
     "million": "^2.6.4",
+    "next": "^14.0.4",
     "next-firebase": "^1.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rimraf": "^5.0.5",
-    "next": "^14.0.4",
     "zustand": "^4.4.7"
   },
   "devDependencies": {

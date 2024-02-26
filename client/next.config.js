@@ -16,7 +16,7 @@ const nextConfig = {
     domains: ["firebasestorage.googleapis.com"],
   },
   generateBuildId: async () => {
-    return "version 1";
+    return "version 5";
   },
 };
 

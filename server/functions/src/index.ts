@@ -23,18 +23,19 @@ const next = require("next");
 
 const app = next({
   // Specify the path to your Next.js project
-  conf: { distDir: "dist/client" },
+  conf: { distDir: "../../../client/.next" },
 });
 
 const handle = app.getRequestHandler();
 
 exports.nextServer = functions
   .runWith({
-    memory: "4GB",
+    memory: "8GB",
   })
   .region("europe-west1")
   .https.onRequest((req, res) => {
     return cors(req, res, () => {
+      functions.logger.log("File: " + req.originalUrl);
       return app.prepare().then(() => handle(req, res));
     });
   });
