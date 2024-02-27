@@ -14,7 +14,7 @@ jobs:
       - name: Install Dependencies
         run: yarn install
       - name: Build
-        run:  yarn & yarn run build-all"
+        run:  yarn run build-all"
       - name: Deploy
         run:  yarn run deploy
       - uses: FirebaseExtended/action-hosting-deploy@v0
