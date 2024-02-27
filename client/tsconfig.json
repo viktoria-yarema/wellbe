@@ -2,7 +2,11 @@
   "compilerOptions": {
     "moduleResolution": "node",
     "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -19,7 +23,9 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": [
+        "./src/*"
+      ]
     }
   },
   "include": [
@@ -28,7 +34,15 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "server.js",
-    "function.ts"
+    "function.ts",
+    "../functions/next/types/**/*.ts",
+    "../server/function/src/next/types/**/*.ts",
+    "../server/function/src/nextServer/types/**/*.ts",
+    "../server/functions/nextServer/types/**/*.ts",
+    "../next/types/**/*.ts",
+    "../server/functions/next/types/**/*.ts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ]
 }

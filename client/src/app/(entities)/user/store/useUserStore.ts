@@ -6,6 +6,7 @@ export type UserStore = {
   user: UserDetails | null;
   setUser: (user: UserDetails | null) => void;
   setFirebaseUser: (user: ServerUser | null | false) => void;
+  cleanUser: () => void;
 };
 
 export const useUserStore = create<UserStore>((set) => ({
@@ -18,5 +19,10 @@ export const useUserStore = create<UserStore>((set) => ({
   setFirebaseUser: (firebaseUser: ServerUser | null | false) =>
     set({
       firebaseUser,
+    }),
+  cleanUser: () =>
+    set({
+      firebaseUser: null,
+      user: null,
     }),
 }));

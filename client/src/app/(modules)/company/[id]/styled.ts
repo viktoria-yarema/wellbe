@@ -18,6 +18,6 @@ export const StyledHeadingWrapper = styled(FlexColumn)`
 `;
 
 export const StyledContentWrapper = styled.div`
-  margin-top: 320px;
+  margin-top: 290px;
   z-index: 110;
 `;

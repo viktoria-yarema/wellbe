@@ -14,7 +14,7 @@ import LoadingPage from "../_components/LoadingPage";
 const LazyReactQueryDevtools = lazy(() =>
   import("@tanstack/react-query-devtools").then((module) => ({
     default: module.ReactQueryDevtools,
-  }))
+  })),
 );
 
 type MainLayoutProps = {
@@ -22,7 +22,7 @@ type MainLayoutProps = {
 };
 
 export default function MainLayout({ children }: MainLayoutProps) {
-  const { firebaseUser } = useUserStore();
+  const { user, firebaseUser } = useUserStore();
   // TODO: Refactor it
   const pathname = usePathname();
   const isNestedPage = pathname.split("/").length > 2;
@@ -30,10 +30,8 @@ export default function MainLayout({ children }: MainLayoutProps) {
   return (
     <QueryClientProvider client={queryClient}>
       {<GlobalSideEffects />}
-      {firebaseUser && !isNestedPage && (
-        <PrivateLayout>{children}</PrivateLayout>
-      )}
-      {firebaseUser && isNestedPage && (
+      {user && !isNestedPage && <PrivateLayout>{children}</PrivateLayout>}
+      {user && isNestedPage && (
         <PageDetailsLayout>{children}</PageDetailsLayout>
       )}
       {firebaseUser === null && <AuthLayout />}

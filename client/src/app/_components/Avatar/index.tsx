@@ -20,6 +20,8 @@ export default function AvatarComponent({ src, alt, size, name }: AvatarProps) {
     xl: 92,
   };
 
+  if (!name || !src) null;
+
   const img = getStorageDownloadLink(src);
 
   return (

@@ -18,6 +18,7 @@ const nextConfig = {
   generateBuildId: async () => {
     return "version 5";
   },
+  // distDir: "../server/functions/nextServer",
 };
 
 const millionConfig = {

@@ -13,17 +13,16 @@ import { getGroupsServices } from "./entities/services/getGroupsServices";
 import { getUserDetails } from "./entities/user/getUserDetails";
 import { createUserDocument } from "./triggers/createUserDocument";
 
-const cors = require("cors")({ origin: true });
-
 const admin = require("firebase-admin");
 admin.initializeApp();
 const functions = require("firebase-functions");
 
 const next = require("next");
+const cors = require("cors")({ origin: true });
 
 const app = next({
   // Specify the path to your Next.js project
-  conf: { distDir: "../../../client/.next" },
+  conf: { distDir: "../nextServer" },
 });
 
 const handle = app.getRequestHandler();

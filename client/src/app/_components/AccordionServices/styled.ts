@@ -11,6 +11,10 @@ export const StyledAccordion = styled(Accordion)`
     background-color: ${COLOR_CARD};
     border-radius: 12px;
     padding: 0 1rem;
+
+    &::before {
+      display: none;
+    }
   }
 `;
 
