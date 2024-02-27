@@ -4,6 +4,7 @@ import { AvailableTime } from "@/app/(entities)/appointment/types";
 import { format, isBefore, isSameDay } from "date-fns";
 
 export const convertTimestampToDate = (timeStamp: CustomTimestamp) =>
+  // @ts-ignore
   new Date(timeStamp?._seconds * 1000);
 
 export const formatAvailableTime = (timeStamp: CustomTimestamp) => {

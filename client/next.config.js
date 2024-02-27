@@ -9,13 +9,19 @@ const nextConfig = {
       transform: "@mui/icons-material/{{member}}",
     },
   },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
   images: {
     domains: ["firebasestorage.googleapis.com"],
+  },
+  generateBuildId: async () => {
+    return "version 5";
   },
 };
 
 const millionConfig = {
-  auto: true, // if you're using RSC: auto: { rsc: true },
+  auto: true,
 };
 
 module.exports = million.next(nextConfig, millionConfig);

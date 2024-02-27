@@ -5,7 +5,7 @@ import FlexColumn from "@/app/_components/Layout/FlexColumn";
 import Typography from "@mui/material/Typography";
 import { filterAvailableTimeByDate, formatAvailableTime } from "./utils";
 import { StyledTimeChip } from "./styled";
-import { useBookingStore } from "../../store/useBookingStore";
+import { useChangeAppointmentStore } from "../../store/useChangeAppointmentStore";
 import { AvailableTime } from "@/app/(entities)/appointment/types";
 import Title from "../../components/Title";
 
@@ -14,7 +14,8 @@ type TimestampsProps = {
 };
 
 export default function Timestamps({ serviceAvailableTime }: TimestampsProps) {
-  const { setSelectedTime, selectedTime, selectedDate } = useBookingStore();
+  const { setSelectedTime, selectedTime, selectedDate } =
+    useChangeAppointmentStore();
 
   const availableTimeByDate = filterAvailableTimeByDate(
     selectedDate,

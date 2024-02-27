@@ -9,8 +9,8 @@ export enum AppointmentStatus {
 }
 
 export type AvailableTime = {
-  start: Timestamp;
-  end: Timestamp;
+  start: CustomTimestamp;
+  end: CustomTimestamp;
 };
 
 export type AppointmentType = {
@@ -22,4 +22,5 @@ export type AppointmentType = {
   createdAt: Timestamp;
   price: string;
   companyId: string;
+  serviceId: string;
 };

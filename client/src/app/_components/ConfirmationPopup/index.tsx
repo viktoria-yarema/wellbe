@@ -16,6 +16,8 @@ type ConfirmationPopupProps = {
   onClose: () => void;
   onApply: () => void;
   isLoading?: boolean;
+  secondaryButtonTitle?: string;
+  primaryButtonTitle?: string;
 };
 
 export const ConfirmationPopup: FC<ConfirmationPopupProps> = ({
@@ -25,6 +27,8 @@ export const ConfirmationPopup: FC<ConfirmationPopupProps> = ({
   onClose,
   onApply,
   isLoading,
+  primaryButtonTitle,
+  secondaryButtonTitle,
 }) => {
   return (
     <StyledPopup open={open} onClose={onClose}>
@@ -33,9 +37,13 @@ export const ConfirmationPopup: FC<ConfirmationPopupProps> = ({
         <DialogContentText>{description}</DialogContentText>
       </DialogContent>
       <DialogActions>
-        <SecondaryButton title="Cancel" onClick={onClose} fullWidth />
+        <SecondaryButton
+          title={secondaryButtonTitle ?? "Cancel"}
+          onClick={onClose}
+          fullWidth
+        />
         <PrimaryButton
-          title="Apply"
+          title={primaryButtonTitle ?? "Apply"}
           onClick={onApply}
           fullWidth
           loading={isLoading}

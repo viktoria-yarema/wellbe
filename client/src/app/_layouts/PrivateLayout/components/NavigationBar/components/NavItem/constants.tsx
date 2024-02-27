@@ -9,6 +9,7 @@ import ProfileIcon from "../../../../../../_assets/icons/ProfileIcon";
 import ScheduleIcon from "../../../../../../_assets/icons/ScheduleIcon";
 import SearchIcon from "../../../../../../_assets/icons/SearchIcon";
 import { NavItemType } from "./types";
+import { AppointmentStatus } from "@/app/(entities)/appointment/types";
 
 export const navMap: NavItemType[] = [
   {
@@ -24,7 +25,7 @@ export const navMap: NavItemType[] = [
   {
     name: "Schedule",
     Icon: ScheduleIcon,
-    href: SCHEDULE_PAGE_PATH,
+    href: `${SCHEDULE_PAGE_PATH}?status=${AppointmentStatus.Approved}`,
   },
   {
     name: "Profile",

@@ -1,3 +1,4 @@
+import { approveChangeDateAppointment } from "./entities/appointments/approveChangeDateAppointment";
 import { cancelAppointment } from "./entities/appointments/cancelAppointment";
 import { createAppointment } from "./entities/appointments/createAppointment";
 import { getAppointment } from "./entities/appointments/getAppointment";
@@ -12,37 +13,32 @@ import { getGroupsServices } from "./entities/services/getGroupsServices";
 import { getUserDetails } from "./entities/user/getUserDetails";
 import { createUserDocument } from "./triggers/createUserDocument";
 
+const cors = require("cors")({ origin: true });
+
 const admin = require("firebase-admin");
 admin.initializeApp();
 const functions = require("firebase-functions");
-// const express = require("express");
-// const cors = require("cors");
 
-// const corsOptions = {
-//   origin: function (origin, callback) {
-//     const whitelist = [
-//       "http://localhost:3000",
-//       "https://wellbe-book-dev.web.app",
-//     ];
+const next = require("next");
 
-//     if (!origin || whitelist.includes(origin)) {
-//       callback(null, true);
-//     } else {
-//       callback(new Error("Not allowed by CORS"));
-//     }
-//   },
-// };
+const app = next({
+  // Specify the path to your Next.js project
+  conf: { distDir: "../../../client/.next" },
+});
 
-// const app = express();
-// app.use(cors(corsOptions));
-// app.use(express.json());
+const handle = app.getRequestHandler();
 
-// export const mainApp = express();
-// mainApp.use("/api", app);
-
-// app.post("/createAppointment", createAppointment);
-
-// exports.api = functions.region("europe-west1").https.onRequest(mainApp);
+exports.nextServer = functions
+  .runWith({
+    memory: "8GB",
+  })
+  .region("europe-west1")
+  .https.onRequest((req, res) => {
+    return cors(req, res, () => {
+      functions.logger.log("File: " + req.originalUrl);
+      return app.prepare().then(() => handle(req, res));
+    });
+  });
 
 exports.getAppointments = functions
   .region("europe-west1")
@@ -96,3 +92,7 @@ exports.updateAppointment = functions
 exports.cancelAppointment = functions
   .region("europe-west1")
   .https.onRequest(cancelAppointment);
+
+exports.approveChangeDateAppointment = functions
+  .region("europe-west1")
+  .https.onRequest(approveChangeDateAppointment);

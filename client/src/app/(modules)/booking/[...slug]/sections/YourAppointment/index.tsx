@@ -11,6 +11,7 @@ type YourAppointment = {
   serviceName: string;
   price: string;
   staff: string;
+  serviceId: string;
 };
 
 export default function YourAppointment({
@@ -18,6 +19,7 @@ export default function YourAppointment({
   serviceName,
   staff,
   price,
+  serviceId,
 }: YourAppointment) {
   const { selectedTime, setNewAppointment } = useBookingStore();
 
@@ -30,6 +32,7 @@ export default function YourAppointment({
         staff,
         name: serviceName,
         currency: "USD",
+        serviceId,
       });
     }
   }, [selectedTime]);

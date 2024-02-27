@@ -4,6 +4,7 @@ export const cancelAppointment = async ({
 }: {
   appointmentId: string;
   userId: string;
+  
 }): Promise<any> => {
   return await fetch(`${process.env.NEXT_PUBLIC_API_MAIN}cancelAppointment`, {
     method: "PUT",

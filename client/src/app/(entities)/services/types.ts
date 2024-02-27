@@ -14,13 +14,13 @@ export type Service = {
 };
 
 export type CreateService = {
-  // userId: string;
   companyId: string;
   name: string;
   price: string;
   currency: string;
   availableTime: AvailableTime;
   staff: StaffId;
+  serviceId: string;
 };
 
 type ServiceId = string;
