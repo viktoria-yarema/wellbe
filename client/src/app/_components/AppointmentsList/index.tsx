@@ -26,6 +26,7 @@ export default function AppointmentsList({ status }: AppointmentsListProps) {
   return (
     <FlexColumn rowGap={"1rem"}>
       {isLoading && <LoadingBookedList />}
+
       {appointments?.map((item) => (
         <AppointmentCard
           key={item.id}

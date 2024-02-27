@@ -13,10 +13,11 @@ import Divider from "@/app/_components/Divider";
 import FlexColumn from "@/app/_components/Layout/FlexColumn";
 
 export default function ProfilePage() {
-  const { user } = useUserStore();
+  const { user, cleanUser } = useUserStore();
 
   const onSignOut = () => {
     signOut(auth);
+    cleanUser();
   };
 
   if (!user) {

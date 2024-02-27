@@ -40,10 +40,10 @@ export default function AccordionServices({
   };
 
   return (
-    <FlexColumn rowGap={"1rem"}>
+    <FlexColumn rowGap={"0.75rem"}>
       {servicesGroups?.map((group, index) => (
         <StyledAccordion
-          expanded={expanded === group.id || index === 0}
+          expanded={expanded === group.id}
           onClick={() => handleChange(group.id)}
           key={group.id}
           elevation={0}

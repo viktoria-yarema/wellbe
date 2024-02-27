@@ -1,19 +1,23 @@
 {
   "hosting": {
-    "public": "client/.next",
+    "source": "client/public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
     "rewrites": [
       {
-        "source": "**",
+        "source": "**/**",
         "function": "nextServer"
       }
     ],
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "frameworksBackend": {
       "region": "europe-west1"
     }
   },
   "functions": {
-    "source": "server/functions",
+    "source": "server/function",
     "runtime": "nodejs18",
     "ignore": [
       "**/src/**",
