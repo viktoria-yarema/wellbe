@@ -9,7 +9,7 @@
     "deploy": "firebase deploy",
     "build-all": "yarn build-next && yarn build-firebase",
     "build-next": "cd \"client\" && yarn && yarn build",
-    "build-firebase": "cd \"server/functions\" && yarn",
+    "build-firebase": "cd \"server\" && yarn run deploy",
     "lint": "cd \"client\" && yarn next lint"
   },
   "engines": {
