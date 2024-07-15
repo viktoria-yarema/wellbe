@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import ThemeRegistry from "./_theme/ThemeRegister";
+import ThemeRegistry from "../shared/theme/ThemeRegister";
 import { StrictMode } from "react";
-import MainLayout from "./_layouts";
+import MainLayout from "../shared/layouts";
 
 export const metadata: Metadata = {
   title: "Wellbe",

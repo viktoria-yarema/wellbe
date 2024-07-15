@@ -1,0 +1,14 @@
+import { FC } from "react";
+import { COLOR_SECONDARY } from "@/shared/theme/colors";
+import { IconType } from "@/shared/theme/types";
+
+const FacebookIcon: FC<IconType> = ({ color = COLOR_SECONDARY }) => (
+  <svg width="38" height="38" viewBox="0 0 38 38" fill="none">
+    <path
+      d="M19.0001 3.23C10.2917 3.23 3.16675 10.3392 3.16675 19.095C3.16675 27.0117 8.96175 33.5825 16.5301 34.77V23.6867H12.5084V19.095H16.5301V15.5958C16.5301 11.6217 18.8892 9.43667 22.5151 9.43667C24.2409 9.43667 26.0459 9.7375 26.0459 9.7375V13.6483H24.0509C22.0876 13.6483 21.4701 14.8675 21.4701 16.1183V19.095H25.8717L25.1592 23.6867H21.4701V34.77C25.2011 34.1807 28.5986 32.2771 31.0491 29.4026C33.4997 26.5281 34.8419 22.8723 34.8334 19.095C34.8334 10.3392 27.7084 3.23 19.0001 3.23Z"
+      fill={color}
+    />
+  </svg>
+);
+
+export default FacebookIcon;
